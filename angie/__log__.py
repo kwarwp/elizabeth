@@ -29,3 +29,10 @@ AttributeError: 'Elemento' object has no attribute 'entradireita'
         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Oct 26 2020 16:55:18.470 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  peixe = Elemento (img=PEIXE, tit ="ooi", x=90,y=50,w=100 e h=800px)
+                                                            ^
+SyntaxError: invalid syntax
+'''},
