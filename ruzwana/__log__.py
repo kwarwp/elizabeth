@@ -111,3 +111,10 @@ NameError: name 'castelo' is not defined
     castelo-Cena(img=CASTELO)
 NameError: name 'castelo' is not defined
 '''},
+{'date': 'Mon Oct 26 2020 16:50:39.560 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  morango= Elemento(img=MORANGO tit ="me chamo morango")
+                                 ^
+SyntaxError: invalid syntax
+'''},
