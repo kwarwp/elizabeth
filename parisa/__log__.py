@@ -77,3 +77,10 @@ NameError: name 'Castelo' is not defined
     morango.entra(Castelo)
 NameError: name 'Castelo' is not defined
 '''},
+{'date': 'Mon Oct 26 2020 16:50:12.329 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  PEIXE = 
+           ^
+SyntaxError: invalid syntax
+'''},
