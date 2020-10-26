@@ -166,3 +166,10 @@ NameError: name 'DESERTO' is not defined
     deserto= Cena(img=DESERTO)
 NameError: name 'DESERTO' is not defined
 '''},
+{'date': 'Mon Oct 26 2020 16:55:37.673 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  peixe= Elemento(img=PEIXE, tit ="ooi" x 90,y=50,w=100 e h=800px)
+                                         ^
+SyntaxError: invalid syntax
+'''},
