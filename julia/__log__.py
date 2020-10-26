@@ -15,3 +15,10 @@
     Oceano= Cena(img=OCEANO)
 NameError: name 'OCEANO' is not defined
 '''},
+{'date': 'Mon Oct 26 2020 17:03:02.71 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  from _ spy.vitollino.main import _ Cena, Elemento 
+                                         ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
