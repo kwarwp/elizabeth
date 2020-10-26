@@ -15,6 +15,6 @@ castelo.direita=deserto
 deserto.esquerda=castelo
 morango= Elemento(img=MORANGO, tit = "me chamo morango")
 morango.entra(deserto)
-tubarao_vivo = Elemento(img=TUBARAO_VIVO,
+tubarao_vivo = Elemento(img=TUBARAO_VIVO)
 tubarao_vivo.entra(deserto)
 castelo.vai
