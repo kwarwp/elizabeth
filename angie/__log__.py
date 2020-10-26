@@ -43,3 +43,10 @@ SyntaxError: invalid syntax
                                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Oct 26 2020 16:58:52.182 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  morango= Elemento (img=MORANGO, tit ="me chamo morango", top=150, height=1 , widht=200, left=)
+                                                                                                ^
+SyntaxError: invalid syntax
+'''},
