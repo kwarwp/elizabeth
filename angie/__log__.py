@@ -22,3 +22,10 @@ SyntaxError: invalid syntax
     morango.entradireita(castelo)
 AttributeError: 'Elemento' object has no attribute 'entradireita'
 '''},
+{'date': 'Mon Oct 26 2020 16:49:01.915 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  JOHN CENA= "https://i.imgur.com/nuaU01Hb.jpg"
+        ^
+SyntaxError: invalid syntax
+'''},
