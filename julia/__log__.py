@@ -22,3 +22,10 @@ NameError: name 'OCEANO' is not defined
                                          ^
 SyntaxError: trailing comma not allowed without surrounding parentheses
 '''},
+{'date': 'Mon Oct 26 2020 17:04:00.202 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  from _ spy.vitollino.main import _ Cena, Elemento 
+                                         ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
