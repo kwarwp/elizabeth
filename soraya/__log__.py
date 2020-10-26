@@ -79,3 +79,10 @@ TypeError: entra() got an unexpected keyword argument 'x'
     peixe.entra(castelo,100,100)
 TypeError: entra() takes 3 positional argument but more were given
 '''},
+{'date': 'Mon Oct 26 2020 16:26:00.619 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  peixe = Elemento(img=PEIXE,100,100)
+                                ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
