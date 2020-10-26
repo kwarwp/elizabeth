@@ -5,8 +5,9 @@ CASTELO = "https://i.imgur.com/LF4NbKH.jpg"
 MORANGO = "https://i.imgur.com/TYqfeqN.png"
  
 
-paisagem= Cena (img=PAISAGEM)
+castelo= Cena (img=CASTELO)
 morango=Elemento(img=MORANGO)
-morango.entra(paisagem)
+morango.entra(castelo)
+
 
 
