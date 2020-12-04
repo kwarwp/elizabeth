@@ -36,7 +36,7 @@ class desafio_2:
         self.cena1 = Cena(imagem_quarto)
         #self.cena1.vai()
         
-        self.texto_1 = Texto(cena1, txt = "Encontre o livro")
+        self.texto_1 = Texto(self.cena1, txt = "Encontre o livro")
         #self.texto_1.vai()
         
         self.LIVRO= Elemento(imagem_livro, tit="título_do_elemento",
@@ -46,9 +46,9 @@ class desafio_2:
         
         
     def funcao_de_acao_do_botao(self,event = None):
+    
         self.cena2= Cena(imagem_livroaberto)
         self.cena2.vai()
-    
         self.PAPEL_RASGADO = Elemento(papel_rasgado, tit="título_do_elemento", 
                                  w=578, h=437, x=450, y=250, 
                                  cena = self.cena2)
@@ -56,9 +56,9 @@ class desafio_2:
 
         
     def funcao_de_acao_do_botao2(self,event = None):
-        self.cena3.elt.bind("click", self.desafio1)   
         self.cena3= Cena(self.papel_rasgado)
         self.cena3.vai()
+        self.cena3.elt.bind("click", self.desafio1)   
 
     def desafio1(self, resposta2):
         self.resposta1=str(input('Qual é a resposta do desafio?'))
@@ -81,7 +81,7 @@ class desafio_2:
             tente_novamente=Texto(cena3, txt = "Tente novamente.")
             tente_novamente.vai()
             
-    def inicia():
+    def inicia(self,*_):
         self.cena1.vai()
         self.texto_1.vai()
         
