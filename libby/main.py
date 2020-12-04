@@ -56,30 +56,21 @@ class desafio_2:
 
         
     def funcao_de_acao_do_botao2(self,event = None):
-        self.cena3= Cena(self.papel_rasgado)
+        self.cena3= Cena(papel_rasgado)
         self.cena3.vai()
         self.cena3.elt.bind("click", self.desafio1)   
 
     def desafio1(self, resposta2):
         self.resposta1=str(input('Qual é a resposta do desafio?'))
-        self.resposta2=resposta1.lower()
-        self.cena4 = Cena(imagem_mapa)
+        self.resposta2=self.resposta1.lower()
         if self.resposta2 == 'va para a biblioteca' or 'vá para a biblioteca' :
-            cena4.vai()
-            parabens = Texto(cena4, txt = "Parabéns, você acertou!")
-            parabens.vai()
-    #    elif resposta1== 'Vá para a biblioteca':
-    #        cena4.vai()
-    #        parabens.vai()
-    #    elif resposta1 == 'vá para a biblioteca':
-    #        cena4.vai()
-    #        parabens.vai()
-    #    elif resposta1 == 'Va para a biblioteca':
-    #        cena4.vai()
-    #        parabens.vai()
+            self.cena4 = Cena(imagem_mapa)
+            self.cena4.vai()
+            self.parabens = Texto(cena4, txt = "Parabéns, você acertou!")
+            self.parabens.vai()
         else:
-            tente_novamente=Texto(cena3, txt = "Tente novamente.")
-            tente_novamente.vai()
+            self.tente_novamente=Texto(cena3, txt = "Tente novamente.")
+            self.tente_novamente.vai()
             
     def inicia(self,*_):
         self.cena1.vai()
