@@ -65,3 +65,10 @@ TypeError: inicia() takes 0 positional argument but more were given
                                                                                                                                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 04 2020 17:19:48.217 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  print(self.resposta2, isinstance(self.resposta2,str)
+                                                                                                                                      ^
+SyntaxError: invalid syntax
+'''},
