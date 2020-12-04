@@ -58,3 +58,10 @@ NameError: name 'cena1' is not defined
     desafio_2().inicia()
 TypeError: inicia() takes 0 positional argument but more were given
 '''},
+{'date': 'Fri Dec 04 2020 17:19:32.808 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  print(self.resposta2, isinstance(str,self.resposta2)
+                                                                                                                                      ^
+SyntaxError: invalid syntax
+'''},
