@@ -72,3 +72,10 @@ SyntaxError: invalid syntax
                                                                                                                                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 04 2020 17:20:10.413 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  print(self.resposta2, isinstance(str,self.resposta2)
+                                                                                                                                      ^
+SyntaxError: invalid syntax
+'''},
