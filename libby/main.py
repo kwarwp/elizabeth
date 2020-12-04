@@ -60,9 +60,10 @@ class desafio_2:
         self.cena3.vai()
         self.cena3.elt.bind("click", self.desafio1)   
 
-    def desafio1(self, resposta2):
+    def desafio1(self,*_):
         self.resposta1=str(input('Qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
+        print(self.resposta2)
         if self.resposta2 == 'va para a biblioteca' or 'vá para a biblioteca' :
             self.cena4 = Cena(imagem_mapa)
             self.cena4.vai()
