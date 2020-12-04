@@ -63,7 +63,7 @@ class desafio_2:
     def desafio1(self,*_):
         self.resposta1=str(input('Qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
-        print(self.resposta2)
+        print(self.resposta2, self.resposta2.isalpha(
         if self.resposta2 == 'va para a biblioteca' or 'vá para a biblioteca' :
             self.cena4 = Cena(imagem_mapa)
             self.cena4.vai()
