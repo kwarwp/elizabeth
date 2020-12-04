@@ -93,3 +93,10 @@ SyntaxError: invalid syntax
                                                                                                                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 04 2020 17:23:27.169 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 67
+  if self.resposta2 == 'va para a biblioteca' or 'vá para a biblioteca' :
+  ^
+IndentationError: unexpected indent
+'''},
