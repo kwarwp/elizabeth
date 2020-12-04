@@ -64,12 +64,14 @@ class desafio_2:
         self.resposta1=str(input('Qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
         print(self.resposta2, self.resposta2.isalpha())
-        if self.resposta2 == 'va para a biblioteca' or 'vá para a biblioteca' :
+        if self.resposta2 == 'va para a biblioteca' or self.resposta2 == 'vá para a biblioteca':
+            print('a verificiação if ta funcionando')
             self.cena4 = Cena(imagem_mapa)
             self.cena4.vai()
             self.parabens = Texto(self.cena4, txt = "Parabéns, você acertou!")
             self.parabens.vai()
         else:
+            print('a verificiação else ta funcionando')
             self.tente_novamente=Texto(self.cena3, txt = "Tente novamente.")
             self.tente_novamente.vai()
             
