@@ -63,14 +63,14 @@ class desafio_2:
     def desafio1(self,*_):
         self.resposta1=str(input('Qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
-        print(self.resposta2, self.resposta2.isalpha(
+        print(self.resposta2, self.resposta2.isalpha())
         if self.resposta2 == 'va para a biblioteca' or 'vá para a biblioteca' :
             self.cena4 = Cena(imagem_mapa)
             self.cena4.vai()
-            self.parabens = Texto(cena4, txt = "Parabéns, você acertou!")
+            self.parabens = Texto(self.cena4, txt = "Parabéns, você acertou!")
             self.parabens.vai()
         else:
-            self.tente_novamente=Texto(cena3, txt = "Tente novamente.")
+            self.tente_novamente=Texto(self.cena3, txt = "Tente novamente.")
             self.tente_novamente.vai()
             
     def inicia(self,*_):
