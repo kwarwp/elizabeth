@@ -100,3 +100,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sat Dec 05 2020 15:12:10.320 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 44
+  cena = self.cena1)
+  ^
+IndentationError: unexpected indent
+'''},
