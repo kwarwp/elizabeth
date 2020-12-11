@@ -8,7 +8,7 @@ print(novo_nome)
 """
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from libby.main import desafio_2
+from libby.main import *
 
 CENARIO = "http://cardolettoilustrador.com.br/wp-content/uploads/estudo-cen%C3%A1rio.jpg"
 imagem_play= 'https://img2.gratispng.com/20180325/fyw/kisspng-youtube-play-button-computer-icons-clip-art-button-5ab819cc3d5ee6.2062185015220146682514.jpg'
@@ -36,10 +36,11 @@ class Entrada:
         self.cena_teste = Cena(CENARIO)
         self.cena_teste.vai()
         #print(nome_personagem)
-        self.texto_ = Texto(self.cena_teste, txt = f'{nome_personagem} Gosta de ler um livro', foi = self.viaja_para_libby  )
+        self.texto_ = Texto(self.cena_teste, txt = f'{nome_personagem} Gosta de ler um livro', foi = self.viaja_para_libby)
         self.texto_.vai()
             
     def start_eng(self):
+    
         self.PLAY.vai()
     def viaja_para_libby(self):
         desafio_2().inicia()
