@@ -18,6 +18,7 @@ def nomepersonagem(nome_personagem):
         PC.vai()
     else:
         nome_personagem= nome_personagem
+        PC.vai()
     
     
 PLAY.vai()
