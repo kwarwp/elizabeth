@@ -24,15 +24,14 @@ def nomepersonagem(nome_personagem):
         nome_personagem= nome_personagem
         PC.vai()
         
-def teste1():
-    texto_ = Texto(PC, txt = f'nomeperkdad {nome_personagem}')
-    texto_.vai()
+texto_ = Texto(PC, txt = f'nomeperkdad {nome_personagem}')
+
 
         
     
     
 PLAY.vai()
 BOTAO_PLAY.elt.bind("click", nomepersonagem)
-teste1()
+texto_.vai()
 
 
