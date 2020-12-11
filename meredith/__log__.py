@@ -351,3 +351,7 @@ ImportError: cannot import name 'desafio_2'
     from libby.main import desafio_2
 ImportError: cannot import name 'desafio_2'
 '''},
+{'date': 'Fri Dec 11 2020 20:10:15.662 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is null>
+'''},
