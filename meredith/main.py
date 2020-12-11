@@ -25,7 +25,7 @@ else:
 
 
 
-class Entrada():
+class Entrada:
     global nome_personagem
     
     def __init__(self):
