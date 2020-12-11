@@ -221,3 +221,10 @@ NameError: name 'nome_personagem' is not defined
     (nome_personagem)
 NameError: name 'nome_personagem' is not defined
 '''},
+{'date': 'Fri Dec 11 2020 19:34:31.261 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  from meredith.main import Entrada, global nome_personagem
+                                      ^
+SyntaxError: invalid syntax
+'''},
