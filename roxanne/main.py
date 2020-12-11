@@ -7,13 +7,13 @@ fundo_transparente='https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techtud
 
 
 PLAY= Cena(imagem_play)
-BOTAO_TRANSPARENTE= Elemento(imagem_play, tit= "click" ,w=960,h=600,x= 960, y=600, cena = PLAY)
+BOTAO_TRANSPARENTE= Elemento(imagem_play, tit= "click" ,cena = PLAY)
 
 PC=Cena(imagem_pc)
 
 def nomepersonagem():
     nome_personagem= str(input('Escolha o nome da personagem:'))
-    PC.vai 
+    PC.vai()
     
     
 PLAY.vai()
