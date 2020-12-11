@@ -16,7 +16,7 @@ nome_personagem=''
 def nomepersonagem(pergunta_nome):
     global nome_personagem
     pergunta_nome= str(input('Escolha o nome da personagem:'))
-    nome_personagem=+ pergunta_nome
+    nome_personagem= pergunta_nome
     if nome_personagem == None:
         nome_personagem=fulana
         print(nome_personagem)
