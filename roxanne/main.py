@@ -11,7 +11,7 @@ BOTAO_PLAY= Elemento(imagem_play, tit= "click" ,cena = PLAY)
 
 PC=Cena(imagem_pc)
 
-def nomepersonagem():
+def nomepersonagem(nome_personagem):
     nome_personagem= str(input('Escolha o nome da personagem:'))
     if nome_personagem == None:
         nome_personagem=fulana
