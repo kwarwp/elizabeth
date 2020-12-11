@@ -17,7 +17,7 @@ fundo_transparente='https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techtud
 
 pergunta_nome= str(input('Escolha o nome da personagem:'))
 nome_personagem= pergunta_nome
-if nome_personagem == None:
+if nome_personagem == '':
    nome_personagem = "fulana"
 else:
    nome_personagem = nome_personagem
@@ -34,7 +34,10 @@ class Entrada():
     
     def testa_nome_cena(self,*_):
         self.cena_teste = Cena(CENARIO)
-        self.texto_ = Texto(self.PLAY, txt = nome_personagem + 'Gosta de ler um livro')
+        self.cena_teste.vai()
+        #print(nome_personagem)
+        self.texto_ = Texto(self.cena_teste, txt = f'{nome_personagem} Gosta de ler um livro')
+        self.texto_.vai()
             
     def start_eng(self):
         self.PLAY.vai()
