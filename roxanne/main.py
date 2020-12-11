@@ -8,5 +8,7 @@ PC=Cena(imagem_pc)
 def nomepersonagem():
     nome_personagem= str(input('Escolha o nome da personagem:'))
     PC.vai 
-
+    
+    
+PLAY.vai()
 PLAY.elt.bind("click", nomepersonagem)
