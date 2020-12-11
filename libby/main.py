@@ -69,11 +69,11 @@ class desafio_2:
             #print('a verificiação if ta funcionando') # LINHA DE VERIFICAÇÃO É NECESSÁRIO O CONSOLE DO BROWSER
             self.cena4 = Cena(imagem_mapa)
             self.cena4.vai()
-            self.parabens = Texto(self.cena4, txt = "Parabéns,{nome_personagem}, você acertou!")
+            self.parabens = Texto(self.cena4, txt = f'Parabéns,{nome_personagem}, você acertou!')
             self.parabens.vai()
         else:
             #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
-            self.tente_novamente=Texto(self.cena3, txt = "{nome_personagem}, Tente novamente.")
+            self.tente_novamente=Texto(self.cena3, txt = f'{nome_personagem}, Tente novamente.')
             self.tente_novamente.vai()
             
     def inicia(self,*_):
