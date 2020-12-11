@@ -17,7 +17,7 @@ fundo_transparente='https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techtud
 
 
 pergunta_nome= str(input('Escolha o nome da personagem:'))
-nome_personagem= pergunta_nome
+nome_personagem = pergunta_nome
 if nome_personagem == '':
    nome_personagem = "fulana"
 else:
@@ -44,5 +44,7 @@ class Entrada():
         self.PLAY.vai()
     def viaja_para_libby(self):
         desafio_2().inicia()
-Entrada().start_eng()
+        
+if __name__ == "__main__":                  
+    Entrada().start_eng()
             
