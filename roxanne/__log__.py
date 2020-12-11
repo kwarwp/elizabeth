@@ -22,3 +22,10 @@ SyntaxError: invalid syntax
     PLAY= Cena(imagem_playy)
 NameError: name 'imagem_playy' is not defined
 '''},
+{'date': 'Fri Dec 11 2020 16:23:19.113 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  BOTAO_TRANSPARENTE= Elemento(fundo_transparente, tit="click",w=,h=36,  x=450, y=300, 
+                                                                  ^
+SyntaxError: invalid syntax
+'''},
