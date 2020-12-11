@@ -7,7 +7,7 @@ fundo_transparente='https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techtud
 
 
 PLAY= Cena(imagem_play)
-BOTAO_TRANSPARENTE= Elemento(imagem_play, tit= "click" ,cena = PLAY)
+BOTAO_PLAY= Elemento(imagem_play, tit= "click" ,cena = PLAY)
 
 PC=Cena(imagem_pc)
 
@@ -21,4 +21,4 @@ def nomepersonagem():
     
     
 PLAY.vai()
-BOTAO_TRANSPARENTE.elt.bind("click", nomepersonagem)
+BOTAO_PLAY.elt.bind("click", nomepersonagem)
