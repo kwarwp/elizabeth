@@ -355,3 +355,7 @@ ImportError: cannot import name 'desafio_2'
 'error': '''
 Exception: <TypeError: obj is null>
 '''},
+{'date': 'Fri Dec 11 2020 20:10:26.234 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is null>
+'''},
