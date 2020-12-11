@@ -28,7 +28,7 @@ def nomepersonagem(pergunta_nome):
         
 
         
-texto_ = Texto(PC, txt = f'{nome_personagem}')
+texto_ = Texto(PC, txt = nome_personagem + 'Gosta de ler um livro')
 
 
         
