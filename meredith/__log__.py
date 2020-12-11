@@ -20,3 +20,10 @@ SyntaxError: invalid syntax
                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 11 2020 16:05:56.506 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  novo nome = diga_o_nome
+        ^
+SyntaxError: invalid syntax
+'''},
