@@ -19,4 +19,5 @@ def nomepersonagem():
     
     
 PLAY.vai()
+BOTAO_TRANSPARENTE.vai()
 BOTAO_TRANSPARENTE.elt.bind("click", nomepersonagem)
