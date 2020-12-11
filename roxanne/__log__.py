@@ -36,3 +36,10 @@ SyntaxError: invalid syntax
                                                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 11 2020 16:24:54.82 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  BOTAO_TRANSPARENTE= Elemento(fundo_transparente, tit="click",w=,h=36,  x=450, y=300, cena = PLAY)
+                                                                  ^
+SyntaxError: invalid syntax
+'''},
