@@ -26,7 +26,9 @@ def nomepersonagem(pergunta_nome):
         PC.vai()
         print(nome_personagem)
         
-#texto_ = Texto(PC, txt = f'nomeperkdad {nome_personagem}')
+
+        
+texto_ = Texto(PC, txt = f'{nome_personagem}')
 
 
         
@@ -34,6 +36,7 @@ def nomepersonagem(pergunta_nome):
     
 PLAY.vai()
 BOTAO_PLAY.elt.bind("click", nomepersonagem)
+texto_.vai()
 
 
 
