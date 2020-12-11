@@ -87,3 +87,10 @@ TypeError: 'module' object is not callable
     desafio_2().inicia()
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Fri Dec 11 2020 16:57:17.309 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.Seta2 = Elemento(botao_seta2, tit="CLIQUE",
+                                                                                                                                                                                                                                                                 ^
+SyntaxError: invalid syntax
+'''},
