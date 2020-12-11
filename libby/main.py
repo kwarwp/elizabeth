@@ -30,7 +30,7 @@ STYLE["heigth"] = '600px' # min-height = "300px"
 #STYLE["heigth"] = '521px'
 
 class desafio_2:
-    from meredith.main import nome_personagem
+    import meredith.main 
 
     def __init__(self):
         self.cena1 = Cena(imagem_quarto)
