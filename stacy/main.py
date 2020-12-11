@@ -26,9 +26,12 @@ class Modulo1:
             self.Cena2 = Cena(imagem_computador2)
             self.Cena2.vai()
             
+            from libby.main import desafio_2
+            
             self.Seta2 = Elemento(botao_seta2, tit="CLIQUE",
                            style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.Cena2)
+                           cena = self.Cena2,
+                           vai = desafio_2().inicia())
                            
       def mari(self):
             self.Cena1.vai()
