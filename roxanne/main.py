@@ -13,7 +13,10 @@ PC=Cena(imagem_pc)
 
 def nomepersonagem():
     nome_personagem= str(input('Escolha o nome da personagem:'))
-    PC.vai()
+    if nome_personagem =! None:
+        PC.vai()
+    else:
+        nome_personagem==fulana
     
     
 PLAY.vai()
