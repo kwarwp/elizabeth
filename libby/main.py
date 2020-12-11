@@ -1,5 +1,3 @@
-# elizabeth.libby.main.py
-# roberta.libby.main.py
 """     xxxxx
 
 .. codeauthor:: Livia Machado <liviamcampos98@gmail.com>
