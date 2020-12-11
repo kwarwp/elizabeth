@@ -88,3 +88,7 @@ NameError: name 'PLAY' is not defined
     self.BOTAO_PLAY.elt.bind("click", Nome_jogador)
 NameError: name 'Nome_jogador' is not defined
 '''},
+{'date': 'Fri Dec 11 2020 18:26:16.825 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: return not in function>
+'''},
