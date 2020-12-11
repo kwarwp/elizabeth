@@ -27,3 +27,10 @@ SyntaxError: invalid syntax
         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 11 2020 18:14:38.494 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  CENARIO = http://cardolettoilustrador.com.br/wp-content/uploads/estudo-cen%C3%A1rio.jpg
+                 ^
+SyntaxError: invalid syntax
+'''},
