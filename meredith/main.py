@@ -43,7 +43,7 @@ class Entrada:
     
         self.PLAY.vai()
     def viaja_para_libby(self):
-        from libby.main import desafio_2
+        import libby.main 
         desafio_2().inicia()
         
 if __name__ == "__main__":                  
