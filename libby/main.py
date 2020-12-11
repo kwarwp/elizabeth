@@ -13,6 +13,7 @@ Changelog
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from elizabeth.meredith import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
@@ -36,7 +37,7 @@ class desafio_2:
         self.cena1 = Cena(imagem_quarto)
         #self.cena1.vai()
         
-        self.texto_1 = Texto(self.cena1, txt = "Encontre o livro")
+        self.texto_1 = Texto(self.cena1, txt = f'{nome_personagem},Encontre o livro')
         #self.texto_1.vai()
         
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
