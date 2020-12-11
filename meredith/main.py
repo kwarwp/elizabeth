@@ -8,7 +8,7 @@ print(novo_nome)
 """
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from libby.main import *
+from libby.main import desafio_2
 
 CENARIO = "http://cardolettoilustrador.com.br/wp-content/uploads/estudo-cen%C3%A1rio.jpg"
 imagem_play= 'https://img2.gratispng.com/20180325/fyw/kisspng-youtube-play-button-computer-icons-clip-art-button-5ab819cc3d5ee6.2062185015220146682514.jpg'
