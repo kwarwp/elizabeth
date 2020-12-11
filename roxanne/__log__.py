@@ -43,3 +43,10 @@ SyntaxError: invalid syntax
                                                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 11 2020 16:43:05.495 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  if nome_personagem =! None:
+                      ^
+SyntaxError: invalid syntax
+'''},
