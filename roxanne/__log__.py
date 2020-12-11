@@ -185,3 +185,10 @@ NameError: name 'nome_personagem' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Fri Dec 11 2020 17:22:53.158 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  imagem_play= 'https://img2.gratispng.com/20180325/fyw/kisspng-youtube-play-button-computer-icons-clip-art-button-5ab819cc3d5ee6.2062185015220146682514.jpg'
+  ^
+IndentationError: expected an indented block
+'''},
