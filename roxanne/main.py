@@ -9,7 +9,7 @@ fundo_transparente='https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techtud
 PLAY= Cena(imagem_play)
 
 
-BOTAO_TRANSPARENTE= Elemento(fundo_transparente, tit= "click" ,w=960,h=600,x= 1, y=1, cena = PLAY)
+BOTAO_TRANSPARENTE= Elemento(fundo_transparente, tit= "click" ,w=960,h=600,x= 960, y=600, cena = PLAY)
 
 PC=Cena(imagem_pc)
 
