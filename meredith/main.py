@@ -36,7 +36,7 @@ class Entrada():
         self.cena_teste = Cena(CENARIO)
         self.cena_teste.vai()
         #print(nome_personagem)
-        self.texto_ = Texto(self.cena_teste, txt = f'{nome_personagem} Gosta de ler um livro')
+        self.texto_ = Texto(self.cena_teste, txt = f'{nome_personagem} Gosta de ler um livro', foi = )
         self.texto_.vai()
             
     def start_eng(self):
