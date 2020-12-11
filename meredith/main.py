@@ -26,8 +26,7 @@ else:
 
 
 class Entrada:
-    global nome_personagem
-    
+  
     def __init__(self):
         self.PLAY= Cena(imagem_play)
         self.BOTAO_PLAY= Elemento(imagem_play, tit= "click" ,cena = self.PLAY)
