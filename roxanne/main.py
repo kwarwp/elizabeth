@@ -22,3 +22,5 @@ def nomepersonagem(nome_personagem):
     
 PLAY.vai()
 BOTAO_PLAY.elt.bind("click", nomepersonagem)
+
+print(nome_personagem)
