@@ -46,7 +46,6 @@ class desafio_2:
         
         
     def funcao_de_acao_do_botao(self,event = None):
-    
         self.cena2= Cena(imagem_livroaberto)
         self.cena2.vai()
         self.PAPEL_RASGADO = Elemento(papel_rasgado, tit="título_do_elemento", 
