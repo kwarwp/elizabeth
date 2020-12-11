@@ -13,29 +13,29 @@ BOTAO_PLAY= Elemento(imagem_play, tit= "click" ,cena = PLAY)
 
 PC=Cena(imagem_pc)
 nome_personagem=''
-def nomepersonagem(pergunta_nome):
-    global nome_personagem
-    pergunta_nome= str(input('Escolha o nome da personagem:'))
-    nome_personagem= pergunta_nome
-    if nome_personagem == None:
-        nome_personagem=fulana
-        print(nome_personagem)
-        PC.vai()
-    else:
-        nome_personagem= nome_personagem
-        PC.vai()
-        print(nome_personagem)
+#def nomepersonagem(pergunta_nome):
+    
+pergunta_nome= str(input('Escolha o nome da personagem:'))
+nome_personagem= pergunta_nome
+if nome_personagem == None:
+    nome_personagem=fulana
+    print(nome_personagem)
+#        PC.vai()
+else:
+    nome_personagem= nome_personagem
+    #    PC.vai()
+    print(nome_personagem)
         
 
         
-texto_ = Texto(PC, txt = nome_personagem + 'Gosta de ler um livro')
+texto_ = Texto(PLAY, txt = nome_personagem + 'Gosta de ler um livro')
 
 
         
     
     
 PLAY.vai()
-BOTAO_PLAY.elt.bind("click", nomepersonagem)
+#BOTAO_PLAY.elt.bind("click", nomepersonagem)
 texto_.vai()
 
 
