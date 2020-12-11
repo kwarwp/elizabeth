@@ -25,7 +25,9 @@ def nomepersonagem(nome_personagem):
         PC.vai()
         
 def teste1():
-    print(f'nomeperkdad {nome_personagem}')
+    texto_ = Texto(PC, txt = f'nomeperkdad {nome_personagem}')
+    texto_.vai()
+
         
     
     
