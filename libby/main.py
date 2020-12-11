@@ -11,7 +11,7 @@ Changelog
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from meredith.main import nome_personagem
+from meredith.main import Entrada ,nome_personagem
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
