@@ -16,12 +16,14 @@ def nomepersonagem(nome_personagem):
     if nome_personagem == None:
         nome_personagem=fulana
         PC.vai()
+        print(nome_personagem)
     else:
         nome_personagem= nome_personagem
         PC.vai()
+        print(nome_personagem)
     
     
 PLAY.vai()
 BOTAO_PLAY.elt.bind("click", nomepersonagem)
 
-print(nome_personagem)
+
