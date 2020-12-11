@@ -13,7 +13,7 @@ Changelog
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from elizabeth.meredith import *
+from elizabeth.meredith import Entrada
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
