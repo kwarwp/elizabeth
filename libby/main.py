@@ -11,6 +11,7 @@ Changelog
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+import meredith.main 
 #rom meredith.main import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
@@ -30,7 +31,7 @@ STYLE["heigth"] = '600px' # min-height = "300px"
 #STYLE["heigth"] = '521px'
 
 class desafio_2:
-    import meredith.main 
+    
 
     def __init__(self):
         self.cena1 = Cena(imagem_quarto)
