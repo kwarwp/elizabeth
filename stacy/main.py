@@ -1,4 +1,40 @@
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from libby.main import desafio_2
 
 
@@ -13,3 +49,4 @@ class mari:
 
 if __name__ == "__main__":                  
     mari().chamaa()
+"""
