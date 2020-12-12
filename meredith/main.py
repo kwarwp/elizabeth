@@ -17,12 +17,12 @@ fundo_transparente='https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techtud
 
 
 pergunta_nome= str(input('Escolha o nome da personagem:'))
-nome_personagem = pergunta_nome
-if nome_personagem == '':
-   nome_personagem = "fulana"
+if pergunta_nome == '':
+   pergunta_nome= "fulana"
 else:
-   nome_personagem = nome_personagem
+   pergunta_nome = pergunta_nome
 
+nome_personagem = pergunta_nome
 
 
 class Entrada:
