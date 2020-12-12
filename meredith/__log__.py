@@ -508,3 +508,10 @@ Traceback (most recent call last):
     pergunta_nome= nome_personagem
 NameError: name 'nome_personagem' is not defined
 '''},
+{'date': 'Fri Dec 11 2020 21:19:19.762 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  def inicia_jogo(self):
+  ^
+IndentationError: unexpected indent
+'''},
