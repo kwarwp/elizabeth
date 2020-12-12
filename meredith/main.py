@@ -29,7 +29,7 @@ class Registro:
         self.nome_personagem = self.pergunta_nome   
         
     def inicia_jogo(self):
-         self.pergunta_nome()
+         self.pergunta_nome() 
          Entrada().start_eng()
 
 class Entrada:
@@ -43,7 +43,7 @@ class Entrada:
         self.cena_teste = Cena(CENARIO)
         self.cena_teste.vai()
         #print(nome_personagem)
-        self.texto_ = Texto(self.cena_teste, txt = f'{Registro.nome_personagem} Gosta de ler um livro', foi = self.viaja_para_libby)
+        self.texto_ = Texto(self.cena_teste, txt = f'{self.nome_personagem} Gosta de ler um livro', foi = self.viaja_para_libby)
         self.texto_.vai()
             
     def start_eng(self):
