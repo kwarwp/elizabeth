@@ -515,3 +515,10 @@ NameError: name 'nome_personagem' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Dec 15 2020 15:10:10.697 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  Entrada().start_eng()
+  ^
+IndentationError: unexpected indent
+'''},
