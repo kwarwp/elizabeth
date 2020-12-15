@@ -11,8 +11,8 @@ Changelog
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from meredith.main import nome_personagem
-#rom meredith.main import *
+#from meredith.main import nome_personagem
+from meredith.main import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
@@ -21,7 +21,8 @@ imagem_livro = 'https://livrariaconcreta.com.br/wp-content/uploads/2017/01/Hardc
 imagem_livroaberto = 'https://images.vexels.com/media/users/3/157260/isolated/preview/d48b34b2e855b69b29d5565edda69536-vetor-de-livro-aberto-em-branco-by-vexels.png'
 papel_rasgado = 'https://cdn.pixabay.com/photo/2019/03/18/15/10/torn-paper-4063317_960_720.png'
 imagem_mapa ='https://comps.canstockphoto.com.br/cidade-mapa-pequeno-sub%C3%BArbio-vila-vetor-clip-arte_csp14479563.jpg'
-
+imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
+imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
@@ -36,6 +37,9 @@ class desafio_2:
     def __init__(self):
         self.cena1 = Cena(imagem_quarto)
         #self.cena1.vai()
+        #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
+                             #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             #cena = self.cena1)
         
         self.texto_1 = Texto(self.cena1, txt = f'{nome_personagem},Encontre o livro')
         #self.texto_1.vai()
