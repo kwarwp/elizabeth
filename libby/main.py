@@ -35,18 +35,18 @@ class desafio_2:
     
 
     def __init__(self):
-        self.cena1 = Cena(imagem_quarto)
+        self.QUARTO = Cena(imagem_quarto)
         #self.cena1.vai()
         #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
         
-        self.texto_1 = Texto(self.cena1, txt = f'{nome_personagem},Encontre o livro')
+        self.texto_1 = Texto(self.QUARTO, txt = f'{nome_personagem},Encontre o livro')
         #self.texto_1.vai()
         
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
                              w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             cena = self.cena1)
+                             cena = self.QUARTO)
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)   
         
         
