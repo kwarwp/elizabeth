@@ -38,10 +38,10 @@ BOTAO2.elt.bind("click", desafio_porta2)
 
 Biblioteca_dentro = Cena(Imagem_Biblioteca_caixa)
             #Cena1.vai()
-           botao_caixa = Elemento(Imagem_Biblioteca_caixa, tit="CLIQUE",
-                           style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = Biblioteca_dentro,
-                           vai = clique_caixa)
+botao_caixa = Elemento(Imagem_Biblioteca_caixa, tit="CLIQUE",
+                       style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                       cena = Biblioteca_dentro,
+                       vai = clique_caixa)
 
       def clique_caixa (event = None):
             Biblioteca_papel = Cena(Imagem_Biblioteca_papel)
