@@ -13,3 +13,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Dec 16 2020 18:07:16.693 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  def clique_caixa (event = None):
+  ^
+IndentationError: unexpected indent
+'''},
