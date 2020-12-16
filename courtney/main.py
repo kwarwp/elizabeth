@@ -43,6 +43,6 @@ botao_caixa = Elemento(Imagem_Biblioteca_caixa, tit="CLIQUE",
                        cena = Biblioteca_dentro,
                        vai = clique_caixa)
 
-      def clique_caixa (event = None):
-            Biblioteca_papel = Cena(Imagem_Biblioteca_papel)
-            Biblioteca_papel.vai()
+def clique_caixa (event = None):
+    Biblioteca_papel = Cena(Imagem_Biblioteca_papel)
+    Biblioteca_papel.vai()
