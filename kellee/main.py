@@ -15,10 +15,10 @@ QUARTO2 = Cena(imagem_quarto)
 def acorda_boneca (event = None):
     QUARTO2.vai()
     
-PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit= "Acorde", W=960, h=600,  x=960, y=600, cena = QUARTO1, vai = acorda_boneca)
+PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit= "Acorde", W=375, h=200,  x=400, y=300, cena = QUARTO1, vai = acorda_boneca)
                              
 PERSONAGEM_ACORDADA = Elemento(imagem_personagem2, tit="",
-                             W=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             W=200,h=375,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = QUARTO2)
                              
 texto2 = Texto(QUARTO2, txt = "Nome_Fulana gosta de ler um livro quando acorda. Encontre-o")
