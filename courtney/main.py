@@ -36,7 +36,7 @@ BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo
                                 
 BOTAO2.elt.bind("click", desafio_porta2)
 
-Biblioteca_dentro = Cena(Imagem_Biblioteca_caixa)
+Biblioteca_dentro = Cena(Imagem_Biblioteca_dentro)
             #Cena1.vai()
 botao_caixa = Elemento(Imagem_Biblioteca_caixa, tit="CLIQUE",
                        style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
