@@ -18,7 +18,7 @@ Biblioteca_porta=Cena(porta_aberta)
 Biblioteca_dentro=Cena(Imagem_Biblioteca_dentro)
 
 
-Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
+Imagem_botao="https://www.google.com/search?as_st=y&tbm=isch&hl=pt-BR&as_q=caixa+desenho&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ic:trans#imgrc=PmlWJKz59LExBM"
 
 def abre_porta (event = None):
     Biblioteca_porta.vai()
