@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 porta_fechada="https://media.istockphoto.com/vectors/closed-door-drawing-vector-id865663698"
 porta_aberta="https://image.freepik.com/vetores-gratis/porta-aberta-dos-desenhos-animados-entrada-do-corredor-do-apartamento-entrada-do-escritorio_53562-8532.jpg"
 Imagem_Biblioteca_dentro="https://secult.es.gov.br/Media/secult/BPES/IMG_7650.JPG"
-imagem_caixa="https://www.google.com/search?as_st=y&tbm=isch&hl=pt-BR&as_q=caixa+desenho&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ic:trans#imgrc=PmlWJKz59LExBM"
+imagem_caixa="https://thumbs.dreamstime.com/z/caixa-dos-desenhos-animados-no-fundo-branco-98137796.jpg"
 imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-o-desenho-da-m%C3%A3o-do-pino-do-impulso-89420296.jpg"
 STYLE["width"] = 500 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
