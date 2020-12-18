@@ -683,3 +683,10 @@ IndentationError: expected an indented block
                         ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Fri Dec 18 2020 14:56:15.896 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 60
+  #Registro().registra()
+                        ^
+IndentationError: expected an indented block
+'''},
