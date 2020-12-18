@@ -984,3 +984,7 @@ Traceback (most recent call last):
     from stacy.main import Modulo1
 ImportError: cannot import name 'Modulo1'
 '''},
+{'date': 'Fri Dec 18 2020 16:16:13.800 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is null>
+'''},
