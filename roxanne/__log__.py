@@ -747,3 +747,10 @@ AttributeError: 'NoneType' object has no attribute 'nome'
     VAI.nome_personagem
 AttributeError: 'NoneType' object has no attribute 'nome_personagem'
 '''},
+{'date': 'Fri Dec 18 2020 15:03:49.752 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 65
+  #Registro().registra()
+                        ^
+IndentationError: expected an indented block
+'''},
