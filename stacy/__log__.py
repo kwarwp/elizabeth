@@ -213,3 +213,9 @@ Traceback (most recent call last):
   module stacy.main line 2
     from roxanne.main import Registro
 '''},
+{'date': 'Fri Dec 18 2020 18:39:31.291 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: obj is null
+  module '$exec_1850' line 2
+from roxanne.main import *
+'''},
