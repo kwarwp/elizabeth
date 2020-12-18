@@ -12,7 +12,7 @@ Changelog
 """
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-#from stacy.main import Modulo1
+from stacy.main import Modulo1
 
 #class parte1:
 
