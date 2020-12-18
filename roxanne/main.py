@@ -37,8 +37,9 @@ class Registro:
         """ testa se após passar por aqui, self.nome se torna true e a variável grava o nome """
         #print(self.nome, self.nome_personagem) 
         
-VAI = Registro().registra()
-VAI.nome_personagem
+VAI = Registro()
+VAI.registra()
+
 
 
         
