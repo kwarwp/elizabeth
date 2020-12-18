@@ -39,7 +39,7 @@ class Registro:
         self.nome_personagem = self.pergunta_nome 
         return self.nome_personagem
         
-new = Registro()
+
 
         
 class Inicia:
@@ -52,10 +52,10 @@ class Inicia:
         self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cena,
-                           vai = self.cria_persona())
+                           vai = self.instancia.registra())
     
     def cria_persona(self):
-        self.instancia.registra()
+        pass
         
 
     def gera(self):
@@ -63,6 +63,7 @@ class Inicia:
 
         
 if __name__ == "__main__":
+    new = Registro()
     new.registra()
     new.nome_personagem
     
