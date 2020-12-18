@@ -12,7 +12,7 @@ Changelog
 """
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from stacy.main import Modulo1
+#from stacy.main import Modulo1
 
 #class parte1:
 
@@ -27,6 +27,8 @@ class Registro:
 
     def __init__(self, nome = False):
         self.nome = nome
+        #self.nome_personagem = ""
+        
         
     def registra(self):
         self.pergunta_nome= str(input('Escolha o nome da personagem:'))
@@ -34,10 +36,10 @@ class Registro:
             self.pergunta_nome = "fulana"
         else:
             self.pergunta_nome = self.pergunta_nome
-        self.nome_personagem = self.pergunta_nome   
+        self.nome_personagem = self.pergunta_nome 
+        return self.nome_personagem
         
-        """ testa se após passar por aqui, self.nome se torna true e a variável grava o nome """
-        #print(self.nome, self.nome_personagem) 
+new = Registro()
 
         
 class Inicia:
@@ -52,17 +54,18 @@ class Inicia:
                            cena = self.cena,
                            vai = self.cria_persona())
     
-
     def cria_persona(self):
-        pass
+        self.instancia.registra()
+        
 
     def gera(self):
         self.cena.vai()
 
-
         
-if __name__ == "__main__":   
-    Inicia().gera()
+if __name__ == "__main__":
+    new.registra()
+    
+    #Inicia().registra()
     
 #VAI = Registro() 
 #VAI.registra()
