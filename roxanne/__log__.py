@@ -921,3 +921,7 @@ Traceback (most recent call last):
   module roxanne.main line 15
     from stacy.main import Modulo1
 '''},
+{'date': 'Fri Dec 18 2020 15:41:56.700 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is null>
+'''},
