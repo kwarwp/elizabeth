@@ -12,7 +12,7 @@ Changelog
 """
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from stacy.main import Modulo1
+#from stacy.main import *
 
 #class parte1:
 
@@ -39,7 +39,7 @@ class Registro:
         self.nome_personagem = self.pergunta_nome   
         """ testa se após passar por aqui, self.nome se torna true e a variável grava o nome """
         #print(self.nome, self.nome_personagem) 
-        
+    
 #VAI = Registro() 
 #VAI.registra()
 #print(VAI.nome, VAI.nome_personagem)
@@ -52,32 +52,25 @@ class Inicia:
         self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cena,
-                           vai = self.interacao_amais)
-        self.bot2 =Elemento(registrador, tit="CLIQUE PARA REGISTRAR",
-                           style=dict(height=100,widht=100, left=300, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.cena,
-                           vai = self.cria_usuario)
+                           vai = self.cria_persona)
         self.ticket = ticket
         
-    def cria_usuario(self, *_):
+    def cria_persona(self, *_):
         INSTANCIA = Registro()
         INSTANCIA.registra()
         if INSTANCIA.nome == True:
-            self.ticket = True
-            self.chama_mod1()
-            
-    def interacao_amais(self, *_):
-        self.nome_personagem = "Gaia"
-        print(self.nome_personagem)
-        self.chama_mod1()
-            
+            #self.ticket = True
+            print(f'Qualquer palhaçada')
+            #self.chama_mod1() 
             
     def chama_mod1(self):
         Modulo1().mari()
     
     def gera(self):
         self.cena.vai()
-            
+        
+INICIA = Inicia().cria_persona()
+
             
 if __name__ == "__main__":    
     Inicia().gera()
