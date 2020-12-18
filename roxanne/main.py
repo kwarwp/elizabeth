@@ -53,14 +53,16 @@ class Inicia:
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cena,
                            vai = self.cria_persona)
-        self.ticket = ticket
         
-    def cria_persona(self, *_):
+        
+    def cria_persona(self, INSTANCIA, *_):
+        self.INSTANCIA = INSTANCIA
         INSTANCIA = Registro()
         INSTANCIA.registra()
-        if INSTANCIA.nome == True:
+        self.ticket = True
+        #if INSTANCIA.nome == True:
             #self.ticket = True
-            print(f'Qualquer palhaçada')
+            #print(f'{INSTANCIA.nome_personagem}')
             #self.chama_mod1() 
             
     def chama_mod1(self):
@@ -69,9 +71,5 @@ class Inicia:
     def gera(self):
         self.cena.vai()
         
-INICIA = Inicia().cria_persona()
-
-            
-if __name__ == "__main__":    
-    Inicia().gera()
-    #Registro().registra()
+Inicia().gera()
+print(f'{INSTANCIA.nome_personagem}')
