@@ -676,3 +676,10 @@ NameError: name 'nome' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Fri Dec 18 2020 14:55:54.697 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 59
+  #Registro().registra()
+                        ^
+IndentationError: expected an indented block
+'''},
