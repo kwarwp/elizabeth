@@ -140,3 +140,10 @@ Traceback (most recent call last):
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Fri Dec 18 2020 16:16:49.476 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 36
+  def mari(self):
+  ^
+IndentationError: unexpected indent
+'''},
