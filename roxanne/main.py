@@ -71,5 +71,7 @@ class Inicia:
     def gera(self):
         self.cena.vai()
         
-Inicia().gera()
-print(f'{INSTANCIA.nome_personagem}')
+INICIA = Inicia().gera()
+INICIA
+if ticket == True:
+    print(f'{INSTANCIA.nome_personagem}')
