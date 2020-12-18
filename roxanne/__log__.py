@@ -575,3 +575,10 @@ AttributeError: 'Registro' object has no attribute 'nome'
     print(Registro.nome)
 AttributeError: 'Registro' object has no attribute 'nome'
 '''},
+{'date': 'Fri Dec 18 2020 14:36:39.24 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  def __init__(self:
+                                                             ^
+SyntaxError: invalid syntax
+'''},
