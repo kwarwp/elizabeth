@@ -12,7 +12,7 @@ Changelog
 """
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-#from stacy.main import *
+from stacy.main import Modulo1
 
 #class parte1:
 
@@ -26,27 +26,7 @@ comecador = "https://pngimage.net/wp-content/uploads/2018/06/game-play-button-pn
 class Registro:
 
     def __init__(self, nome = False):
-        self.nome = nome
-        
-    def registra(self):
-        self.pergunta_nome= str(input('Escolha o nome da personagem:'))
-        if self.pergunta_nome == '':
-            self.pergunta_nome = "fulana"
-            self.nome = True
-        else:
-            self.pergunta_nome = self.pergunta_nome
-            self.nome = True  
-        self.nome_personagem = self.pergunta_nome   
-        """ testa se após passar por aqui, self.nome se torna true e a variável grava o nome """
-        #print(self.nome, self.nome_personagem) 
-    
-#VAI = Registro() 
-#VAI.registra()
-#print(VAI.nome, VAI.nome_personagem)
-
-class Inicia:
-
-    def __init__(self, ticket = False):
+        #self.nome = nome
         self.ticket = False
         self.instancia = Registro()
         
@@ -54,14 +34,33 @@ class Inicia:
         self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cena,
-                           vai = self.cria_persona)
+                           vai = self.registra)
         
+    def registra(self):
+        self.pergunta_nome= str(input('Escolha o nome da personagem:'))
+        if self.pergunta_nome == '':
+            self.pergunta_nome = "fulana"
+            #self.nome = True
+            #self.chama_mod1()
+        else:
+            self.pergunta_nome = self.pergunta_nome
+            #self.nome = True  
+            #self.chama_mod1()
+        self.nome_personagem = self.pergunta_nome   
         
-    def cria_persona(self, *_):
-        pass
+        """ testa se após passar por aqui, self.nome se torna true e a variável grava o nome """
+        #print(self.nome, self.nome_personagem) 
+    def chama_mod1(self):
+        Modulo1().mari()
+
     def gera(self):
         self.cena.vai()
         
-TESTE = Inicia()
-TESTE.cria_persona()
-print(TESTE.nome, TESTE.nome_personagem)
+if __name__ == "__main__":   
+    Registro().gera()
+    
+#VAI = Registro() 
+#VAI.registra()
+#print(VAI.nome, VAI.nome_personagem)
+
+
