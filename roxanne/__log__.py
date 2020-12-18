@@ -1115,3 +1115,10 @@ AttributeError: 'NoneType' object has no attribute 'nome'
                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 18 2020 16:43:05.953 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 68
+  def chama_mod1(self):
+  ^
+IndentationError: expected an indented block
+'''},
