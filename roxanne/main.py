@@ -66,9 +66,9 @@ class Inicia:
             self.ticket = True
             self.chama_mod1()
             
-    def interacao_amais(self):
-        self.nome_automatico = "Fulana"
-        print(self.nome_automatico)
+    def interacao_amais(self, *_):
+        self.nome_personagem = "Gaia"
+        print(self.nome_personagem)
         self.chama_mod1()
             
             
