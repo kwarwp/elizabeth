@@ -37,7 +37,7 @@ class Registro:
         else:
             self.pergunta_nome = self.pergunta_nome
         self.nome_personagem = self.pergunta_nome 
-        print(self.nome_personagem)
+        self.nome_personagem = self.pergunta_nome
         
 
 
@@ -52,10 +52,10 @@ class Inicia:
         self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cena,
-                           vai = self.instancia.registra())
+                           vai = self.cria_persona() )
     
     def cria_persona(self):
-        pass
+        self.instancia.registra()
         
 
     def gera(self):
