@@ -340,3 +340,10 @@ SyntaxError: invalid syntax
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 18 2020 14:27:00.255 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  tela_branca "http://www.f12com.com.br/wp-content/uploads/tela_branca.jpg"
+               ^
+SyntaxError: invalid syntax
+'''},
