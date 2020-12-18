@@ -48,6 +48,8 @@ class Inicia:
 
     def __init__(self, ticket = False):
         self.ticket = False
+        self.instancia = Registro()
+        
         self.cena = Cena(tela_branca)
         self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -56,22 +58,11 @@ class Inicia:
         
         
     def cria_persona(self, *_):
-        self.INSTANCIA = INSTANCIA
-        INSTANCIA = Registro()
+        INSTANCIA = self.instancia
         INSTANCIA.registra()
-        self.ticket = True
-        #if INSTANCIA.nome == True:
-            #self.ticket = True
-            #print(f'{INSTANCIA.nome_personagem}')
-            #self.chama_mod1() 
-            
-    def chama_mod1(self):
-        Modulo1().mari()
+        INSTANCIA.nome
     
     def gera(self):
         self.cena.vai()
         
-INICIA = Inicia().gera()
-INICIA
-if INSTANCIA.ticket == True:
-    print(f'{INSTANCIA.nome_personagem}')
+Inicia().cria_persona()
