@@ -1108,3 +1108,10 @@ Traceback (most recent call last):
     INICIA.nome
 AttributeError: 'NoneType' object has no attribute 'nome'
 '''},
+{'date': 'Fri Dec 18 2020 16:40:29.968 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 58
+  def cria_persona(self, INSTANCIA *_):
+                                    ^
+SyntaxError: invalid syntax
+'''},
