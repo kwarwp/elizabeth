@@ -64,6 +64,7 @@ class Inicia:
         
 if __name__ == "__main__":
     new.registra()
+    new.nome_personagem
     
     #Inicia().registra()
     
