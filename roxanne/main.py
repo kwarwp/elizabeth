@@ -30,7 +30,7 @@ class Registro:
         #self.nome_personagem = ""
         
         
-    def registra(self):
+    def registra(self,*_):
         self.pergunta_nome= str(input('Escolha o nome da personagem:'))
         if self.pergunta_nome == '':
             self.pergunta_nome = "fulana"
@@ -49,13 +49,20 @@ class Inicia:
         self.instancia = Registro()
         
         self.cena = Cena(tela_branca)
-        self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
+        self.bot1 = Elemento(registrador, tit="CLIQUE PARA COMEÇAR",
                            style=dict(height=100,widht=100, left=150, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.cena,
-                           vai = self.cria_persona())
-    
-    def cria_persona(self):
-        self.instancia.registra()
+                           cena = self.cena)
+                           
+        self.bot1.elt.bind("click", self.instancia.registra)
+        
+        self.bot1 = Elemento(comecador, tit="CLIQUE PARA COMEÇAR",
+                    style=dict(height=100,widht=100, left=50, top=125), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                    cena = self.cena)
+        self.bot1.elt.bind("click", self.chama_jogo)
+                           
+        
+    def chama_jogo(self, *_):
+        Modulo1().mari()
         
 
     def gera(self):
@@ -64,11 +71,6 @@ class Inicia:
         
 if __name__ == "__main__":
     Inicia().gera()
-    #new = Registro()
-    #new.registra()
-    #new.nome_personagem
-    
-    #Inicia().registra()
     
 #VAI = Registro() 
 #VAI.registra()
