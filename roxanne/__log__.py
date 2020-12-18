@@ -925,3 +925,7 @@ Traceback (most recent call last):
 'error': '''
 Exception: <TypeError: obj is null>
 '''},
+{'date': 'Fri Dec 18 2020 15:43:48.10 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: obj is null>
+'''},
