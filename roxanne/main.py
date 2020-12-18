@@ -73,5 +73,5 @@ class Inicia:
         
 INICIA = Inicia().gera()
 INICIA
-if INICIA.ticket == True:
+if INSTANCIA.ticket == True:
     print(f'{INSTANCIA.nome_personagem}')
