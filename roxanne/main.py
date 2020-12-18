@@ -58,11 +58,10 @@ class Inicia:
         
         
     def cria_persona(self, *_):
-        INSTANCIA = self.instancia
-        INSTANCIA.registra()
-        INSTANCIA.nome
-    
+        pass
     def gera(self):
         self.cena.vai()
         
-Inicia().cria_persona()
+TESTE = Inicia()
+TESTE.cria_persona()
+print(TESTE.nome, TESTE.nome_personagem)
