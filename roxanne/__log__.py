@@ -669,3 +669,10 @@ Traceback (most recent call last):
     if nome== True:
 NameError: name 'nome' is not defined
 '''},
+{'date': 'Fri Dec 18 2020 14:55:41.387 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 65
+  
+  ^
+IndentationError: expected an indented block
+'''},
