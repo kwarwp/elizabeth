@@ -35,11 +35,9 @@ class Modulo1:
                      vai = self.mari2)
                            
       def mari(self):
-        print(f'Testando {nome_personagem}')
         self.Cena1.vai()
             
       def mari2(self,*_):
-        print(f'Testando {nome_personagem}')
         desafio_2().inicia()
 
 
