@@ -326,3 +326,10 @@ NameError: name 'nome_personagem' is not defined
     (nome_personagem)
 NameError: name 'nome_personagem' is not defined
 '''},
+{'date': 'Fri Dec 18 2020 14:26:28.394 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  tela_branca "http://www.f12com.com.br/wp-content/uploads/tela_branca.jpg"
+               ^
+SyntaxError: invalid syntax
+'''},
