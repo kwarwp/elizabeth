@@ -55,7 +55,7 @@ class Inicia:
                            vai = self.cria_persona)
         
         
-    def cria_persona(self, INSTANCIA, *_):
+    def cria_persona(self, *_):
         self.INSTANCIA = INSTANCIA
         INSTANCIA = Registro()
         INSTANCIA.registra()
