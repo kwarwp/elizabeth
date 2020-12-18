@@ -147,3 +147,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Fri Dec 18 2020 16:16:55.652 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  def mari2(self,*_):
+  ^
+IndentationError: unexpected indent
+'''},
