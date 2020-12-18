@@ -1158,3 +1158,10 @@ NameError: name 'INSTANCIA' is not defined
     (INSTANCIA.nome_personagem)
 NameError: name 'INSTANCIA' is not defined
 '''},
+{'date': 'Fri Dec 18 2020 16:45:27.76 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 76
+  if ticket = True:
+             ^
+SyntaxError: invalid syntax
+'''},
