@@ -37,7 +37,7 @@ class Registro:
         else:
             self.pergunta_nome = self.pergunta_nome
         self.nome_personagem = self.pergunta_nome 
-        return self.nome_personagem
+        print(self.nome_personagem)
         
 
 
@@ -63,9 +63,10 @@ class Inicia:
 
         
 if __name__ == "__main__":
-    new = Registro()
-    new.registra()
-    new.nome_personagem
+    Inicia().gera()
+    #new = Registro()
+    #new.registra()
+    #new.nome_personagem
     
     #Inicia().registra()
     
