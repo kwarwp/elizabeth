@@ -133,3 +133,10 @@ Traceback (most recent call last):
   module stacy.main line 2
     from roxanne.main import nome_personagem
 '''},
+{'date': 'Fri Dec 18 2020 16:16:36.875 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 27
+  def clique_computador (self,event = None):
+  ^
+IndentationError: unexpected indent
+'''},
