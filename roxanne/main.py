@@ -1,4 +1,5 @@
 # elizabeth.roxanne.main.py
+#PARTE INICIAL DO JOGO (PLAY, ESCOLHE O NOME DA PERSONAGEM)
 """     xxxxx
 
 .. codeauthor:: Emanuelle Simas <ellesimas@gmail.com>
