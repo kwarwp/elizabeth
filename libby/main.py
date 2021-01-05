@@ -43,7 +43,7 @@ class desafio_2:
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
         self.SETA = Elemento(imagem_livro, tit="Próximo",
-                             w=55,h=58,  x=815,73, y=426,37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO)
         
         self.texto_1 = Texto(self.QUARTO, txt = '{nome_personagem},Encontre o livro')
