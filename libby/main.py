@@ -16,9 +16,10 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
-imagem_quarto = 'https://imgur.com/hvHCTF9'
-imagem_livro = 'https://livrariaconcreta.com.br/wp-content/uploads/2017/01/Hardcover-Book-MockUp-LIVRO-VERMELHO.png'
-imagem_livroaberto = 'https://images.vexels.com/media/users/3/157260/isolated/preview/d48b34b2e855b69b29d5565edda69536-vetor-de-livro-aberto-em-branco-by-vexels.png'
+imagem_quarto = 'https://i.imgur.com/hvHCTF9.jpeg'
+imagem_quarto2='https://i.imgur.com/eatF6gK.jpeg'
+imagem_livro = 'https://i.imgur.com/XLWFUsC.png'
+imagem_livroaberto = 'https://i.imgur.com/RUhE56h.jpeg'
 papel_rasgado = 'https://cdn.pixabay.com/photo/2019/03/18/15/10/torn-paper-4063317_960_720.png'
 imagem_mapa ='https://comps.canstockphoto.com.br/cidade-mapa-pequeno-sub%C3%BArbio-vila-vetor-clip-arte_csp14479563.jpg'
 imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
