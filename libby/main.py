@@ -49,10 +49,7 @@ class desafio_2:
         self.texto_1 = Texto(self.QUARTO, txt = '{nome_personagem},Encontre o livro')
         #self.texto_1.vai()
         
-        self.LIVRO= Elemento(imagem_livro, tit="Livro",
-                             w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             cena = self.QUARTO2)
-        self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)   
+ 
         
         
     def funcao_de_acao_do_botao(self,event = None):
@@ -72,6 +69,11 @@ class desafio_2:
     def funcao_de_acao_do_botao3(self,event = None):
         self.QUARTO2= Cena(imagem_quarto2)
         self.QUARTO2.vai()
+        
+    self.LIVRO= Elemento(imagem_livro, tit="Livro",
+                         w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                         cena = self.QUARTO2)
+    self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
            
 
     def desafio1(self,*_):
