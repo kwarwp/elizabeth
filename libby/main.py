@@ -42,10 +42,11 @@ class desafio_2:
         #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
-        self.QUARTO2= Cena(imagem_quarto2)
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
-                         w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                         cena = self.QUARTO2)
+                             w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             cena = self.QUARTO2)
+        self.QUARTO2= Cena(imagem_quarto2)
+
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
         self.SETA = Elemento(imagem_livro, tit="Próximo",
                              w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
