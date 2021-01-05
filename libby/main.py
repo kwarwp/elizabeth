@@ -12,7 +12,7 @@ Changelog
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 #from meredith.main import nome_personagem
-from roxane.main import *
+#from roxane.main import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
