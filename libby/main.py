@@ -16,7 +16,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
         
-imagem_quarto = 'https://i.pinimg.com/originals/66/88/9a/66889a5a4db243c94e3c0623df56e664.jpg'
+imagem_quarto = 'https://imgur.com/hvHCTF9'
 imagem_livro = 'https://livrariaconcreta.com.br/wp-content/uploads/2017/01/Hardcover-Book-MockUp-LIVRO-VERMELHO.png'
 imagem_livroaberto = 'https://images.vexels.com/media/users/3/157260/isolated/preview/d48b34b2e855b69b29d5565edda69536-vetor-de-livro-aberto-em-branco-by-vexels.png'
 papel_rasgado = 'https://cdn.pixabay.com/photo/2019/03/18/15/10/torn-paper-4063317_960_720.png'
@@ -80,7 +80,7 @@ class desafio_2:
             self.tente_novamente.vai()
             
     def inicia(self,*_):
-        self.cena1.vai()
+        self.QUARTO.vai()
         self.texto_1.vai()
         
 if __name__ == "__main__":                  
