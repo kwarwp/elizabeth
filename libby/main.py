@@ -48,7 +48,7 @@ class desafio_2:
                              cena = self.QUARTO2)
 
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
-        self.SETA = Elemento(imagem_livro, tit="Próximo",
+        self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO)
         
