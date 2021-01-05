@@ -41,7 +41,7 @@ class desafio_2:
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
         
-        self.texto_1 = Texto(self.QUARTO, txt = f'{nome_personagem},Encontre o livro')
+        self.texto_1 = Texto(self.QUARTO, txt = '{nome_personagem},Encontre o livro')
         #self.texto_1.vai()
         
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
@@ -76,7 +76,7 @@ class desafio_2:
             self.parabens.vai()
         else:
             #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
-            self.tente_novamente=Texto(self.cena3, txt = f'{nome_personagem}, Tente novamente.')
+            self.tente_novamente=Texto(self.cena3, txt = '{nome_personagem}, Tente novamente.')
             self.tente_novamente.vai()
             
     def inicia(self,*_):
