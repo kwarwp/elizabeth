@@ -50,7 +50,7 @@ class desafio_2:
         #self.texto_1.vai()
         
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
-                             w=55,h=58,  x=815,73, y=426,37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             w=55,h=58, x=815.73, y=426.37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO2)
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)   
         
