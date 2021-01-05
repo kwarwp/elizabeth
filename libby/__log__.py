@@ -1056,3 +1056,10 @@ AttributeError: 'desafio_2' object has no attribute 'cena1'
                       ^
 SyntaxError: non-keyword arg after keyword arg
 '''},
+{'date': 'Tue Jan 05 2021 13:07:23.485 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  w=55,h=58,  x=815,73, y=426,37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                      ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
