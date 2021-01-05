@@ -42,7 +42,9 @@ class desafio_2:
         #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
-        self.QUARTO2= Cena(imagem_quart02)
+        self.SETA = Elemento(imagem_livro, tit="Próximo",
+                             w=55,h=58,  x=815,73, y=426,37, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             cena = self.QUARTO)
         
         self.texto_1 = Texto(self.QUARTO, txt = '{nome_personagem},Encontre o livro')
         #self.texto_1.vai()
@@ -65,7 +67,12 @@ class desafio_2:
     def funcao_de_acao_do_botao2(self,event = None):
         self.cena3= Cena(papel_rasgado)
         self.cena3.vai()
-        self.cena3.elt.bind("click", self.desafio1)   
+        self.cena3.elt.bind("click", self.desafio1)  
+    
+    def funcao_de_acao_do_botao3(self,event = None):
+        self.QUARTO2= Cena(imagem_quarto2)
+        self.QUARTO2.vai()
+           
 
     def desafio1(self,*_):
         self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
