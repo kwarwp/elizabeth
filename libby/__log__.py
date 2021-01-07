@@ -1149,3 +1149,10 @@ SyntaxError: invalid syntax
     self.texto_2= Texto(self.cena2, 
 AttributeError: 'GUI' object has no attribute 'cena2'
 '''},
+{'date': 'Thu Jan 07 2021 19:20:20.807 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  self.LIVRO= Elemento(imagem_livro, tit="Livro",
+                                                                                                                                                                                                                                                                                                                                 ^
+SyntaxError: invalid syntax
+'''},
