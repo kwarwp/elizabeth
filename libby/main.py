@@ -59,6 +59,9 @@ class desafio_2:
         self.texto_2= Texto(self.cena2, 
                             txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
         
+        def funcao_de_acao_do_botao2(self,event = None):
+            self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
+        
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
                              w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.cena2,
@@ -69,10 +72,6 @@ class desafio_2:
         self.texto_2.vai()
         
                                  
-
-        
-    def funcao_de_acao_do_botao2(self,event = None):
-        self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
     
     def funcao_de_acao_do_botao3(self,event = None):
         self.QUARTO2.vai()
