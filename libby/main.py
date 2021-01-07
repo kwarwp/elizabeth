@@ -60,7 +60,7 @@ class desafio_2:
                             txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
         
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
-                             w=55,h=58, x=760, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             w=55,h=58, x=500, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.cena2)
                              
     def funcao_de_acao_do_botao(self,event = None):
