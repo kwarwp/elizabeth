@@ -46,8 +46,7 @@ class desafio_2:
         self.QUARTO2= Cena(imagem_quarto2)
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
                              w=55,h=58, x=850, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             cena = self.QUARTO2,
-                             vai=
+                             cena = self.QUARTO2)
 
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
         
