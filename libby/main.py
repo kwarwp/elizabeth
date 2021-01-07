@@ -20,7 +20,8 @@ imagem_quarto = 'https://i.imgur.com/hvHCTF9.jpeg'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 imagem_quarto2='https://i.imgur.com/eatF6gK.jpeg'
 imagem_livro = 'https://i.imgur.com/XLWFUsC.png'
-imagem_livroaberto = 'https://i.imgur.com/RUhE56h.jpeg'
+imagem_livroaberto = 'https://i.imgur.com/F8BX0Aa.jpg'
+botao_desafio1='https://i.imgur.com/74ZZX5s.png'
 imagem_mapa ='https://i.imgur.com/E2MZ6DR.png'
 imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
 imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
@@ -56,9 +57,6 @@ class desafio_2:
         self.cena2= Cena(imagem_livroaberto)
         self.texto_2= Texto(self.cena2, 
                             txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
-        
-        
- 
         
         
     def funcao_de_acao_do_botao(self,event = None):
