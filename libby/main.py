@@ -61,9 +61,9 @@ class desafio_2:
     def funcao_de_acao_do_botao(self,event = None):
         self.cena2= Cena(imagem_livroaberto)
         self.cena2.vai()
-    self.texto_2= Texto(self.cena2, 
-                        txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
-    self.texto_2.vai()
+        self.texto_2= Texto(self.cena2, 
+                            txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
+        self.texto_2.vai()
                                  
 
         
