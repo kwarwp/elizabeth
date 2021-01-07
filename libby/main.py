@@ -35,27 +35,6 @@ STYLE["heigth"] = '600px' # min-height = "300px"
 #STYLE["heigth"] = '521px'
 
 class desafio_2:
-    def desafio1(self,*_):
-        self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
-        self.resposta2=self.resposta1.lower()
-        #print(self.resposta2, self.resposta2.isalpha()) # ESSA LINHA DE VERIFICAÇAO MOSTRA SE PARTE DO CÓDIGO RODA
-        if self.resposta2 == 'va para a biblioteca' or self.resposta2 == 'vá para a biblioteca':
-            #print('a verificiação if ta funcionando') # LINHA DE VERIFICAÇÃO É NECESSÁRIO O CONSOLE DO BROWSER
-            self.cena4 = Cena(imagem_mapa)
-            self.cena4.vai()
-            self.parabens = Texto(self.cena4, txt = f'Parabéns,{nome_personagem}, você acertou!')
-            self.parabens.vai()
-        else:
-            #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
-            self.tente_novamente=Texto(self.cena3, txt = '{nome_personagem}, Tente novamente.')
-            self.tente_novamente.vai()   
-            
-            
-            
-    def funcao_de_acao_do_botao2(self,event = None):
-        self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
-                             
-    
 
     def __init__(self):
         self.QUARTO = Cena(imagem_quarto)
@@ -76,12 +55,35 @@ class desafio_2:
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
         self.texto_1 = Texto(self.QUARTO2, txt = '{nome_personagem},Encontre o livro')
         self.cena2= Cena(imagem_livroaberto)
-        self.texto_2= Texto(self.cena2, 
-                            txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
-        self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
-                             w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             cena = self.cena2,
-                             vai=funcao_de_acao_do_botao2)
+        self.texto_2= Texto(self.cena2, txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
+        
+        def desafio1(self,*_):
+            self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
+            self.resposta2=self.resposta1.lower()
+            #print(self.resposta2, self.resposta2.isalpha()) # ESSA LINHA DE VERIFICAÇAO MOSTRA SE PARTE DO CÓDIGO RODA
+            if self.resposta2 == 'va para a biblioteca' or self.resposta2 == 'vá para a biblioteca':
+            #print('a verificiação if ta funcionando') # LINHA DE VERIFICAÇÃO É NECESSÁRIO O CONSOLE DO BROWSER
+                self.cena4 = Cena(imagem_mapa)
+                self.cena4.vai()
+                self.parabens = Texto(self.cena4, txt = f'Parabéns,{nome_personagem}, você acertou!')
+                self.parabens.vai()
+            else:
+            #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
+                self.tente_novamente=Texto(self.cena3, txt = '{nome_personagem}, Tente novamente.')
+                self.tente_novamente.vai()   
+            
+            
+            
+    def funcao_de_acao_do_botao2(self,event = None):
+        self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
+                             
+    
+        
+        
+    self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
+                                  w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                  cena = self.cena2,
+                                  vai=funcao_de_acao_do_botao2)
                               
                              
     def funcao_de_acao_do_botao(self,event = None):
