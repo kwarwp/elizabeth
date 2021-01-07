@@ -25,6 +25,7 @@ botao_desafio1='https://i.imgur.com/74ZZX5s.png'
 imagem_mapa ='https://i.imgur.com/E2MZ6DR.png'
 imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
 imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
+
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
@@ -58,7 +59,10 @@ class desafio_2:
         self.texto_2= Texto(self.cena2, 
                             txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
         
-        
+        self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
+                             w=55,h=58, x=760, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             cena = self.cena2)
+                             
     def funcao_de_acao_do_botao(self,event = None):
         self.cena2.vai()
         self.texto_2.vai()
@@ -67,9 +71,7 @@ class desafio_2:
 
         
     def funcao_de_acao_do_botao2(self,event = None):
-        self.cena3= Cena(papel_rasgado)
-        self.cena3.vai()
-        self.cena3.elt.bind("click", self.desafio1)  
+        self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
     
     def funcao_de_acao_do_botao3(self,event = None):
         self.QUARTO2.vai()
