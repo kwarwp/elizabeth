@@ -1246,3 +1246,10 @@ AttributeError: 'GUI' object has no attribute 'cena2'
     self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
 AttributeError: 'GUI' object has no attribute 'cena2'
 '''},
+{'date': 'Thu Jan 07 2021 19:35:47.515 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 85
+  self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
+  ^
+IndentationError: unexpected indent
+'''},
