@@ -1124,3 +1124,10 @@ AttributeError: 'GUI' object has no attribute 'QUARTO2'
     self.LIVRO= Elemento(imagem_livro, tit="Livro",
 AttributeError: 'desafio_2' object has no attribute 'QUARTO2'
 '''},
+{'date': 'Thu Jan 07 2021 18:20:23.384 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 64
+  self.texto_2= Texto(self.cena2, 
+                                                                                                                                                                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
