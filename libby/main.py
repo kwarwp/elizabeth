@@ -21,7 +21,6 @@ seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 imagem_quarto2='https://i.imgur.com/eatF6gK.jpeg'
 imagem_livro = 'https://i.imgur.com/XLWFUsC.png'
 imagem_livroaberto = 'https://i.imgur.com/RUhE56h.jpeg'
-papel_rasgado = 'https://cdn.pixabay.com/photo/2019/03/18/15/10/torn-paper-4063317_960_720.png'
 imagem_mapa ='https://i.imgur.com/E2MZ6DR.png'
 imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
 imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
@@ -48,6 +47,7 @@ class desafio_2:
                              cena = self.QUARTO2)
 
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
+        
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO)
@@ -61,10 +61,10 @@ class desafio_2:
     def funcao_de_acao_do_botao(self,event = None):
         self.cena2= Cena(imagem_livroaberto)
         self.cena2.vai()
-        self.PAPEL_RASGADO = Elemento(papel_rasgado, tit="título_do_elemento", 
-                                 w=578, h=437, x=450, y=250, 
-                                 cena = self.cena2)
-        self.PAPEL_RASGADO.elt.bind("click", self.funcao_de_acao_do_botao2)                         
+        self.texto_2= Texto(self.cena2, 
+                            txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
+        self.texto_2.vai()
+                                 
 
         
     def funcao_de_acao_do_botao2(self,event = None):
