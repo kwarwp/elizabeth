@@ -53,17 +53,18 @@ class desafio_2:
                              cena = self.QUARTO)
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
         self.texto_1 = Texto(self.QUARTO2, txt = '{nome_personagem},Encontre o livro')
-        #self.texto_1.vai()
+        self.cena2= Cena(imagem_livroaberto)
+        self.texto_2= Texto(self.cena2, 
+                            txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
+        
         
  
         
         
     def funcao_de_acao_do_botao(self,event = None):
-        self.cena2= Cena(imagem_livroaberto)
         self.cena2.vai()
-        self.texto_2= Texto(self.cena2, 
-                            txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
         self.texto_2.vai()
+        
                                  
 
         
