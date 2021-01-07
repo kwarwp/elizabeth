@@ -58,26 +58,13 @@ class desafio_2:
         self.cena2= Cena(imagem_livroaberto)
         self.texto_2= Texto(self.cena2, 
                             txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
-        
-        def funcao_de_acao_do_botao2(self,event = None):
-            self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
-        
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
                              w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.cena2,
                              vai=funcao_de_acao_do_botao2)
                              
-    def funcao_de_acao_do_botao(self,event = None):
-        self.cena2.vai()
-        self.texto_2.vai()
-        
-                                 
-    
-    def funcao_de_acao_do_botao3(self,event = None):
-        self.QUARTO2.vai()
-        
-           
-
+                             
+                             
     def desafio1(self,*_):
         self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
@@ -91,7 +78,22 @@ class desafio_2:
         else:
             #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
             self.tente_novamente=Texto(self.cena3, txt = '{nome_personagem}, Tente novamente.')
-            self.tente_novamente.vai()
+            self.tente_novamente.vai()   
+            
+            
+            
+    def funcao_de_acao_do_botao2(self,event = None):
+        self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)  
+                             
+    def funcao_de_acao_do_botao(self,event = None):
+        self.cena2.vai()
+        self.texto_2.vai()
+        
+                                 
+    
+    def funcao_de_acao_do_botao3(self,event = None):
+        self.QUARTO2.vai()
+        
             
     def inicia(self,*_):
         self.QUARTO.vai()
