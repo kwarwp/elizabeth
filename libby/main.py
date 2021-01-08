@@ -68,7 +68,7 @@ class desafio_2:
         
         
     def desafio1(self,*_):
-        self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
+        self.resposta1=str(input('{nome_personagem}, qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
         #print(self.resposta2, self.resposta2.isalpha()) # ESSA LINHA DE VERIFICAÇAO MOSTRA SE PARTE DO CÓDIGO RODA
         if self.resposta2 == 'va para a biblioteca' or self.resposta2 == 'vá para a biblioteca':
