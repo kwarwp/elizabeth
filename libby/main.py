@@ -56,7 +56,9 @@ class desafio_2:
         self.texto_1 = Texto(self.QUARTO2, txt = '{nome_personagem},Encontre o livro')
         self.cena2= Cena(imagem_livroaberto)
         self.texto_2= Texto(self.cena2, txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
-        
+        self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
+                                      w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                      cena = self.cena2)
     def desafio1(self,*_):
         self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
@@ -80,11 +82,6 @@ class desafio_2:
     def funcao_de_acao_do_botao(self,event = None):
         self.cena2.vai()
         self.texto_2.vai()
-        
-        
-    self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
-                                  w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                                  cena = self.cena2)
                                                                
     
     def funcao_de_acao_do_botao3(self,event = None):
