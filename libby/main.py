@@ -63,6 +63,7 @@ class desafio_2:
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
                                       w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                       cena = self.cena2)
+
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
         
         
