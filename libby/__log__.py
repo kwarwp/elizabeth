@@ -1343,3 +1343,10 @@ AttributeError: 'GUI' object has no attribute 'botao_desafio1'
     self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
 AttributeError: 'GUI' object has no attribute 'cena2'
 '''},
+{'date': 'Fri Jan 08 2021 11:57:11.942 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 68
+  self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
+                                                                                                                                                                                                                                                                       ^
+SyntaxError: invalid syntax
+'''},
