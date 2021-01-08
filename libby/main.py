@@ -23,6 +23,7 @@ imagem_livro = 'https://i.imgur.com/XLWFUsC.png'
 imagem_livroaberto = 'https://i.imgur.com/F8BX0Aa.jpg'
 botao_desafio1='https://i.imgur.com/74ZZX5s.png'
 imagem_mapa ='https://i.imgur.com/E2MZ6DR.png'
+click_biblioteca= 'https://i.imgur.com/ZKiFXHh.png'
 imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
 imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
 
@@ -66,6 +67,7 @@ class desafio_2:
 
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
         
+  
         
     def desafio1(self,*_):
         self.resposta1=str(input('{nome_personagem}, qual é a resposta do desafio?'))
@@ -75,8 +77,11 @@ class desafio_2:
         #print('a verificiação if ta funcionando') # LINHA DE VERIFICAÇÃO É NECESSÁRIO O CONSOLE DO BROWSER
             self.cena4 = Cena(imagem_mapa)
             self.cena4.vai()
-            self.parabens = Texto(self.cena4, txt = f'Parabéns,{nome_personagem}, você acertou!')
+            self.parabens = Texto(self.cena4, txt = 'Parabéns,{nome_personagem}, você acertou!')
             self.parabens.vai()
+            self.BIBLIOTECA= Elemento(click_biblioteca, tit="CLICK",
+                                      w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                      cena = self.cena4)   
         else:
         #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
             self.tente_novamente=Texto(self.cena3, txt = '{nome_personagem}, Tente novamente.')
