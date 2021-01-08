@@ -29,11 +29,6 @@ imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
-#STYLE["width"] = 700 #  width = 300 (default)
-#STYLE["heigth"] = '600px' # min-height = "300px"
-#STYLE["width"] = 394 #  width = 300 (default)
-#STYLE["heigth"] = '521px'
-
 class desafio_2:
 
     def __init__(self):
@@ -63,13 +58,12 @@ class desafio_2:
         
         self.cena2= Cena(imagem_livroaberto)
         
-        self.texto_2= Texto(self.cena2, txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
+        self.texto_2= Texto(self.cena2, txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la')
         
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
                                       w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                       cena = self.cena2)
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
-        
         
         
     def desafio1(self,*_):
