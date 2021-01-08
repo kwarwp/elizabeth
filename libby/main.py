@@ -38,27 +38,37 @@ class desafio_2:
 
     def __init__(self):
         self.QUARTO = Cena(imagem_quarto)
-        #self.cena1.vai()
         #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
+        
         self.QUARTO2= Cena(imagem_quarto2)
+        
+        
         self.LIVRO= Elemento(imagem_livro, tit="Livro",
                              w=55,h=58, x=850, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO2)
 
+        
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
         
+        
         self.SETA = Elemento(seta, tit="Próximo",
-                             w=55,h=58, x=900, y=420, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             w=55,h=58, x=900, y=420,
                              cena = self.QUARTO)
+        
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
+        
         self.texto_1 = Texto(self.QUARTO2, txt = '{nome_personagem},Encontre o livro')
+        
         self.cena2= Cena(imagem_livroaberto)
+        
         self.texto_2= Texto(self.cena2, txt= '{nome_personagem} encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la'),
+        
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
                                       w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                                      cena = self.cena2)
+                                      cena = self.cena2
+                                      vai=self.funcao_de_acao_do_botao2)
     def desafio1(self,*_):
         self.resposta1=str(input(f'{nome_personagem}, qual é a resposta do desafio?'))
         self.resposta2=self.resposta1.lower()
