@@ -22,7 +22,7 @@ def resultado(A):
     devolutiva.vai()
 
 
-pergunta = Texto(nome_da_cena, txt = "Qual é a resposta para o desafio?", foi = resultado, A= MEU_ELEMENTO, B= "resposta")
+pergunta = Texto(nome_da_cena, txt = "Qual é a resposta para o desafio?", foi = resultado, A= MEU_ELEMENTO, B= "resposta", c= 'lalala')
 
 nome_da_cena.vai()
 pergunta.vai()
