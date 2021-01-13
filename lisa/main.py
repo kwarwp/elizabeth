@@ -11,7 +11,7 @@ MINHA_CENA = "https://i.imgur.com/CsOVXPc.jpeg" # Extensões aceitas: png, jpg, 
 MEU_ELEMENTO = "https://i.imgur.com/aYRC7bM.png" # Extensões aceitas: png, jpg, jpeg e gif
 
 nome_da_cena = Cena(MINHA_CENA)
-nome_da_cena.vai()
+
 
 RESPOSTA1= Elemento(MEU_ELEMENTO, tit="PLAY", w=55,h=58, x=610, y=300, cena = nome_da_cena)
 
@@ -23,4 +23,6 @@ def resultado(A):
 
 
 pergunta = Texto(nome_da_cena, txt = "Qual é a resposta para o desafio?", foi = resultado, A= "resposta", B= "resposta")
+
+nome_da_cena.vai()
 pergunta.vai()
