@@ -160,3 +160,29 @@ NameError: name 'Elemento' is not defined
     texto_opcao = html.SPAN(texto)
 ValueError: wrong element [object Object]
 '''},
+{'date': 'Tue Jan 12 2021 23:05:41.630 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 28
+    pergunta.vai()
+  module _spy.vitollino.main line 1331
+    self.mostra(self.tit, self.txt, act=self.esconde)
+  module _spy.vitollino.main line 1326
+    Popup.POP.mostra(act, tit=tit, txt=txt, **kwargs)
+  module _spy.vitollino.main line 1282
+    self.monta_optar(**kwargs)
+  module _spy.vitollino.main line 1276
+    self.div <= opta(*op)
+  module _spy.vitollino.main line 1269
+    texto_opcao = html.SPAN(texto)
+ValueError: wrong element [object Object]
+'''},
