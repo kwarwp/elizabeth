@@ -1,7 +1,7 @@
 # elizabeth.lisa.main.py
 
 
-from _spy.vitollino.main import Cena, Texto, STYLE
+from _spy.vitollino.main import Cena, Texto, STYLE, Elemento
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
