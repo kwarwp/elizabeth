@@ -244,3 +244,10 @@ NameError: name 'Imagem' is not defined
     MEU_ELEMENTO =Image.open( "https://i.imgur.com/aYRC7bM.png") # Extensões aceitas: png, jpg, jpeg e gif
 AttributeError: 'module' object has no attribute 'open'
 '''},
+{'date': 'Thu Jan 14 2021 20:51:04.459 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  !pip install pillow
+   ^
+SyntaxError: invalid syntax
+'''},
