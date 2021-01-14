@@ -9,7 +9,7 @@ STYLE["heigth"] = '600px' # min-height = "300px"
 
 
 MINHA_CENA = "https://i.imgur.com/CsOVXPc.jpeg" # Extensões aceitas: png, jpg, jpeg e gif
-MEU_ELEMENTO =Imagem.open( "https://i.imgur.com/aYRC7bM.png") # Extensões aceitas: png, jpg, jpeg e gif
+MEU_ELEMENTO =Image.open( "https://i.imgur.com/aYRC7bM.png") # Extensões aceitas: png, jpg, jpeg e gif
 
 nome_da_cena = Cena(MINHA_CENA)
 
