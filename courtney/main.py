@@ -10,6 +10,10 @@ imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-
 STYLE["width"] = 500 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
+
+STYLE["width"] = 960 #  width = 300 (default)
+STYLE["heigth"] = '600px' # min-height = "300px"
+
 Biblioteca_entrada=Cena(porta_fechada)
 Biblioteca_entrada.vai()
 
