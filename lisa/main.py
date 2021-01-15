@@ -1,15 +1,14 @@
 # elizabeth.lisa.main.py
 
-
 from _spy.vitollino.main import Cena, Texto, STYLE, Elemento
-from PIL import Image
+
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
 
 MINHA_CENA = "https://i.imgur.com/CsOVXPc.jpeg" # Extensões aceitas: png, jpg, jpeg e gif
-MEU_ELEMENTO =Image.open( "https://i.imgur.com/aYRC7bM.png") # Extensões aceitas: png, jpg, jpeg e gif
+MEU_ELEMENTO ="https://i.imgur.com/aYRC7bM.png"# Extensões aceitas: png, jpg, jpeg e gif
 
 nome_da_cena = Cena(MINHA_CENA)
 
