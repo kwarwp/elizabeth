@@ -2,7 +2,7 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-porta_fechada="https://media.istockphoto.com/vectors/closed-door-drawing-vector-id865663698"
+porta_fechada="https://i.imgur.com/wistRJZ.jpeg"
 porta_aberta="https://image.freepik.com/vetores-gratis/porta-aberta-dos-desenhos-animados-entrada-do-corredor-do-apartamento-entrada-do-escritorio_53562-8532.jpg"
 Imagem_Biblioteca_dentro="https://secult.es.gov.br/Media/secult/BPES/IMG_7650.JPG"
 imagem_caixa="https://thumbs.dreamstime.com/z/caixa-dos-desenhos-animados-no-fundo-branco-98137796.jpg"
