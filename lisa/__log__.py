@@ -251,3 +251,19 @@ AttributeError: 'module' object has no attribute 'open'
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Jan 15 2021 17:50:26.718 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 11
+    MEU_ELEMENTO =Image.open( "https://i.imgur.com/aYRC7bM.png") # Extensões aceitas: png, jpg, jpeg e gif
+AttributeError: 'module' object has no attribute 'open'
+'''},
