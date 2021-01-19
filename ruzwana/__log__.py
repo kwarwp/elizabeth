@@ -221,3 +221,10 @@ NameError: name 'TUBARAO_VIVO' is not defined
     tubarao_vivo=Elemento(img=TUBARAO_VIVO)
 NameError: name 'TUBARAO_VIVO' is not defined
 '''},
+{'date': 'Tue Jan 19 2021 18:17:44.237 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 36
+  ADM.vai()
+  ^
+IndentationError: expected an indented block
+'''},
