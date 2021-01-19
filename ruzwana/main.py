@@ -29,6 +29,10 @@ class desafio_3:
         
         self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, nome_personagem! Você conseguiu escapar, entre na diretoria da biblioteca para mais informações')
         
+        self.PASTA= Elemento(pasta_confidencial, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             cena = self.ADM)
+                             
+        self.texto_2=Texto(self.ADM, txt = 'Encontre a pasta confidencial.')
         
         
 #        self.COMPUTADOR= Elemento(computador, tit="click",
