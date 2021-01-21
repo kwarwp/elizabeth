@@ -56,7 +56,7 @@ class desafio_2:
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
                              cena = self.QUARTO)
-        self.BONECA1 = Elemento(imagem = boneca1, tit="Onde pode estar meu livro?",
+        self.BONECA1 = Elemento(imagem_boneca1, tit="Onde pode estar meu livro?",
                                 w=10,h=58, x=900, y=420,
                                 cena = self.QUARTO)
         
