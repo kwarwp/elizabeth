@@ -21,6 +21,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
         
 imagem_quarto = 'https://i.imgur.com/hvHCTF9.jpeg'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
+imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 imagem_quarto2='https://i.imgur.com/eatF6gK.jpeg'
 imagem_livro = 'https://i.imgur.com/XLWFUsC.png'
 imagem_livroaberto = 'https://i.imgur.com/F8BX0Aa.jpg'
@@ -55,6 +56,9 @@ class desafio_2:
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
                              cena = self.QUARTO)
+        self.BONECA1 = Elemento(imagem = boneca1, tit="Onde pode estar meu livro?",
+                                w=10,h=58, x=900, y=420,
+                                cena = self.QUARTO)
         
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
         
