@@ -1471,3 +1471,10 @@ NameError: name 'QUARTO' is not defined
                                                                                                                                                                                                                                               ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Jan 20 2021 22:35:46.311 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 109
+  self.texto_1.vai()
+  ^
+IndentationError: unexpected indent
+'''},
