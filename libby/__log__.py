@@ -1464,3 +1464,10 @@ NameError: name 'texto_3' is not defined
     self.texto_3= Texto(QUARTO, txt= '{nome_personagem} gosta de ler um livro quando acorda.')
 NameError: name 'QUARTO' is not defined
 '''},
+{'date': 'Wed Jan 20 2021 22:33:49.713 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  self.texto_3= Texto(self.QUARTO, txt= '{nome_personagem} gosta de ler um livro quando acorda. Seu livro sempre fica ao lado de sua cama mas, nesse dia, percebeu que não estava lá. {nome_personagem} resolveu procurá-lo em seu closet.')')
+                                                                                                                                                                                                                                              ^
+SyntaxError: EOL while scanning string literal
+'''},
