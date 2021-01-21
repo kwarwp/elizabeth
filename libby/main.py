@@ -34,7 +34,7 @@ imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
-class desafio_2:
+class desafio_1:
 
     def __init__(self):
         self.QUARTO = Cena(imagem_quarto)
@@ -113,4 +113,4 @@ class desafio_2:
         self.texto_1.vai()
         
 if __name__ == "__main__":                  
-    desafio_2().inicia()
+    desafio_1().inicia()
