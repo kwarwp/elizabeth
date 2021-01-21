@@ -57,8 +57,10 @@ class desafio_2:
                              w=55,h=58, x=900, y=420,
                              cena = self.QUARTO)
         self.BONECA1 = Elemento(imagem_boneca1, tit="Onde pode estar meu livro?",
-                                w=55,h=58, x=900, y=420,
+                                w=330,h=348, x=600, y=250,
                                 cena = self.QUARTO)
+                               
+        self.texto_3 = Texto(self.QUARTO, txt = '{nome_personagem} gosta de ler um livro quando acorda. Seu livro sempre fica do lado de sua cama mas, nesse dia, não o encontrou. {nome_personagem} resolveu procurá-lo em seu closet.')
         
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
         
