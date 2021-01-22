@@ -250,3 +250,42 @@ Traceback (most recent call last):
   module <module> line 2
     from roxanne.main import instancia.nome_personagem
 '''},
+{'date': 'Fri Jan 22 2021 12:12:37.174 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 2
+    from roxanne.main import *
+  module roxanne.main line 16
+    from stacy.main import Modulo1
+  module stacy.main line 3
+    from libby.main import desafio_2
+ImportError: cannot import name 'desafio_2'
+
+ImportError
+Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 268
+    action()
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 2
+    from roxanne.main import *
+  module roxanne.main line 16
+    from stacy.main import Modulo1
+  module stacy.main line 3
+    from libby.main import desafio_2
+'''},
