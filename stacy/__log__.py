@@ -295,3 +295,9 @@ Exception: Cannot read property '__class__' of null
   module '$exec_1858' line 2
 from roxanne.main import *
 '''},
+{'date': 'Fri Jan 22 2021 12:12:39.405 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: Cannot read property '__class__' of null
+  module '$exec_1865' line 2
+from roxanne.main import *
+'''},
