@@ -5,8 +5,9 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 porta_fechada="https://i.imgur.com/wistRJZ.jpeg"
 porta_aberta="https://image.freepik.com/vetores-gratis/porta-aberta-dos-desenhos-animados-entrada-do-corredor-do-apartamento-entrada-do-escritorio_53562-8532.jpg"
-Imagem_Biblioteca_dentro="https://secult.es.gov.br/Media/secult/BPES/IMG_7650.JPG"
-imagem_caixa="https://thumbs.dreamstime.com/z/caixa-dos-desenhos-animados-no-fundo-branco-98137796.jpg"
+Imagem_Biblioteca_dentro="https://i.imgur.com/l1LeZ9x.jpg"
+imagem_caixa="https://i.imgur.com/7nnzwwN.png"
+caixa_aberta= "https://i.imgur.com/grpEmod.png"
 imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-o-desenho-da-m%C3%A3o-do-pino-do-impulso-89420296.jpg"
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 
