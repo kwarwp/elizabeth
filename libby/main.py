@@ -48,14 +48,7 @@ class desafio_1:
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
         
-        self.QUARTO2= Cena(imagem_quarto2)
-        
-        self.CenaComputador = Cena(imagem_computador)
-        self.SetaEntrada = Elemento(botao_seta, tit="CLIQUE",
-                     style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                     cena = self.CenaComputador,
-                     vai = self.clique_computador)
-        
+        self.QUARTO2= Cena(imagem_quarto2)        
         
         self.LIVRO= Elemento(imagem_livro, tit="É esse!",
                              w=55,h=58, x=850, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -116,13 +109,6 @@ class desafio_1:
             self.tente_novamente=Texto(self.cena3, txt = 'Hipátia, tente novamente.')
             self.tente_novamente.vai()   
             
-        def clique_computador(self,event = None):
-        self.CenaComputador2 = Cena(imagem_computador2)
-        self.CenaComputador2.vai() 
-        self.SetaEntrada2 = Elemento(botao_seta2, tit="CLIQUE",
-                     style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                     cena = self.CenaComputador2,
-                     vai = self.entrada2)            
              
                              
     def funcao_de_acao_do_botao(self,event = None):
@@ -138,11 +124,6 @@ class desafio_1:
         self.QUARTO.vai()
         self.texto_3.vai()
         
-    def entrada(self):
-        self.Cena1.vai()
-            
-    def entrada2(self,*_):
-        desafio_2().inicia()
         
         
 if __name__ == "__main__":                  
