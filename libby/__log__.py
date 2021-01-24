@@ -1478,3 +1478,10 @@ SyntaxError: EOL while scanning string literal
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jan 24 2021 13:54:48.241 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 120
+  self.CenaComputador2 = Cena(imagem_computador2)
+  ^
+IndentationError: expected an indented block
+'''},
