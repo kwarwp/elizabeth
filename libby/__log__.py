@@ -1553,3 +1553,10 @@ AttributeError: 'desafio_1' object has no attribute 'clique_computador'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jan 24 2021 14:11:28.645 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 127
+  self.QUARTO.vai()
+  ^
+IndentationError: unexpected indent
+'''},
