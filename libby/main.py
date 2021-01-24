@@ -29,6 +29,7 @@ imagem_mapa ='https://i.imgur.com/E2MZ6DR.png'
 click_biblioteca= 'https://i.imgur.com/ZKiFXHh.png'
 imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
 imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
+imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -55,7 +56,11 @@ class desafio_1:
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
                              cena = self.QUARTO)
-        
+                             
+        self.BONECA1 = Elemento(imagem_boneca1, tit="Onde pode estar meu livro?",
+                             w=30,h=42, x=900, y=420,
+                             cena = self.QUARTO)  
+                             
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
         
         self.texto_1 = Texto(self.QUARTO2, txt = '{nome_personagem},Encontre o livro')
