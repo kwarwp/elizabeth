@@ -55,8 +55,8 @@ class desafio_1:
                              w=55,h=58, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO2)     
                              
-        self.BONECA2= Elemento(imagem_boneca1, tit="Acho que encontrei meu livro!",
-                             w=240,h=336, x=400, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+        self.BONECA2= Elemento(imagem_boneca2, tit="Acho que encontrei meu livro!",
+                             w=300,h=420, x=200, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO2)    
         
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
@@ -67,7 +67,7 @@ class desafio_1:
                              cena = self.QUARTO)
                              
         self.BONECA1 = Elemento(imagem_boneca1, tit="Onde pode estar meu livro?",
-                             w=240,h=336, x=600, y=250,
+                             w=300,h=420, x=600, y=200,
                              cena = self.QUARTO)  
                              
         self.texto_3 = Texto(self.QUARTO, txt = "Hipátia gosta de ler seu livro quando acorda. Mas, nessa manhã, não o encontrou em sua mesa e resolveu procurar no closet. Estranho...")
