@@ -379,3 +379,9 @@ Traceback (most recent call last):
   module stacy.main line 3
     from libby.main import desafio_2
 '''},
+{'date': 'Sun Jan 24 2021 13:47:38.125 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: Cannot read property '__class__' of null
+  module '$exec_1858' line 2
+from roxanne.main import *
+'''},
