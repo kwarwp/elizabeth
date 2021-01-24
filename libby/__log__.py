@@ -1546,3 +1546,10 @@ IndentationError: expected an indented block
     self.SetaEntrada = Elemento(botao_seta, tit="CLIQUE",
 AttributeError: 'desafio_1' object has no attribute 'clique_computador'
 '''},
+{'date': 'Sun Jan 24 2021 14:10:59.950 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 127
+  self.QUARTO.vai()
+  ^
+IndentationError: unexpected indent
+'''},
