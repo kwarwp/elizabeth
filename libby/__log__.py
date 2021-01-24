@@ -1521,3 +1521,10 @@ NameError: name 'imagem_computador1' is not defined
     self.SetaEntrada = Elemento(botao_seta, tit="CLIQUE",
 AttributeError: 'desafio_1' object has no attribute 'clique_computador'
 '''},
+{'date': 'Sun Jan 24 2021 14:02:47.59 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 121
+  self.CenaEntrada2 = Cena(imagem_computador2)
+  ^
+IndentationError: expected an indented block
+'''},
