@@ -61,7 +61,7 @@ class desafio_1:
                              w=240,h=336, x=600, y=250,
                              cena = self.QUARTO)  
                              
-        self.texto_2 = Texto(self.QUARTO, txt = "Hipátia gosta de ler seu livro quando acorda. Mas, nessa manhã, não o encontrou em sua mesa e resolveu procurar no closet. Estranho...")
+        self.texto_3 = Texto(self.QUARTO, txt = "Hipátia gosta de ler seu livro quando acorda. Mas, nessa manhã, não o encontrou em sua mesa e resolveu procurar no closet. Estranho...")
                              
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)  
         
@@ -111,7 +111,7 @@ class desafio_1:
             
     def inicia(self,*_):
         self.QUARTO.vai()
-        self.texto_2.vai()
+        self.texto_3.vai()
         
         
 if __name__ == "__main__":                  
