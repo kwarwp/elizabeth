@@ -51,7 +51,7 @@ class desafio_1:
                              cena = self.QUARTO2)
                              
         self.LIVROERRADO= Elemento(imagem_livroerrado, tit="Acho que não é esse...",
-                             w=55,h=58, x=850, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             w=55,h=58, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.QUARTO2)                             
 
         
