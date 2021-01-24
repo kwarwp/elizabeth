@@ -31,6 +31,7 @@ imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/202
 imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
 imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 imagem_livroerrado = 'https://i.imgur.com/kP9br1f.png'
+imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -52,8 +53,11 @@ class desafio_1:
                              
         self.LIVROERRADO= Elemento(imagem_livroerrado, tit="Acho que não é esse...",
                              w=55,h=58, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             cena = self.QUARTO2)                             
-
+                             cena = self.QUARTO2)     
+                             
+        self.BONECA2= Elemento(imagem_boneca1, tit="Acho que encontrei meu livro!",
+                             w=240,h=336, x=400, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             cena = self.QUARTO2)    
         
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
         
