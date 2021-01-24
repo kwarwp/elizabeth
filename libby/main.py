@@ -47,8 +47,17 @@ class desafio_1:
         #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
+        self.QUARTO.vai()
+        self.texto_3.vai()
         
-        self.QUARTO2= Cena(imagem_quarto2)        
+        self.QUARTO2= Cena(imagem_quarto2)
+        
+        self.Entrada1 = Cena(imagem_computador)
+        
+        self.SetaEntrada = Elemento(botao_seta, tit="CLIQUE",
+                     style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                     cena = self.Entrada1,
+                     vai = self.clique_computador)
         
         self.LIVRO= Elemento(imagem_livro, tit="É esse!",
                              w=55,h=58, x=850, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -107,7 +116,19 @@ class desafio_1:
         else:
         #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
             self.tente_novamente=Texto(self.cena3, txt = 'Hipátia, tente novamente.')
-            self.tente_novamente.vai()   
+            self.tente_novamente.vai()  
+            
+            
+    def clique_computador(self,event = None):
+        self.CenaEntrada2 = Cena(imagem_computador2)
+        self.CenaEntrada2.vai() 
+        self.Seta2 = Elemento(botao_seta2, tit="CLIQUE",
+                     style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                     cena = self.CenaEntrada2,
+                     vai = self.QUARTO)
+
+    #self.QUARTO.vai()
+    #self.texto_3.vai()
             
              
                              
@@ -119,10 +140,15 @@ class desafio_1:
     def funcao_de_acao_do_botao3(self,event = None):
         self.QUARTO2.vai()
         self.texto_1.vai()
+        
+    #def clique_computador(self,event = None):
+        #self.QUARTO.vai()
+        #self.texto_3.vai()
             
     def inicia(self,*_):
-        self.QUARTO.vai()
-        self.texto_3.vai()
+        self.Entrada1.vai()
+        #self.QUARTO.vai()
+        #self.texto_3.vai()
         
         
         
