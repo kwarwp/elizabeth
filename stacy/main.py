@@ -27,8 +27,7 @@ class Modulo1:
         self.Cena2.vai() 
         self.Seta2 = Elemento(botao_seta2, tit="CLIQUE",
                      style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                     cena = self.Cena2,
-                     vai = self.mari2)
+                     cena = self.Cena2)
                            
             
       def inicia(self,*_):
