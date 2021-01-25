@@ -1639,3 +1639,10 @@ AttributeError: 'desafio_1' object has no attribute 'texto_3'
                                                                                                                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jan 25 2021 20:00:33.442 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 52
+  self.SETAENTRADA1 = Elemento(botao_seta, tit="CLIQUE",
+                                                                                                                                                                                             ^
+SyntaxError: invalid syntax
+'''},
