@@ -47,6 +47,21 @@ class desafio_1:
         #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
                              #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              #cena = self.cena1)
+        self.ENTRADA1 = Cena(imagem_computador)
+        
+        self.SETAENTRADA1 = Elemento(botao_seta, tit="CLIQUE",
+                            w=55, h=58, x=500, y=390,
+                            cena = self.ENTRADA1)
+        
+        self.SETAENTRADA1.elt.bind("CLIQUE", self.SETA_ENTRADA1) 
+        
+        self.ENTRADA2 = Cena(imagem_computador2)
+        
+        self.SETAENTRADA2 = Elemento(botao_seta2, tit="CLIQUE",
+                            w=55, h=58, x=500, y=390,
+                            cena = self.ENTRADA2)     
+                            
+        self.SETAENTRADA2.elt.bind("CLIQUE", self.SETA_ENTRADA2)         
         
         self.QUARTO2= Cena(imagem_quarto2)        
         
@@ -120,9 +135,15 @@ class desafio_1:
         self.QUARTO2.vai()
         self.texto_1.vai()
             
-    def inicia(self,*_):
+    def SETA_ENTRADA1(self,event = None):
+        self.ENTRADA2.vai()
+        
+    def SETA_ENTRADA2(self,event = None):
         self.QUARTO.vai()
-        self.texto_3.vai()
+        self.texto_3.vai()    
+    
+    def inicia(self,*_):
+        self.ENTRADA1
         
         
         
