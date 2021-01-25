@@ -1671,3 +1671,10 @@ SyntaxError: invalid syntax
     self.SETAENTRADA1.elt.bind("CLIQUE", self.BOTAO_ENTRADA1) 
 AttributeError: 'desafio_1' object has no attribute 'BOTAO_ENTRADA1'
 '''},
+{'date': 'Mon Jan 25 2021 20:23:47.986 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 52
+  self.SETAENTRADA1 = Elemento(botao_seta, tit="CLIQUE",
+                                                                                                                                                                                             ^
+SyntaxError: invalid syntax
+'''},
