@@ -53,8 +53,9 @@ class desafio_1:
                             w=55, h=58, x=500, y=390,
                             cena = self.ENTRADA1)
                             
+                            
         
-        self.SETAENTRADA1.elt.bind("CLIQUE", self.BOTAO_ENTRADA1) 
+        #self.SETAENTRADA1.elt.bind("CLIQUE", self.BOTAO_ENTRADA1) 
         
         self.ENTRADA2 = Cena(imagem_computador2)
         
@@ -145,7 +146,7 @@ class desafio_1:
         
     
     def inicia(self,*_):
-        self.ENTRADA1.vai()
+        self.ENTRADA1().inicia()
         
         
         
