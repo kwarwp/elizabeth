@@ -61,9 +61,9 @@ class desafio_1:
         self.SETAENTRADA2 = Elemento(botao_seta2, tit="CLIQUE",
                             w=55, h=58, x=500, y=390,
                             cena = self.ENTRADA2)     
-                            
-        self.SETAENTRADA2.elt.bind("CLIQUE", self.SETA_ENTRADA2)         
         
+        self.SETAENTRADA2.elt.bind("CLIQUE", self.BOTAO_ENTRADA2)
+                     
         self.QUARTO2= Cena(imagem_quarto2)        
         
         self.LIVRO= Elemento(imagem_livro, tit="É esse!",
@@ -136,12 +136,13 @@ class desafio_1:
         self.QUARTO2.vai()
         self.texto_1.vai()
             
-    def SETA_ENTRADA2(self,event = None):
+    def BOTAO_ENTRADA2(self,event = None):
         self.QUARTO.vai()
         self.texto_3.vai() 
         
     def BOTAO_ENTRADA1(self,event = None):
-        self.ENTRADA2.vai()    
+        self.ENTRADA2.vai()
+        
     
     def inicia(self,*_):
         self.ENTRADA1.vai()
