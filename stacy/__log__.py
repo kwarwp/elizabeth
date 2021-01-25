@@ -385,3 +385,10 @@ Exception: Cannot read property '__class__' of null
   module '$exec_1858' line 2
 from roxanne.main import *
 '''},
+{'date': 'Mon Jan 25 2021 20:30:03.566 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  def clique_computador(self,event = None):
+  ^
+IndentationError: unexpected indent
+'''},
