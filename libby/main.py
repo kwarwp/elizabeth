@@ -143,7 +143,7 @@ class desafio_1:
         self.texto_3.vai()    
     
     def inicia(self,*_):
-        self.ENTRADA1
+        self.ENTRADA1.vai()
         
         
         
