@@ -64,6 +64,7 @@ class desafio_1:
         
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)  
         
+        self.LIVROERRADO.elt.bind("click", self.livro_errado)  
         
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
@@ -109,7 +110,9 @@ class desafio_1:
             self.tente_novamente=Texto(self.cena3, txt = 'Hipátia, tente novamente.')
             self.tente_novamente.vai()   
             
-             
+    def livro_errado(self,event = None):
+        self.texto_4=Texto(self.QUARTO2, txt = 'Este não é o livro correto, continue procurando.')
+        self.texto_4.vai()
                              
     def funcao_de_acao_do_botao(self,event = None):
         self.cena2.vai()
