@@ -33,6 +33,7 @@ class desafio_2:
         
         self.caixa_abre = Cena(imagem_papel)
         
+        
         #Elementos
         
         self.BOTAO= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -76,6 +77,7 @@ class desafio_2:
         
         self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
         self.BOTAO.elt.bind("click", self.abre_porta)
+        self.CAIXA_ABERTA("click", self.CAIXA_ABRE)
                            
 
 
@@ -93,6 +95,11 @@ class desafio_2:
 
     def clique_caixa (self,event = None):
         self.Biblioteca_dentro2.vai()
+        
+        
+    
+    def CAIXA_ABRE (self,event = None):
+        self.caixa_abre.vai()
         
     
     def inicia(self,*_):
