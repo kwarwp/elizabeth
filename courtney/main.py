@@ -49,7 +49,13 @@ class desafio_2:
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
                                w=250,h=350, x=200, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_entrada)  
-                           
+        
+        #Texto
+        
+        self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca." )
+
+
+
         #Click
         
         self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
