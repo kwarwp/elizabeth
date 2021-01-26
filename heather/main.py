@@ -79,8 +79,8 @@ class desafio_1:
         self.texto_1 = Texto(self.QUARTO2, txt = 'Hipátia, encontre o livro')                     
         self.texto_2= Texto(self.cena2, txt= 'Hipátia encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la')
         
-        self.SETAENTRADA1.elt.bind("CLIQUE", self.BOTAO_ENTRADA1)
-        self.SETAENTRADA2.elt.bind("CLIQUE", self.BOTAO_ENTRADA2)
+        self.SETAENTRADA1.elt.bind("click", self.BOTAO_ENTRADA1)
+        self.SETAENTRADA2.elt.bind("click", self.BOTAO_ENTRADA2)
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
