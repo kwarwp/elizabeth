@@ -77,7 +77,7 @@ class desafio_2:
         
         self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
         self.BOTAO.elt.bind("click", self.abre_porta)
-        self.CAIXA_ABERTA("click", self.CAIXA_ABRE)
+        self.CAIXA_ABERTA.elt.bind("click", self.CAIXA_ABRE)
                            
 
 
