@@ -126,8 +126,3 @@ class desafio_1:
         
 if __name__ == "__main__":                  
     desafio_1().inicia()
-        
-        
-        
-        
-        
