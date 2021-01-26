@@ -2,18 +2,6 @@
 #ATO 1
 
 
-"""     xxxxx
-
-.. codeauthor:: Livia Machado <liviamcampos98@gmail.com>
-
-Changelog
----------
-.. versionadded::    
-       - xxx
-
-"""
-
-
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 #from meredith.main import nome_personagem
 #from roxane.main import *
