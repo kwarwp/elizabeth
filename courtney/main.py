@@ -42,7 +42,7 @@ class desafio_2:
                               cena = self.Biblioteca_porta)
         
         self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
-                                    h=100, w =100, x=600, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                    h=100, w =100, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro,
                                     vai = self.clique_caixa)
          
