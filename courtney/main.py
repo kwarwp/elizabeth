@@ -42,7 +42,7 @@ class desafio_2:
                               cena = self.Biblioteca_porta)
         
         self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
-                                    h=100, w =100, x=720, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                    h=100, w =100, x=720, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro,
                                     vai = self.clique_caixa)
          
@@ -66,6 +66,7 @@ class desafio_2:
 
     def abre_porta (self,event = None):
         self.Biblioteca_porta.vai()
+        self.texto_2.vai()
     
 
 
