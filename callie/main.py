@@ -46,14 +46,14 @@ class Main():
         self.BIBLIOTECA=Cena(biblioteca)
         
         self.DESAFIO= Elemento(desafio, tit="Hipátia",
-                               w=300,h=300, x=340, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA)
 
         self.T_AZUL=Item_herdado(triangulo_azul, tit="nome_do_meu_elemento", 
                                 H=60,w=60, X=100, Y=100,
                                 cena=self.BIBLIOTECA)
         
-        self.T_AZUL.mementor((110,150,200,"200px"))
+        self.T_AZUL.mementor((110,150,200,"300px"))
         self.T_AZUL.vai=self.T_AZUL.bota
 
         self.BIBLIOTECA.vai()
