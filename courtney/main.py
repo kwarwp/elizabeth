@@ -47,7 +47,7 @@ class desafio_2:
                                     vai = self.clique_caixa)
          
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
-                               w=250,h=350, x=200, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=200, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_entrada)  
                            
         #Click
