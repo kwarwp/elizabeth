@@ -42,13 +42,17 @@ class desafio_2:
                               cena = self.Biblioteca_porta)
         
         self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
-                                    h=100, w =100, x=720, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                    h=100, w =100, x=700, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro,
                                     vai = self.clique_caixa)
          
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
-                               w=250,h=350, x=200, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_entrada)  
+                               
+        self.BONECA3= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.Biblioteca_dentro)  
         
         #Texto
         
