@@ -11,18 +11,18 @@ class Item_herdado(Elemento):
     """Construção de uma classe que herde de Elemento
     """
     def bota(self, *_):
-    """Aciona estado de inv.bota = True para que eventual clique devolva o Elemento para a cena"""
+        """Aciona estado de inv.bota = True para que eventual clique devolva o Elemento para a cena"""
         inv.bota(self, True)
         #self.vai=lambda*_:self.resgata(x=x,y=y,w=w,h=h)
-         """Método vai do Elemento atrelado ao evento de reposicionamento, onde o memento especifica os argumentos pedidos pelo método resgata."""
+        """Método vai do Elemento atrelado ao evento de reposicionamento, onde o memento especifica os argumentos pedidos pelo método resgata."""
         self.vai=lambda*_:self.resgata(*self.memento)
 
     def resgata(self,x,y,w,h):
         """Método para resgate do Elemento no inventário"""
         self.x,self.y,self.w,self.h= x,y,w,h
-         """Retira Elemento atrelado ao título do inventário"""
+        """Retira Elemento atrelado ao título do inventário"""
         inv.tira(self.tit)
-         """Coloca Elemento na cena"""
+        """Coloca Elemento na cena"""
         self.entra(inv.cena)
         """Aciona estado de inv.bota = False para que eventual clique devolva o Elemento para o inventário"""
         self.vai=self.bota
@@ -44,5 +44,5 @@ class Main():
 
         self.minha_cena.vai()
 
- if __name__ == "__main__":
-     Main()
+if __name__ == "__main__":
+    Main()
