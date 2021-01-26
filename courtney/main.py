@@ -10,6 +10,7 @@ imagem_caixa="https://i.imgur.com/7nnzwwN.png"
 caixa_aberta= "https://i.imgur.com/grpEmod.png"
 imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-o-desenho-da-m%C3%A3o-do-pino-do-impulso-89420296.jpg"
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
+imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -18,6 +19,8 @@ STYLE["heigth"] = '600px' # min-height = "300px"
 class desafio_2:
 
     def __init__(self):
+    
+        #Cenas
 
         self.Biblioteca_entrada=Cena(porta_fechada)
         
@@ -25,25 +28,33 @@ class desafio_2:
         
         self.Biblioteca_dentro=Cena(Imagem_Biblioteca_dentro)
         
+        self.caixa_abre = Cena(imagem_papel)
+        
+        #Elementos
+        
         self.BOTAO= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.Biblioteca_entrada)
-                                
-        self.BOTAO.elt.bind("click", self.abre_porta)
-        
+                       
         self.BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                               cena = self.Biblioteca_porta)
                               
         self.BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                               cena = self.Biblioteca_porta)
-                                
-        self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
-        
-        self.caixa_abre = Cena(imagem_papel)
         
         self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
-                           style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.Biblioteca_dentro,
-                           vai = self.clique_caixa)
+                                    style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                    cena = self.Biblioteca_dentro,
+                                    vai = self.clique_caixa)
+         
+        self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=300,h=420, x=200, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.Biblioteca_entrada)  
+                           
+        #Click
+        
+        self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
+        self.BOTAO.elt.bind("click", self.abre_porta)
+                           
 
 
     def abre_porta (self,event = None):
