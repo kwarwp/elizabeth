@@ -42,7 +42,7 @@ class desafio_2:
                               cena = self.Biblioteca_porta)
         
         self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
-                                    style=dict(height=100,widht=100, left=300, top=250), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                    h=100, w =100, x=720, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro,
                                     vai = self.clique_caixa)
          
@@ -53,6 +53,7 @@ class desafio_2:
         #Texto
         
         self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca." )
+        self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
 
 
 
@@ -78,6 +79,7 @@ class desafio_2:
     
     def inicia(self,*_):
         self.Biblioteca_entrada.vai()
+        self.texto_1.vai()
         
 if __name__ == "__main__":                  
     desafio_2().inicia()
