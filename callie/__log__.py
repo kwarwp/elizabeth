@@ -20,3 +20,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Jan 26 2021 14:30:49.681 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  self.memento=memento
+  ^
+IndentationError: unexpected indent
+'''},
