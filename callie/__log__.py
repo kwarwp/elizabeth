@@ -27,3 +27,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Jan 26 2021 14:31:11.747 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  self.memento=memento
+  ^
+IndentationError: unexpected indent
+'''},
