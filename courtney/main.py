@@ -58,11 +58,11 @@ class desafio_2:
                                cena = self.Biblioteca_entrada)  
                                
         self.BONECA3= Elemento(imagem_boneca1, tit="Hipátia",
-                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=750, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro1)  
                                
         self.BONECA4= Elemento(imagem_boneca1, tit="Hipátia",
-                               w=250,h=350, x=750, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=700, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro2)  
         
         #Texto
