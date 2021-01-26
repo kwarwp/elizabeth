@@ -26,7 +26,9 @@ class desafio_2:
         
         self.Biblioteca_porta=Cena(porta_aberta)
         
-        self.Biblioteca_dentro=Cena(Imagem_Biblioteca_dentro)
+        self.Biblioteca_dentro1=Cena(Imagem_Biblioteca_dentro)
+        
+        self.Biblioteca_dentro2=Cena(Imagem_Biblioteca_dentro)
         
         self.caixa_abre = Cena(imagem_papel)
         
@@ -43,8 +45,12 @@ class desafio_2:
         
         self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
                                     h=100, w =100, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                                    cena = self.Biblioteca_dentro,
+                                    cena = self.Biblioteca_dentro1,
                                     vai = self.clique_caixa)
+                                    
+        self.CAIXA_ABERTA= Elemento(caixa_aberta, tit="CLIQUE",
+                                    h=100, w =100, x=500, y=380, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                    cena = self.Biblioteca_dentro2)
          
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
                                w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -52,7 +58,11 @@ class desafio_2:
                                
         self.BONECA3= Elemento(imagem_boneca2, tit="Hipátia",
                                w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                               cena = self.Biblioteca_dentro)  
+                               cena = self.Biblioteca_dentro1)  
+                               
+        self.BONECA4= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.Biblioteca_dentro2)  
         
         #Texto
         
@@ -75,12 +85,12 @@ class desafio_2:
 
 
     def entra_na_biblioteca (self,event = None):
-        self.Biblioteca_dentro.vai()
+        self.Biblioteca_dentro1.vai()
     
 
 
     def clique_caixa (self,event = None):
-        self.caixa_abre.vai()
+        self.Biblioteca_dentro2.vai()
     
     def inicia(self,*_):
         self.Biblioteca_entrada.vai()
