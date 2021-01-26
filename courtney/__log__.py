@@ -84,3 +84,10 @@ NameError: name 'clique_caixa' is not defined
     botao_caixa = Elemento(Imagem_Biblioteca_caixa, tit="CLIQUE",
 NameError: name 'clique_caixa' is not defined
 '''},
+{'date': 'Tue Jan 26 2021 15:22:39.486 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  cena = self.Biblioteca_dentro,
+  ^
+IndentationError: unexpected indent
+'''},
