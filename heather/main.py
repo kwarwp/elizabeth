@@ -71,6 +71,7 @@ class desafio_1:
         self.SETAENTRADA2.elt.bind("click", self.BOTAO_ENTRADA2)
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)
+        self.LIVROERRADO.elt.bind("click", self.livro_errado)  
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
         
     def desafio1(self,*_):
@@ -90,6 +91,10 @@ class desafio_1:
         #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
             self.tente_novamente=Texto(self.cena3, txt = 'Hipátia, tente novamente.')
             self.tente_novamente.vai()
+        
+    def livro_errado(self,event = None):
+        self.texto_4=Texto(self.QUARTO2, txt = 'Este não é o livro correto, continue procurando.')
+        self.texto_4.vai()
             
     def funcao_de_acao_do_botao(self,event = None):
         self.cena2.vai()
