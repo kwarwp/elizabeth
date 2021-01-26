@@ -11,6 +11,7 @@ caixa_aberta= "https://i.imgur.com/grpEmod.png"
 imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-o-desenho-da-m%C3%A3o-do-pino-do-impulso-89420296.jpg"
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
+imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -43,32 +44,32 @@ class desafio_2:
         self.BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                               cena = self.Biblioteca_porta)
         
-        self.botao_caixa = Elemento(imagem_caixa, tit="CLIQUE",
+        self.botao_caixa = Elemento(imagem_caixa, tit="Abra a caixa",
                                     h=100, w =100, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro1,
                                     vai = self.clique_caixa)
                                     
-        self.CAIXA_ABERTA= Elemento(caixa_aberta, tit="CLIQUE",
-                                    h=100, w =100, x=500, y=380, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+        self.CAIXA_ABERTA= Elemento(caixa_aberta, tit="Colete as informações.",
+                                    h=100, w =120, x=500, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro2)
          
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
                                w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_entrada)  
                                
-        self.BONECA3= Elemento(imagem_boneca2, tit="Hipátia",
+        self.BONECA3= Elemento(imagem_boneca1, tit="Hipátia",
                                w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro1)  
                                
-        self.BONECA4= Elemento(imagem_boneca2, tit="Hipátia",
-                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+        self.BONECA4= Elemento(imagem_boneca1, tit="Hipátia",
+                               w=250,h=350, x=750, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro2)  
         
         #Texto
         
         self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca." )
         self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
-
+        self.texto_3=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
 
 
         #Click
@@ -86,11 +87,13 @@ class desafio_2:
 
     def entra_na_biblioteca (self,event = None):
         self.Biblioteca_dentro1.vai()
+        self.texto_3.vai()
     
 
 
     def clique_caixa (self,event = None):
         self.Biblioteca_dentro2.vai()
+        
     
     def inicia(self,*_):
         self.Biblioteca_entrada.vai()
