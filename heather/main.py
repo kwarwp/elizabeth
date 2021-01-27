@@ -53,7 +53,7 @@ class desafio_1:
                             w=55, h=58, x=500, y=390,
                             cena = self.ENTRADA2)
         self.BONECADORMINDO = Elemento(boneca_dormindo, tit="Acorde Hipátia",
-                              w=55, h=58, x=500, y=390,
+                              w=300, h=420, x=500, y=390,
                               cena = self.QUARTO1)
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
@@ -73,7 +73,8 @@ class desafio_1:
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
                                       w=55,h=58, x=610, y=300,
                                       cena = self.cena2)
-                                      
+         
+        self.texto_4 = Texto(self.QUARTO1, txt = "Acorde Hipátia")
         self.texto_3 = Texto(self.QUARTO, txt = "Hipátia gosta de ler seu livro quando acorda. Mas, nessa manhã, não o encontrou em sua mesa e resolveu procurar no closet. Estranho...")
         self.texto_1 = Texto(self.QUARTO2, txt = 'Hipátia, encontre o livro')                     
         self.texto_2= Texto(self.cena2, txt= 'Hipátia encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la')
@@ -119,6 +120,7 @@ class desafio_1:
             
     def BOTAO_ENTRADA2(self,event = None):
         self.QUARTO1.vai() 
+        self.texto_4.vai()
         
     def BOTAO_ENTRADA1(self,event = None):
         self.ENTRADA2.vai()
