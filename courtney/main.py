@@ -78,7 +78,7 @@ class desafio_2:
                              cena = self.caixa_abre)
                              
         self.LIXO= Elemento(lixo, tit="Colete as informações.",
-                            h=71.4, w =70.6, x=300, y=600, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                            h=100, w =103, x=200, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                             cena = self.biblioteca2)
                              
         
