@@ -145,3 +145,10 @@ TypeError: 'Elemento' object is not callable
     self.CAIXA_ABERTA("click", self.CAIXA_ABRE)
 TypeError: 'Elemento' object is not callable
 '''},
+{'date': 'Wed Jan 27 2021 14:47:36.300 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 94
+  self.LIXO= Elemento(lixo, tit="Colete as informações.",
+                                                                                                                                                                                                                                                 ^
+SyntaxError: invalid syntax
+'''},
