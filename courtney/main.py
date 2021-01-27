@@ -1,17 +1,19 @@
 # elizabeth.courtney.main.py
 # ATO 2
 
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
 
 porta_fechada="https://i.imgur.com/wistRJZ.jpeg"
 porta_aberta="https://image.freepik.com/vetores-gratis/porta-aberta-dos-desenhos-animados-entrada-do-corredor-do-apartamento-entrada-do-escritorio_53562-8532.jpg"
 Imagem_Biblioteca_dentro="https://i.imgur.com/l1LeZ9x.jpg"
+imagem_biblioteca2="https://i.imgur.com/o7cml0T.jpeg"
 imagem_caixa="https://i.imgur.com/7nnzwwN.png"
 caixa_aberta= "https://i.imgur.com/grpEmod.png"
 imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-o-desenho-da-m%C3%A3o-do-pino-do-impulso-89420296.jpg"
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
+seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -30,6 +32,10 @@ class desafio_2:
         self.Biblioteca_dentro1=Cena(Imagem_Biblioteca_dentro)
         
         self.Biblioteca_dentro2=Cena(Imagem_Biblioteca_dentro)
+        
+        self.Biblioteca_dentro3=Cena(Imagem_Biblioteca_dentro)
+        
+        self.biblioteca2= Cena (imagem_biblioteca2)
         
         self.caixa_abre = Cena(imagem_papel)
         
@@ -66,11 +72,21 @@ class desafio_2:
                                w=250,h=350, x=550, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro2)  
         
+        self.SETA = Elemento(seta, tit="Próximo",
+                             w=55,h=58, x=900, y=420,
+                             cena = self.caixa_abre)
+                             
+                             
+        #Salas
+        
+        self.BIBLIOTECA2 = Sala(n=self.Biblioteca_dentro3, l=self.biblioteca2)
+        
         #Texto
         
         self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca." )
         self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
         self.texto_3=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
+        self.texto_4=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
 
 
         #Click
@@ -78,6 +94,7 @@ class desafio_2:
         self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
         self.BOTAO.elt.bind("click", self.abre_porta)
         self.CAIXA_ABERTA.elt.bind("click", self.CAIXA_ABRE)
+        self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)
                            
 
 
@@ -100,6 +117,10 @@ class desafio_2:
     
     def CAIXA_ABRE (self,event = None):
         self.caixa_abre.vai()
+        
+    def funcao_de_acao_do_botao3(self,event = None):
+        self.BIBLIOTECA2.norte.vai()
+
         
     
     def inicia(self,*_):
