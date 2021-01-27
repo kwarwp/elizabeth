@@ -53,7 +53,7 @@ class desafio_1:
                             w=55, h=58, x=500, y=390,
                             cena = self.ENTRADA2)
         self.BONECADORMINDO = Elemento(boneca_dormindo, tit="Acorde Hipátia",
-                              w=270, h=378, x=300, y=150,
+                              w=240, h=336, x=300, y=180,
                               cena = self.QUARTO1)
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
