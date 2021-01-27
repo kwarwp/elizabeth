@@ -86,7 +86,7 @@ class desafio_2:
         self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca." )
         self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
         self.texto_3=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
-        self.texto_4=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
+        self.texto_4=Texto(self.Biblioteca_dentro3, txt= "Vá até a outra sala e colete mais informações." )
 
 
         #Click
