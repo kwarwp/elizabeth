@@ -72,6 +72,12 @@ class desafio_2:
         self.BONECA4= Elemento(imagem_boneca1, tit="Hipátia",
                                w=250,h=350, x=550, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro2)  
+                               
+                               
+        self.BONECA5= Elemento(imagem_boneca1, tit="Hipátia",
+                               w=250,h=350, x=400, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca2)  
+                               
         
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
