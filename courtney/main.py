@@ -108,7 +108,7 @@ class desafio_2:
                             cena = self.biblioteca3)
                             
         self.informacoes= Elemento(infos_lixo, tit='', 
-                                   h=512, w =600, x=200, y=500,
+                                   h=512, w =600, x=200, y=100,
                                    cena= self.biblioteca3)
         
                              
