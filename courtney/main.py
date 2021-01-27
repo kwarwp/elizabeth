@@ -14,6 +14,7 @@ Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
+lixo= 'https://i.imgur.com/8TMfOgz.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -75,6 +76,12 @@ class desafio_2:
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
                              cena = self.caixa_abre)
+                             
+        self.LIXO= Elemento(lixo, tit="Colete as informações.",
+                            h=71.4, w =70.6, x=300, y=600, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                            cena = self.biblioteca2)
+                             
+        
                              
                              
         #Salas
