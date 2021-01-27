@@ -59,7 +59,7 @@ class desafio_1:
                              w=55,h=58, x=900, y=420,
                              cena = self.QUARTO)
         self.BONECA1 = Elemento(imagem_boneca1, tit="Onde pode estar meu livro?",
-                                w=240,h=336, x=300, y=200,
+                                w=240,h=336, x=300, y=230,
                                 cena = self.QUARTO)
         self.LIVRO= Elemento(imagem_livro, tit="É esse!",
                              w=55,h=58, x=850, y=390,
