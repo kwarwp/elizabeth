@@ -15,6 +15,8 @@ imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 lixo= 'https://i.imgur.com/8TMfOgz.png'
+caixa_vazia= 'https://i.imgur.com/4Tm4yIE.png'
+infos_lixo= 'https://i.imgur.com/8kggT8B.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -38,6 +40,8 @@ class desafio_2:
         
         self.biblioteca2= Cena (imagem_biblioteca2)
         
+        self.biblioteca3= Cena (imagem_biblioteca2)
+        
         self.caixa_abre = Cena(imagem_papel)
         
         
@@ -49,13 +53,15 @@ class desafio_2:
         self.BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                               cena = self.Biblioteca_porta)
                               
-        self.BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                              cena = self.Biblioteca_porta)
         
         self.botao_caixa = Elemento(imagem_caixa, tit="Abra a caixa",
                                     h=100, w =100, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro1,
                                     vai = self.clique_caixa)
+                                    
+        self.botao_caixavazia= Elemento(caixa_vazia, tit="Você já colheu informações aqui...",
+                                        h=100, w =120, x=500, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                        cena = self.Biblioteca_dentro3)
                                     
         self.CAIXA_ABERTA= Elemento(caixa_aberta, tit="Colete as informações.",
                                     h=100, w =120, x=500, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -76,7 +82,15 @@ class desafio_2:
                                
         self.BONECA5= Elemento(imagem_boneca1, tit="Hipátia",
                                w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                               cena = self.biblioteca2)  
+                               cena = self.biblioteca2)
+                               
+        self.BONECA6= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=250,h=350, x=700, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.Biblioteca_dentro3)  
+                               
+        self.BONECA7= Elemento(imagem_boneca1, tit="Hipátia",
+                               w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca3)
                                
         
         self.SETA = Elemento(seta, tit="Próximo",
@@ -85,7 +99,18 @@ class desafio_2:
                              
         self.LIXO= Elemento(lixo, tit="Colete as informações.",
                             h=100, w =103, x=200, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                            cena = self.biblioteca2)
+                            cena = self.biblioteca2,
+                            vai=self.chama_elemento)
+                            
+                            
+        self.LIXO2= Elemento(lixo, tit="Colete as informações.",
+                            h=100, w =103, x=200, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                            cena = self.biblioteca3)
+                            
+        self.informacoes= Elemento(infos_lixo, tit='', 
+                                   h=512, w =600, x=200, y=500,
+                                   cena= self.biblioteca3)
+        
                              
         
                              
@@ -96,10 +121,10 @@ class desafio_2:
         
         #Texto
         
-        self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca." )
+        self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca interditada." )
         self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
         self.texto_3=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
-        self.texto_4=Texto(self.Biblioteca_dentro3, txt= "Vá até a outra sala e colete mais informações." )
+        self.texto_4=Texto(self.Biblioteca_dentro3, txt= "Vá até a outra sala clicando à direita da imagem e colete mais informações." )
 
 
         #Click
@@ -133,6 +158,10 @@ class desafio_2:
         
     def funcao_de_acao_do_botao3(self,event = None):
         self.BIBLIOTECA2.norte.vai()
+        self.texto_4.vai()
+        
+    def chama_elemento(self,event=None):
+        self.biblioteca3.vai()
 
         
     
