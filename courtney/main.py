@@ -75,7 +75,7 @@ class desafio_2:
                                
                                
         self.BONECA5= Elemento(imagem_boneca1, tit="Hipátia",
-                               w=250,h=350, x=350, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.biblioteca2)  
                                
         
