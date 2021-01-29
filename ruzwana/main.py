@@ -36,7 +36,7 @@ class desafio_3:
                              cena= self.PASTA_ABERTA)
         self.SETA = Elemento(seta, tit="SEGUIR",
                              w=30, h=36, x=450, y=300,
-                             cena= self.DESAFIO_CODIGO)   
+                             cena= self.DESAFIO_CODIGO)
         
         self.BOTAO.elt.bind("click", self.abre_porta)
         self.PASTA.elt.bind("click", self.abre_pasta)
