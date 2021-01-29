@@ -278,3 +278,10 @@ AttributeError: 'desafio_3' object has no attribute 'inicia'
     self.BOTAO.elt.bind("click", self.abre_porta)
 AttributeError: 'GUI' object has no attribute 'BOTAO'
 '''},
+{'date': 'Sat Jan 30 2021 01:15:56.404 GMt+0300 (GMT+03:00) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 48
+  self.texto_3=Texto(self.PASTA_ABERTA = "Após ler as informações, Hipátia percebeu que havia um código para ser resolvido. Clique no botão para descobrir o que é.")
+                                       ^
+SyntaxError: keyword can't be an expression
+'''},
