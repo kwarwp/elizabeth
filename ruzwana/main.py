@@ -39,7 +39,7 @@ class desafio_3:
                              cena= self.DESAFIO_CODIGO)   
         
         self.BOTAO.elt.bind("click", self.abre_porta)
-        self.PASTA.elt.bind("clicK", self.abre_pasta)
+        self.PASTA.elt.bind("clicK", self.pasta_aberta)
         self.PLAY.elt.bind("click", self.desafio_codigo)
         self.SETA.elt.bind("click", self.botao_seguir)
         
@@ -57,7 +57,7 @@ class desafio_3:
         self.DESAFIO_CODIGO.vai()
         self.texto_4.vai()
         
-    def abre_pasta (self,event = None):
+    def pasta_aberta (self,event = None):
         self.PASTA_ABERTA.vai()
         self.texto_3.vai()
 
