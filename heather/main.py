@@ -44,7 +44,7 @@ class desafio_1:
         self.cena2= Cena(imagem_livroaberto)
         
         self.BOTAOPLAY = Elemento(botao_play, tit="PLAY",
-                         w=55, h=58, x=500, y=390,
+                         w=150, h=150, x=200, y=390,
                          cena = self.ABERTURA)        
         self.SETAENTRADA1 = Elemento(botao_seta, tit="CLIQUE",
                             w=55, h=58, x=500, y=390,
