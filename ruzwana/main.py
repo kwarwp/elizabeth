@@ -3,10 +3,11 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 porta_adm= 'https://a-static.besthdwallpaper.com/decoracao-da-porta-bonita-papel-de-parede-10187_L.jpg'
-sala_adm= 'https://lh3.googleusercontent.com/proxy/xalvtuStGO3pn4ctZvAk3V9JzHLGdFStyB4Sgqm3y9b79RynLuNQ5FPx10KqGBXs4-EJTKACC2QQSW4mwkWibWmTTa8oSWhjk_BMUP1jYat04xaX5lYuVVBkEYuMcPmy_BFIJIqMCe_bzFFbZyuVRa6ZMdL1IB9K'
+sala_adm= 'https://www.galeriadaarquitetura.com.br/img/ambiente/368x285/6041/243014_bibliotecas-e-salas-de-leitura.jpg'
 computador= 'https://s2.glbimg.com/of-wm12tGeAcF_chWnw-0wlWP6E=/0x0:695x522/695x522/s.glbimg.com/po/tt/f/original/2014/02/13/inspiron-3000-e-nova-linha-de-desktop-compacto-com-processador-haswell.jpg'
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 pasta_confidencial= 'https://comps.canstockphoto.com.br/foto-pasta-arquivo-vetor-clip-arte_csp32469962.jpg'
+
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
@@ -14,11 +15,7 @@ STYLE["heigth"] = '600px' # min-height = "300px"
 class desafio_3:
 
     def __init__(self):
-        self.ENTRADA_ADM = Cena(porta_adm)
-        #self.PERSONAGEM_DORMINDO= Elemento(imagem_personagem1, tit="Acorde",
-                             #w=600,h=300,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             #cena = self.cena1)
-        
+        self.ENTRADA_ADM = Cena(porta_adm)        
         self.ADM= Cena(sala_adm)
         
         self.BOTAO= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -27,7 +24,7 @@ class desafio_3:
         
         self.BOTAO.elt.bind("click", self.abre_porta)
         
-        self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, nome_personagem! Você conseguiu escapar, entre na diretoria da biblioteca para mais informações')
+        self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, Hipátia! Você conseguiu escapar. Entre na diretoria da biblioteca para mais informações')
         
         self.PASTA= Elemento(pasta_confidencial, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.ADM)
