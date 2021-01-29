@@ -21,7 +21,7 @@ class desafio_3:
     def __init__(self):
         self.ENTRADA_ADM = Cena(porta_adm)        
         self.ADM= Cena(sala_adm)
-        self.PASTA_ABERTA(pasta_aberta)
+        self.PASTA_ABERTA= Cena(pasta_aberta)
         self.DESAFIO_CODIGO = Cena(imagem_desafiocodigo)
         self.COMPUTADOR = Cena(computador)
         
