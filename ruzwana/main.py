@@ -58,7 +58,7 @@ class desafio_3:
         self.texto_4.vai()
         
     def pasta_aberta (self,event = None):
-        self.PASTA_ABERTA.vai()
+        self.COMPUTADOR.vai()
         self.texto_3.vai()
 
     def abre_porta (self,event = None):
