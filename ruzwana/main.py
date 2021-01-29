@@ -45,7 +45,7 @@ class desafio_3:
         
         self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, Hipátia! Você conseguiu escapar. Entre na diretoria da biblioteca para mais informações')
         self.texto_2=Texto(self.ADM, txt = 'Encontre a pasta confidencial.')
-        self.texto_3=Texto(self.PASTA_ABERTA = "Após ler as informações, Hipátia percebeu que havia um código para ser resolvido. Clique no botão para descobrir o que é.")
+        self.texto_3=Texto(self.PASTA_ABERTA, txt = "Após ler as informações, Hipátia percebeu que havia um código para ser resolvido. Clique no botão para descobrir o que é.")
         self.texto_4=Texto(self.DESAFIO_CODIGO, txt = "Descubra o código e anote-o. Hipátia precisará dele para seu próximo passo.")
         self.texto_5=Texto(self.COMPUTADOR, txt = "Insira o código descoberto na última etapa.")
         
