@@ -3,7 +3,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 porta_adm= 'https://i.imgur.com/TrrsagT.jpeg'
-sala_adm= 'https://www.galeriadaarquitetura.com.br/img/ambiente/368x285/6041/243014_bibliotecas-e-salas-de-leitura.jpg'
+sala_adm= 'https://i.imgur.com/Zntc84W.jpeg'
 computador= 'https://s2.glbimg.com/of-wm12tGeAcF_chWnw-0wlWP6E=/0x0:695x522/695x522/s.glbimg.com/po/tt/f/original/2014/02/13/inspiron-3000-e-nova-linha-de-desktop-compacto-com-processador-haswell.jpg'
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 pasta_confidencial= 'https://comps.canstockphoto.com.br/foto-pasta-arquivo-vetor-clip-arte_csp32469962.jpg'
