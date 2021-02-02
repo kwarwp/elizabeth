@@ -16,8 +16,6 @@ imagem_livroaberto = 'https://i.imgur.com/F8BX0Aa.jpg'
 botao_desafio1='https://i.imgur.com/74ZZX5s.png'
 imagem_mapa ='https://i.imgur.com/E2MZ6DR.png'
 click_biblioteca= 'https://i.imgur.com/ZKiFXHh.png'
-imagem_personagem1 = 'https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/04/Simpsons-Dormindo-e-Babando-png-Vetor.png'
-imagem_personagem2= 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png'
 imagem_boneca1 = 'https://i.imgur.com/xTthXnC.png'
 imagem_livroerrado = 'https://i.imgur.com/kP9br1f.png'
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
@@ -53,7 +51,7 @@ class desafio_1:
                             w=55, h=58, x=500, y=390,
                             cena = self.ENTRADA2)
         self.BONECADORMINDO = Elemento(boneca_dormindo, tit="Acorde Hipátia",
-                              w=240, h=336, x=300, y=200,
+                              w=336, h=240, x=300, y=200,
                               cena = self.QUARTO1)
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
