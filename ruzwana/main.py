@@ -29,7 +29,7 @@ class desafio_3:
                              w=30,h=36,  x=490, y=280, 
                              cena = self.ENTRADA_ADM)
         self.PASTA= Elemento(pasta_confidencial, tit="Abra a pasta",
-                             w=60,h=72,  x=450, y=300, 
+                             w=30,h=10,  x=380, y=400, 
                              cena = self.ADM)
         self.PLAY = Elemento(botao_play, tit="PLAY",
                              w=30, h=36, x=450, y=300,
