@@ -6,7 +6,7 @@ porta_adm= 'https://i.imgur.com/TrrsagT.jpeg'
 sala_adm= 'https://i.imgur.com/Zntc84W.jpeg'
 computador= 'https://s2.glbimg.com/of-wm12tGeAcF_chWnw-0wlWP6E=/0x0:695x522/695x522/s.glbimg.com/po/tt/f/original/2014/02/13/inspiron-3000-e-nova-linha-de-desktop-compacto-com-processador-haswell.jpg'
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
-pasta_confidencial= 'https://comps.canstockphoto.com.br/foto-pasta-arquivo-vetor-clip-arte_csp32469962.jpg'
+pasta_confidencial= 'https://i.imgur.com/dVY2hl0.png'
 pasta_aberta = 'https://i.imgur.com/8kggT8B.png'
 botao_play = 'https://i.imgur.com/74ZZX5s.png'
 imagem_desafiocodigo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8hnuTypcbATIdbgeCmywkqxgaCbd9lA6u1w&usqp=CAU'
