@@ -27,6 +27,13 @@ class desafio_teorema():
         inv.inicia()
         self.BIBLIOTECA=Cena(biblioteca)
         
+        self.BIBLIOTECA2=Cena(biblioteca)
+        
+        self.BIBLIOTECA3=Cena(biblioteca)
+        
+        
+        #ELEMENTOS BIBLIOTECA
+        
         self.DESAFIO= Elemento(desafio, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA)
@@ -66,9 +73,122 @@ class desafio_teorema():
         self.QUADRADO_VERMELHO = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
                                            h=100,w=100, x=313, y=282,
                                            cena=self.BIBLIOTECA)
+                                           
+        #ELEMENTOS BIBLIOTECA2
+        
+        self.DESAFIO2= Elemento(desafio, tit="Hipátia",
+                               w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.BIBLIOTECA2)
+
+        self.T_AZUL2=Elemento (triangulo_azul, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=100, y=150,
+                                cena=self.BIBLIOTECA2)
+                                
+        self.T_AMARELO2=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=200, y=150,
+                                cena=self.BIBLIOTECA2)
+                                
+        self.T_VERMELHO2 =Elemento (triangulo_vermelho, tit="nome_do_meu_elemento", 
+                                   h=80,w=80, x=300, y=150,
+                                   cena=self.BIBLIOTECA2)
+                                
+        self.T_VERDE2 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=400, y=150,
+                                cena=self.BIBLIOTECA2)
+                                
+        self.T_ROXO2 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=500, y=150,
+                                cena=self.BIBLIOTECA2)
+                                
+        self.T_ROSA2 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=600, y=150,
+                                cena=self.BIBLIOTECA2)
+                                
+        self.T_LARANJA2 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
+                                   h=80,w=80, x=700, y=150,
+                                   cena=self.BIBLIOTECA2)
+                                   
+        self.QUADRADO_VERMELHO2 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
+                                           h=100,w=100, x=413, y=282,
+                                           cena=self.BIBLIOTECA2)
+                                           
+        #ELEMENTOS BIBLIOTECA
+        
+        self.DESAFIO= Elemento(desafio, tit="Hipátia",
+                               w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.BIBLIOTECA)
+
+                                
+        self.T_AMARELO3=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=200, y=150,
+                                cena=self.BIBLIOTECA)
+                                
+        self.T_VERMELHO3 =Elemento (triangulo_vermelho, tit="nome_do_meu_elemento", 
+                                   h=80,w=80, x=300, y=150,
+                                   cena=self.BIBLIOTECA)
+                                
+        self.T_VERDE3 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=400, y=150,
+                                cena=self.BIBLIOTECA)
+                                
+        self.T_ROXO3 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=500, y=150,
+                                cena=self.BIBLIOTECA)
+                                
+        self.T_ROSA3 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+                                h=80,w=80, x=600, y=150,
+                                cena=self.BIBLIOTECA)
+                                
+        self.T_LARANJA3 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
+                                   h=80,w=80, x=700, y=150,
+                                   cena=self.BIBLIOTECA)
+                                   
+                                   
+        self.QUADRADO_VERMELHO3 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
+                                           h=100,w=100, x=513, y=282,
+                                           cena=self.BIBLIOTECA)
+                                           
+                                          
+        
+        #TEXTO BIBLIOTECA1
+        self.texto_1= Texto(self.BIBLIOTECA, txt= 'Clique na peça que se encaixa no quadrado vermelho.')
+        self.texto_2= Texto(self.BIBLIOTECA, txt= 'Esta não é a peça correta.')
+        #TEXTO BIBLIOTECA2
+        self.texto_3= Texto(self.BIBLIOTECA2, txt= 'Esta não é a peça correta.')
+        #BOTAO BIBLIOTECA 1
+        self.T_CIANO.elt.bind("click", self.desafio1)
+        self.T_AZUL.elt.bind("click", self.botao_errado)
+        self.T_VERMELHO.elt.bind("click", self.botao_errado)
+        self.T_AMARELO.elt.bind("click", self.botao_errado)
+        self.T_VERDE.elt.bind("click", self.botao_errado)
+        self.T_ROXO.elt.bind("click", self.botao_errado)
+        self.T_ROSA.elt.bind("click", self.botao_errado)
+        self.T_LARANJA.elt.bind("click", self.botao_errado)
+        
+        #BOTAO BIBLIOTECA2
+        self.T_AZUL2.elt.bind("click", self.desafio2)
+        self.T_VERMELHO2.elt.bind("click", self.botao_errado2)
+        self.T_AMARELO2.elt.bind("click", self.botao_errado2)
+        self.T_VERDE2.elt.bind("click", self.botao_errado2)
+        self.T_ROXO2.elt.bind("click", self.botao_errado2)
+        self.T_ROSA2.elt.bind("click", self.botao_errado2)
+        self.T_LARANJA2.elt.bind("click", self.botao_errado2)
+        
+    def desafio1(self,*_):
+        self.BIBLIOTECA2.vai()
         
         
-        self.texto_1= Texto(self.BIBLIOTECA, txt= 'Clique no quadrado vermelho para completar o quebra-cabeça. Escolha a melhor imagem que complete aquela posição.')
+        
+    def botao_errado(self,*_):
+        self.texto_2.vai()
+        
+    def desafio2(self,*_):
+        self.BIBLIOTECA3.vai()
+        
+        
+    def botao_errado2(self,*_):
+        self.texto_3.vai()
+    
         
     def inicia(self,*_):
         self.BIBLIOTECA.vai()
