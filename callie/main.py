@@ -35,6 +35,8 @@ class desafio_teorema():
         
         self.BIBLIOTECA5=Cena(biblioteca)
         
+        self.BIBLIOTECA6=Cena(biblioteca)
+        
         
         
         #ELEMENTOS BIBLIOTECA
@@ -211,7 +213,7 @@ class desafio_teorema():
                                 
                                    
         self.QUADRADO_VERMELHO5 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=313, y=382,
+                                           h=100,w=100, x=513, y=382,
                                            cena=self.BIBLIOTECA5)                                           
                                           
         
@@ -220,38 +222,9 @@ class desafio_teorema():
         self.texto_2= Texto(self.BIBLIOTECA, txt= 'Esta não é a peça correta.')
         self.texto_3= Texto(self.BIBLIOTECA2, txt= 'Esta não é a peça correta.')
         self.texto_4= Texto(self.BIBLIOTECA3, txt= 'Esta não é a peça correta.')
-        #ELEMENTOS BIBLIOTECA 4
-        
-        self.DESAFIO4= Elemento(desafio, tit="Hipátia",
-                               w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                               cena = self.BIBLIOTECA4)
+        self.texto_5= Texto(self.BIBLIOTECA4, txt= 'Esta não é a peça correta.')
+        self.texto_6= Texto(self.BIBLIOTECA5, txt= 'Esta não é a peça correta.')
 
-                                
-        self.T_AMARELO4=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
-                                h=80,w=80, x=200, y=150,
-                                cena=self.BIBLIOTECA4)
-                                
-                                
-        self.T_VERDE4 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
-                                h=80,w=80, x=400, y=150,
-                                cena=self.BIBLIOTECA4)
-                                
-        self.T_ROXO4 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
-                                h=80,w=80, x=500, y=150,
-                                cena=self.BIBLIOTECA4)
-                                
-        self.T_ROSA4 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
-                                h=80,w=80, x=600, y=150,
-                                cena=self.BIBLIOTECA4)
-                                
-        self.T_LARANJA4 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
-                                   h=80,w=80, x=700, y=150,
-                                   cena=self.BIBLIOTECA4)
-                                   
-                                   
-        self.QUADRADO_VERMELHO4 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=313, y=382,
-                                           cena=self.BIBLIOTECA4)
         #BOTAO BIBLIOTECA 1
         self.T_CIANO.elt.bind("click", self.desafio1)
         self.T_AZUL.elt.bind("click", self.botao_errado)
@@ -286,7 +259,13 @@ class desafio_teorema():
         self.T_ROXO4.elt.bind("click", self.botao_errado4)
         self.T_ROSA4.elt.bind("click", self.botao_errado4)
         self.T_LARANJA4.elt.bind("click", self.desafio4)
-        
+
+        #BOTAOBIBLIOTECA5
+
+        self.T_AMARELO5.elt.bind("click", self.desafio5)
+        self.T_VERDE5.elt.bind("click", self.botao_errado5)
+        self.T_ROXO5.elt.bind("click", self.botao_errado5)
+        self.T_ROSA5.elt.bind("click", self.botao_errado5)       
         
         
     def desafio1(self,*_):
@@ -317,6 +296,13 @@ class desafio_teorema():
         
     def botao_errado4(self,*_):
         self.texto_5.vai()
+   
+    def desafio5(self,*_):
+        self.BIBLIOTECA6.vai()
+        
+        
+    def botao_errado5(self,*_):
+        self.texto_6.vai()        
         
     def inicia(self,*_):
         self.BIBLIOTECA.vai()
