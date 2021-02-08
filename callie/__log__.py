@@ -70,3 +70,10 @@ NameError: name 'Item_herdado' is not defined
     self.texto_1= Texto(self.BIBLIOTECA, txt= 'Clique no quadrado vermelho para completar o quebra-cabeça. Escolha a melhor imagem que complete aquela posição.')
 NameError: name 'Texto' is not defined
 '''},
+{'date': 'Mon Feb 08 2021 17:31:17.980 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 300
+  def desafio4(self,*_):
+  ^
+IndentationError: unexpected indent
+'''},
