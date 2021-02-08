@@ -27,15 +27,15 @@ class Main():
                                cena = self.BIBLIOTECA)
 
         self.T_AZUL=Elemento (triangulo_azul, tit="nome_do_meu_elemento", 
-                                H=60,w=60, X=100, Y=100,
+                                h=60,w=60, x=100, y=100,
                                 cena=self.BIBLIOTECA)
                                 
         self.T_AMARELO=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
-                                H=60,w=60, X=200, Y=200,
+                                h=60,w=60, x=200, y=200,
                                 cena=self.BIBLIOTECA)
                                 
         self.T_VERMELHO =Elemento (triangulo_vermelho, tit="nome_do_meu_elemento", 
-                                H=60,w=60, X=300, Y=300,
+                                h=60,w=60, x=300, y=300,
                                 cena=self.BIBLIOTECA)
         
         
