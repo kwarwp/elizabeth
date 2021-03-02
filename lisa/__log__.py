@@ -274,3 +274,10 @@ AttributeError: 'module' object has no attribute 'open'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Mar 02 2021 13:10:10.920 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  self.CORREDOR= Cena(corredor)
+  ^
+IndentationError: expected an indented block
+'''},
