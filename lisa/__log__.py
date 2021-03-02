@@ -267,3 +267,10 @@ SyntaxError: invalid syntax
     MEU_ELEMENTO =Image.open( "https://i.imgur.com/aYRC7bM.png") # Extensões aceitas: png, jpg, jpeg e gif
 AttributeError: 'module' object has no attribute 'open'
 '''},
+{'date': 'Tue Mar 02 2021 13:09:20.214 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  self.CORREDOR= Cena(corredor)
+  ^
+IndentationError: expected an indented block
+'''},
