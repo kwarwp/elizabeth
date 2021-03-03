@@ -16,7 +16,14 @@ triangulo_rosa ='https://aventurasnahistoria.uol.com.br/media/uploads/pink_trian
 triangulo_laranja= "https://i.imgur.com/TP6Fk9b.png"
 triangulo_ciano='https://i.imgur.com/wBVf9VF.png'
 quadrado_vermelho= 'https://thumbs.dreamstime.com/b/fundo-do-teste-padr%C3%A3o-quadrado-vermelho-110087135.jpg'
-desafio= 'https://i.imgur.com/0kfiusf.png'
+desafio1= 'https://i.imgur.com/3rPBqm3.png'
+desafio2= 'https://i.imgur.com/v7sxY9h.png'
+desafio3= 'https://i.imgur.com/b27vjRF.png'
+desafio4= 'https://i.imgur.com/rckuQwS.png'
+desafio5= 'https://i.imgur.com/2M08qgZ.png'
+desafio6= 'https://i.imgur.com/ASx9OiY.png'
+desafio7= 'https://i.imgur.com/HPZJ4vE.png'
+desafio8= 'https://i.imgur.com/PrcMDw7.png'
 biblioteca = "https://i.imgur.com/wistRJZ.jpeg" 
 
 
@@ -44,7 +51,7 @@ class desafio_teorema():
         
         #ELEMENTOS BIBLIOTECA
         
-        self.DESAFIO= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO= Elemento(desafio1, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA)
 
@@ -80,13 +87,10 @@ class desafio_teorema():
                                  h=80,w=80, x=800, y=150,
                                  cena=self.BIBLIOTECA)
                                    
-        self.QUADRADO_VERMELHO = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=313, y=282,
-                                           cena=self.BIBLIOTECA)
                                            
         #ELEMENTOS BIBLIOTECA2
         
-        self.DESAFIO2= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO2= Elemento(desafio2, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA2)
 
@@ -118,13 +122,10 @@ class desafio_teorema():
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA2)
                                    
-        self.QUADRADO_VERMELHO2 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=413, y=282,
-                                           cena=self.BIBLIOTECA2)
                                            
         #ELEMENTOS BIBLIOTECA 3
         
-        self.DESAFIO3= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO3= Elemento(desafio3, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA3)
 
@@ -153,14 +154,10 @@ class desafio_teorema():
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA3)
                                    
-                                   
-        self.QUADRADO_VERMELHO3 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=513, y=282,
-                                           cena=self.BIBLIOTECA3)
                                            
         #ELEMENTOS BIBLIOTECA 4
         
-        self.DESAFIO4= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO4= Elemento(desafio4, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA4)
 
@@ -185,14 +182,10 @@ class desafio_teorema():
         self.T_LARANJA4 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA4)
-                                   
-                                   
-        self.QUADRADO_VERMELHO4 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=313, y=382,
-                                           cena=self.BIBLIOTECA4)
+
         #ELEMENTOS BIBLIOTECA 5
         
-        self.DESAFIO5= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO5= Elemento(desafio5, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA5)
 
@@ -214,15 +207,11 @@ class desafio_teorema():
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA5)
                                 
-                                   
-        self.QUADRADO_VERMELHO5 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=513, y=382,
-                                           cena=self.BIBLIOTECA5)   
-                                           
+                                          
                                            
         #ELEMENTOS BIBLIOTECA 6
         
-        self.DESAFIO6= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO6= Elemento(desafio6, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA6)                              
                                 
@@ -237,15 +226,11 @@ class desafio_teorema():
         self.T_ROSA6 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA6)
-                                
-                                   
-        self.QUADRADO_VERMELHO6 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=313, y=482,
-                                           cena=self.BIBLIOTECA6)  
+
                 
         #ELEMENTOS BIBLIOTECA 7
         
-        self.DESAFIO7= Elemento(desafio, tit="Hipátia",
+        self.DESAFIO7= Elemento(desafio7, tit="Hipátia",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA7)                              
                                 
@@ -257,10 +242,13 @@ class desafio_teorema():
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA7)
                                 
+                #ELEMENTOS BIBLIOTECA 8
+        
+        self.DESAFIO8= Elemento(desafio8, tit="Hipátia",
+                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                cena = self.BIBLIOTECA8)   
+                                
                                    
-        self.QUADRADO_VERMELHO7 = Elemento (quadrado_vermelho, tit="nome_do_meu_elemento", 
-                                           h=100,w=100, x=413, y=482,
-                                           cena=self.BIBLIOTECA7)  
         
         #TEXTO BIBLIOTECA
         self.texto_1= Texto(self.BIBLIOTECA, txt= 'Clique na peça que se encaixa no quadrado vermelho.')
