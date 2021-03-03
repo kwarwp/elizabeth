@@ -17,6 +17,7 @@ seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 lixo= 'https://i.imgur.com/8TMfOgz.png'
 caixa_vazia= 'https://i.imgur.com/4Tm4yIE.png'
 infos_lixo= 'https://i.imgur.com/8kggT8B.png'
+seguranca = "https://i.imgur.com/z5TxOgI.png"
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -41,6 +42,8 @@ class desafio_2:
         self.biblioteca2= Cena (imagem_biblioteca2)
         
         self.biblioteca3= Cena (imagem_biblioteca2)
+        
+        self.biblioteca4= Cena (imagem_biblioteca2)
         
         self.caixa_abre = Cena(imagem_papel)
         
@@ -92,6 +95,13 @@ class desafio_2:
                                w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.biblioteca3)
                                
+        self.BONECA8= Elemento(imagem_boneca1, tit="Hipátia",
+                               w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca4)
+                               
+        self.SEGURANCA= Elemento(seguranca, tit="Corra!!!!",
+                               w=250,h=350, x=700, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca4)  
         
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
@@ -125,7 +135,7 @@ class desafio_2:
         self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
         self.texto_3=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
         self.texto_4=Texto(self.Biblioteca_dentro3, txt= "Vá até a outra sala clicando à direita da imagem e colete mais informações." )
-
+        self.texto_5=Texto(self.biblioteca4, txt= "CORRAAA!! O SEGURANÇA ESTÁ ATRÁS DE VOCÊ!!! " )
 
         #Click
         
@@ -133,6 +143,7 @@ class desafio_2:
         self.BOTAO.elt.bind("click", self.abre_porta)
         self.CAIXA_ABERTA.elt.bind("click", self.CAIXA_ABRE)
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)
+        self.informacoes.elt.bind("click", self.funcao_de_acao_do_botao4)
                            
 
 
@@ -159,6 +170,12 @@ class desafio_2:
     def funcao_de_acao_do_botao3(self,event = None):
         self.BIBLIOTECA2.norte.vai()
         self.texto_4.vai()
+        
+    def funcao_de_acao_do_botao4(self,event = None):
+        self.biblioteca4.vai()
+        self.texto_5.vai()
+        
+        
         
     def chama_elemento(self,event=None):
         self.biblioteca3.vai()
