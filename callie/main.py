@@ -8,14 +8,13 @@ STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
 triangulo_azul = "https://i.imgur.com/1NvDXiC.png"
-triangulo_verde= 'https://i.imgur.com/f8e7Gkc.png'
+triangulo_verde= 'https://i.imgur.com/ObjxT4w.png'
 triangulo_vermelho= 'https://i.imgur.com/QaRil54.png'
-triangulo_amarelo= 'https://i.imgur.com/g8TxYsH.png'
-triangulo_roxo= 'https://i.imgur.com/RsWbjkx.png'
-triangulo_rosa ='https://aventurasnahistoria.uol.com.br/media/uploads/pink_triangle_up.svg.png'
+triangulo_amarelo= 'https://i.imgur.com/RsWbjkx.png'
+triangulo_roxo= 'https://i.imgur.com/f8e7Gkc.png'
+triangulo_rosa ='https://i.imgur.com/e5FOwQd.png'
 triangulo_laranja= "https://i.imgur.com/TP6Fk9b.png"
 triangulo_ciano='https://i.imgur.com/wBVf9VF.png'
-quadrado_vermelho= 'https://thumbs.dreamstime.com/b/fundo-do-teste-padr%C3%A3o-quadrado-vermelho-110087135.jpg'
 desafio1= 'https://i.imgur.com/3rPBqm3.png'
 desafio2= 'https://i.imgur.com/v7sxY9h.png'
 desafio3= 'https://i.imgur.com/b27vjRF.png'
