@@ -100,7 +100,7 @@ class desafio_2:
                                cena = self.biblioteca4)
                                
         self.SEGURANCA= Elemento(seguranca, tit="Corra!!!!",
-                               w=250,h=350, x=700, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=100, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.biblioteca4)  
         
         self.SETA = Elemento(seta, tit="Próximo",
