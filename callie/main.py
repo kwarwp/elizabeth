@@ -24,10 +24,12 @@ desafio5= 'https://i.imgur.com/2M08qgZ.png'
 desafio6= 'https://i.imgur.com/ASx9OiY.png'
 desafio7= 'https://i.imgur.com/HPZJ4vE.png'
 desafio8= 'https://i.imgur.com/PrcMDw7.png'
-biblioteca_faixada = "https://i.imgur.com/wistRJZ.jpeg" 
+biblioteca_faixada = "https://i.imgur.com/9JTXWZX.png" 
+biblioteca_faixada2 = "https://i.imgur.com/wistRJZ.jpeg"
 
 porta= "https://i.imgur.com/wMjyyBt.png"
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
+continua= "https://ffdiamantes.webnode.com/_files/200000009-d4d18d5c9f/continue-png-4.png"
 
 
 
@@ -37,185 +39,187 @@ class desafio_teorema():
          
         self.Biblioteca_entrada=Cena(biblioteca_faixada)
     
-        self.BIBLIOTECA=Cena(biblioteca_faixada)
+        self.BIBLIOTECA=Cena(biblioteca_faixada2)
         
-        self.BIBLIOTECA2=Cena(biblioteca_faixada)
+        self.BIBLIOTECA2=Cena(biblioteca_faixada2)
         
-        self.BIBLIOTECA3=Cena(biblioteca_faixada)
+        self.BIBLIOTECA3=Cena(biblioteca_faixada2)
         
-        self.BIBLIOTECA4=Cena(biblioteca_faixada)
+        self.BIBLIOTECA4=Cena(biblioteca_faixada2)
         
-        self.BIBLIOTECA5=Cena(biblioteca_faixada)
+        self.BIBLIOTECA5=Cena(biblioteca_faixada2)
         
-        self.BIBLIOTECA6=Cena(biblioteca_faixada)
+        self.BIBLIOTECA6=Cena(biblioteca_faixada2)
         
-        self.BIBLIOTECA7=Cena(biblioteca_faixada)
-        self.BIBLIOTECA8=Cena(biblioteca_faixada)
+        self.BIBLIOTECA7=Cena(biblioteca_faixada2)
+        self.BIBLIOTECA8=Cena(biblioteca_faixada2)
         
         #ELEMENTOS ATO2.1
         
-        self.porta= Elemento(porta, tit="click", w=258, h=695,  x=350, y=5, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+        self.PORTA= Elemento(porta, tit="click", w=238, h=695,  x=350, y=-10, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                              cena = self.Biblioteca_entrada)
                              
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
-                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=250,h=350, x=50, y=340, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_entrada)  
+                               
+        
         
         #ELEMENTOS BIBLIOTECA
         
-        self.DESAFIO= Elemento(desafio1, tit="Hipátia",
+        self.DESAFIO= Elemento(desafio1, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA)
 
-        self.T_AZUL=Elemento (triangulo_azul, tit="nome_do_meu_elemento", 
+        self.T_AZUL=Elemento (triangulo_azul, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=100, y=150,
                                 cena=self.BIBLIOTECA)
                                 
-        self.T_AMARELO=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+        self.T_AMARELO=Elemento (triangulo_amarelo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=200, y=150,
                                 cena=self.BIBLIOTECA)
                                 
-        self.T_VERMELHO =Elemento (triangulo_vermelho, tit="nome_do_meu_elemento", 
+        self.T_VERMELHO =Elemento (triangulo_vermelho, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=300, y=150,
                                    cena=self.BIBLIOTECA)
                                 
-        self.T_VERDE =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA)
                                 
-        self.T_ROXO =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+        self.T_ROXO =Elemento (triangulo_roxo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=500, y=150,
                                 cena=self.BIBLIOTECA)
                                 
-        self.T_ROSA =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA)
                                 
-        self.T_LARANJA = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
+        self.T_LARANJA = Elemento (triangulo_laranja, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA)
                                    
-        self.T_CIANO = Elemento (triangulo_ciano, tit="nome_do_meu_elemento", 
+        self.T_CIANO = Elemento (triangulo_ciano, tit="Monte o quebra-cabeça.", 
                                  h=80,w=80, x=800, y=150,
                                  cena=self.BIBLIOTECA)
                                    
                                            
         #ELEMENTOS BIBLIOTECA2
         
-        self.DESAFIO2= Elemento(desafio2, tit="Hipátia",
+        self.DESAFIO2= Elemento(desafio2, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA2)
 
-        self.T_AZUL2=Elemento (triangulo_azul, tit="nome_do_meu_elemento", 
+        self.T_AZUL2=Elemento (triangulo_azul, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=100, y=150,
                                 cena=self.BIBLIOTECA2)
                                 
-        self.T_AMARELO2=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+        self.T_AMARELO2=Elemento (triangulo_amarelo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=200, y=150,
                                 cena=self.BIBLIOTECA2)
                                 
-        self.T_VERMELHO2 =Elemento (triangulo_vermelho, tit="nome_do_meu_elemento", 
+        self.T_VERMELHO2 =Elemento (triangulo_vermelho, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=300, y=150,
                                    cena=self.BIBLIOTECA2)
                                 
-        self.T_VERDE2 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE2 =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA2)
                                 
-        self.T_ROXO2 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+        self.T_ROXO2 =Elemento (triangulo_roxo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=500, y=150,
                                 cena=self.BIBLIOTECA2)
                                 
-        self.T_ROSA2 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA2 =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA2)
                                 
-        self.T_LARANJA2 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
+        self.T_LARANJA2 = Elemento (triangulo_laranja, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA2)
                                    
                                            
         #ELEMENTOS BIBLIOTECA 3
         
-        self.DESAFIO3= Elemento(desafio3, tit="Hipátia",
+        self.DESAFIO3= Elemento(desafio3, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA3)
 
                                 
-        self.T_AMARELO3=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+        self.T_AMARELO3=Elemento (triangulo_amarelo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=200, y=150,
                                 cena=self.BIBLIOTECA3)
                                 
-        self.T_VERMELHO3 =Elemento (triangulo_vermelho, tit="nome_do_meu_elemento", 
+        self.T_VERMELHO3 =Elemento (triangulo_vermelho, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=300, y=150,
                                    cena=self.BIBLIOTECA3)
                                 
-        self.T_VERDE3 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE3 =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA3)
                                 
-        self.T_ROXO3 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+        self.T_ROXO3 =Elemento (triangulo_roxo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=500, y=150,
                                 cena=self.BIBLIOTECA3)
                                 
-        self.T_ROSA3 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA3 =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA3)
                                 
-        self.T_LARANJA3 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
+        self.T_LARANJA3 = Elemento (triangulo_laranja, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA3)
                                    
                                            
         #ELEMENTOS BIBLIOTECA 4
         
-        self.DESAFIO4= Elemento(desafio4, tit="Hipátia",
+        self.DESAFIO4= Elemento(desafio4, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA4)
 
                                 
-        self.T_AMARELO4=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+        self.T_AMARELO4=Elemento (triangulo_amarelo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=200, y=150,
                                 cena=self.BIBLIOTECA4)
                                 
                                 
-        self.T_VERDE4 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE4 =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA4)
                                 
-        self.T_ROXO4 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+        self.T_ROXO4 =Elemento (triangulo_roxo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=500, y=150,
                                 cena=self.BIBLIOTECA4)
                                 
-        self.T_ROSA4 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA4 =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA4)
                                 
-        self.T_LARANJA4 = Elemento (triangulo_laranja, tit="nome_do_meu_elemento", 
+        self.T_LARANJA4 = Elemento (triangulo_laranja, tit="Monte o quebra-cabeça.", 
                                    h=80,w=80, x=700, y=150,
                                    cena=self.BIBLIOTECA4)
 
         #ELEMENTOS BIBLIOTECA 5
         
-        self.DESAFIO5= Elemento(desafio5, tit="Hipátia",
+        self.DESAFIO5= Elemento(desafio5, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA5)
 
                                 
-        self.T_AMARELO5=Elemento (triangulo_amarelo, tit="nome_do_meu_elemento", 
+        self.T_AMARELO5=Elemento (triangulo_amarelo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=200, y=150,
                                 cena=self.BIBLIOTECA5)
                                 
                                 
-        self.T_VERDE5 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE5 =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA5)
                                 
-        self.T_ROXO5 =Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+        self.T_ROXO5 =Elemento (triangulo_roxo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=500, y=150,
                                 cena=self.BIBLIOTECA5)
                                 
-        self.T_ROSA5 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA5 =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA5)
                                 
@@ -223,51 +227,47 @@ class desafio_teorema():
                                            
         #ELEMENTOS BIBLIOTECA 6
         
-        self.DESAFIO6= Elemento(desafio6, tit="Hipátia",
+        self.DESAFIO6= Elemento(desafio6, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA6)                              
                                 
-        self.T_VERDE6 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE6 =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA6)
                                 
-        self.T_ROXO6=Elemento (triangulo_roxo, tit="nome_do_meu_elemento", 
+        self.T_ROXO6=Elemento (triangulo_roxo, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=500, y=150,
                                 cena=self.BIBLIOTECA6)
                                 
-        self.T_ROSA6 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA6 =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA6)
 
                 
         #ELEMENTOS BIBLIOTECA 7
         
-        self.DESAFIO7= Elemento(desafio7, tit="Hipátia",
+        self.DESAFIO7= Elemento(desafio7, tit="",
                                w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.BIBLIOTECA7)                              
                                 
-        self.T_VERDE7 =Elemento (triangulo_verde, tit="nome_do_meu_elemento", 
+        self.T_VERDE7 =Elemento (triangulo_verde, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=400, y=150,
                                 cena=self.BIBLIOTECA7)
                                 
-        self.T_ROSA7 =Elemento (triangulo_rosa, tit="nome_do_meu_elemento", 
+        self.T_ROSA7 =Elemento (triangulo_rosa, tit="Monte o quebra-cabeça.", 
                                 h=80,w=80, x=600, y=150,
                                 cena=self.BIBLIOTECA7)
                                 
                 #ELEMENTOS BIBLIOTECA 8
         
-        self.DESAFIO8= Elemento(desafio8, tit="Hipátia",
+        self.DESAFIO8= Elemento(desafio8, tit="",
                                 w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                 cena = self.BIBLIOTECA8)   
-                                
-         
-        #personagem
-        
-                                
-                                   
+                                          
         
         #TEXTO BIBLIOTECA
         self.texto_1_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca interditada." )
+        self.texto_2_2=Texto(self.BIBLIOTECA, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
         
         self.texto_1= Texto(self.BIBLIOTECA, txt= 'Clique na peça que se encaixa no quadrado vermelho.')
         self.texto_2= Texto(self.BIBLIOTECA, txt= 'Esta não é a peça correta.')
@@ -331,6 +331,14 @@ class desafio_teorema():
 
         self.T_VERDE7.elt.bind("click", self.desafio7)
         self.T_ROSA7.elt.bind("click", self.botao_errado7) 
+        
+        #botao ato2.1
+        
+        self.PORTA.elt.bind("click", self.abre_porta)
+    
+    def abre_porta (self,event = None):
+        self.BIBLIOTECA.vai()
+        self.texto_2_2.vai()
         
         
     def desafio1(self,*_):
