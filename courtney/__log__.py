@@ -159,3 +159,10 @@ SyntaxError: invalid syntax
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Mar 16 2021 23:31:56.906 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 224
+  self.texto_1_1.vai()
+  ^
+IndentationError: unexpected indent
+'''},
