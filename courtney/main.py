@@ -3,8 +3,6 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
 
-porta_fechada="https://i.imgur.com/wistRJZ.jpeg"
-porta_aberta="https://image.freepik.com/vetores-gratis/porta-aberta-dos-desenhos-animados-entrada-do-corredor-do-apartamento-entrada-do-escritorio_53562-8532.jpg"
 Imagem_Biblioteca_dentro="https://i.imgur.com/l1LeZ9x.jpg"
 imagem_biblioteca2="https://i.imgur.com/o7cml0T.jpeg"
 imagem_caixa="https://i.imgur.com/7nnzwwN.png"
@@ -19,6 +17,15 @@ caixa_vazia= 'https://i.imgur.com/4Tm4yIE.png'
 infos_lixo= 'https://i.imgur.com/8kggT8B.png'
 seguranca = "https://i.imgur.com/z5TxOgI.png"
 
+personagem_assustada= "https://i.imgur.com/2G9fv6S.png"
+personagem_correndo = "https://i.imgur.com/FotzDIP.png"
+
+corredor= "https://i.imgur.com/oO8m0Bq.png"
+corredor2="https://i.imgur.com/YzJB15Y.png"
+resposta_a= "https://i.imgur.com/Ny4x06n.png"
+resposta_b= "https://i.imgur.com/B28Eot5.png"
+resposta_c= "https://i.imgur.com/FWrKaip.png"
+
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
 
@@ -28,10 +35,6 @@ class desafio_2:
     def __init__(self):
     
         #Cenas
-
-        self.Biblioteca_entrada=Cena(porta_fechada)
-        
-        self.Biblioteca_porta=Cena(porta_aberta)
         
         self.Biblioteca_dentro1=Cena(Imagem_Biblioteca_dentro)
         
@@ -45,18 +48,18 @@ class desafio_2:
         
         self.biblioteca4= Cena (imagem_biblioteca2)
         
+        self.biblioteca5= Cena (imagem_biblioteca2)
+        
+        self.biblioteca6= Cena (imagem_biblioteca2)
+        
+        self.biblioteca7= Cena (imagem_biblioteca2)
+        
         self.caixa_abre = Cena(imagem_papel)
         
         
         #Elementos
-        
-        self.BOTAO= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                             cena = self.Biblioteca_entrada)
                        
-        self.BOTAO2= Elemento(Imagem_botao, tit="click",w=30,h=36,  x=450, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                              cena = self.Biblioteca_porta)
-                              
-        
+
         self.botao_caixa = Elemento(imagem_caixa, tit="Abra a caixa",
                                     h=100, w =100, x=500, y=390, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro1,
@@ -69,11 +72,7 @@ class desafio_2:
         self.CAIXA_ABERTA= Elemento(caixa_aberta, tit="Colete as informações.",
                                     h=100, w =120, x=500, y=400, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                     cena = self.Biblioteca_dentro2)
-         
-        self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
-                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                               cena = self.Biblioteca_entrada)  
-                               
+
         self.BONECA3= Elemento(imagem_boneca1, tit="Hipátia",
                                w=250,h=350, x=700, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_dentro1)  
@@ -95,14 +94,39 @@ class desafio_2:
                                w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.biblioteca3)
                                
-        self.BONECA8= Elemento(imagem_boneca1, tit="Hipátia",
-                               w=250,h=350, x=350, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+        self.BONECA8= Elemento(personagem_assustada, tit="CLICK",
+                               w=250,h=350, x=350, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.biblioteca4)
+        
+        
+        self.BONECA9= Elemento(personagem_correndo, tit="CLICK",
+                               w=250,h=350, x=450, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca5)
                                
+        self.BONECA10= Elemento(personagem_correndo, tit="CLICK",
+                               w=250,h=350, x=550, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca6)    
+        
+        self.BONECA11= Elemento(personagem_correndo, tit="CLICK",
+                               w=250,h=350, x=650, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca7)
+                                        
         self.SEGURANCA= Elemento(seguranca, tit="Corra!!!!",
                                w=250,h=350, x=100, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.biblioteca4)  
         
+        self.SEGURANCA2= Elemento(seguranca, tit="Corra!!!!",
+                               w=250,h=350, x=100, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca5)  
+        
+        self.SEGURANCA3= Elemento(seguranca, tit="Corra!!!!",
+                               w=250,h=350, x=100, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca6)  
+        
+        self.SEGURANCA4= Elemento(seguranca, tit="Corra!!!!",
+                               w=250,h=350, x=100, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.biblioteca7)  
+                               
         self.SETA = Elemento(seta, tit="Próximo",
                              w=55,h=58, x=900, y=420,
                              cena = self.caixa_abre)
@@ -130,33 +154,75 @@ class desafio_2:
         self.BIBLIOTECA2 = Sala(n=self.Biblioteca_dentro3, l=self.biblioteca2)
         
         #Texto
-        
-        self.texto_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca interditada." )
-        self.texto_2=Texto(self.Biblioteca_porta, txt= "A porta esta trancada. Resolva o desafio para abri-la" )
+
         self.texto_3=Texto(self.Biblioteca_dentro1, txt= "Abra a caixa e colete as informações." )
         self.texto_4=Texto(self.Biblioteca_dentro3, txt= "Vá até a outra sala clicando à direita da imagem e colete mais informações." )
-        self.texto_5=Texto(self.biblioteca4, txt= "CORRAAA!! O SEGURANÇA ESTÁ ATRÁS DE VOCÊ!!! " )
+        self.texto_5=Texto(self.biblioteca4, txt= "CORRAAA!! O SEGURANÇA ESTÁ ATRÁS DE VOCÊ!!! CLICK EM HIPATIA " )
 
         #Click
         
-        self.BOTAO2.elt.bind("click", self.entra_na_biblioteca)
-        self.BOTAO.elt.bind("click", self.abre_porta)
+
         self.CAIXA_ABERTA.elt.bind("click", self.CAIXA_ABRE)
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)
         self.informacoes.elt.bind("click", self.funcao_de_acao_do_botao4)
-                           
-
+        self.BONECA8.elt.bind("click", self.CORRE)
+        self.BONECA9.elt.bind("click", self.CORRE1)
+        self.BONECA10.elt.bind("click", self.CORRE2)
+        self.BONECA11.elt.bind("click", self.CORRE3)
+        
+        #DESAFIO DO QUADRADO MAGICO
+        
+        
+        self.CORREDOR= Cena(corredor)
+        self.CORREDOR2= Cena(corredor2)
+        
+        #ELEMENTOS
+        self.RESPOSTA_A= Elemento(resposta_a, tit="Click",
+                                  w=139,h=171, x=750, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                  cena = self.CORREDOR)
+                               
+        self.RESPOSTA_B= Elemento(resposta_b, tit="Click",
+                                  w=139,h=171, x=750, y=250, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                  cena = self.CORREDOR)
+        self.RESPOSTA_C= Elemento(resposta_c, tit="Click",
+                                  w=139,h=171, x=750, y=450, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                  cena = self.CORREDOR)
+        
+        
+        self.texto_1_1= Texto(self.CORREDOR, txt= 'Ao tentar fugir, Hipátia se deparou com um desafio. Resolvá-o encaixando a peça correta')
+        self.texto_2_2= Texto(self.CORREDOR, txt= 'Esta não é a peça correta.')
+        self.texto_3_3= Texto(self.CORREDOR2, txt= 'Parabéns! Você concluiu o desafio!')
+        #botao
+    
+        self.RESPOSTA_B.elt.bind("click", self.desafio1)
+        self.RESPOSTA_A.elt.bind("click", self.botao_errado)
+        self.RESPOSTA_C.elt.bind("click", self.botao_errado)
+    
+    def desafio1(self,*_):
+        self.CORREDOR2.vai()
+        self.texto_3_3.vai()
+        
+    def botao_errado(self,*_):
+        self.texto_2_2.vai()
+    
 
     def abre_porta (self,event = None):
         self.Biblioteca_porta.vai()
         self.texto_2.vai()
-    
-
-
-    def entra_na_biblioteca (self,event = None):
-        self.Biblioteca_dentro1.vai()
-        self.texto_3.vai()
-    
+        
+    def CORRE (self,event = None):
+        self.biblioteca5.vai()
+        
+    def CORRE1 (self,event = None):
+        self.biblioteca6.vai()
+        
+    def CORRE2 (self,event = None):
+        self.biblioteca7.vai()
+        
+    def CORRE3 (self,event = None):
+        self.CORREDOR.vai()
+        self.texto_1_1.vai()
+         
 
 
     def clique_caixa (self,event = None):
@@ -183,8 +249,8 @@ class desafio_2:
         
     
     def inicia(self,*_):
-        self.Biblioteca_entrada.vai()
-        self.texto_1.vai()
+        self.Biblioteca_dentro1.vai()
+        self.texto_3.vai()
         
 if __name__ == "__main__":                  
     desafio_2().inicia()
