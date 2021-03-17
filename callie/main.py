@@ -1,8 +1,9 @@
 # elizabeth.callie.main.py
+#ato 2.1
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from _spy.vitollino.main import INVENTARIO as inv
+
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -23,30 +24,42 @@ desafio5= 'https://i.imgur.com/2M08qgZ.png'
 desafio6= 'https://i.imgur.com/ASx9OiY.png'
 desafio7= 'https://i.imgur.com/HPZJ4vE.png'
 desafio8= 'https://i.imgur.com/PrcMDw7.png'
-biblioteca = "https://i.imgur.com/wistRJZ.jpeg" 
+biblioteca_faixada = "https://i.imgur.com/wistRJZ.jpeg" 
+
+porta= "https://i.imgur.com/wMjyyBt.png"
+imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
 
 
 class desafio_teorema():
 
     def __init__(self):
-        inv.inicia()
-        self.BIBLIOTECA=Cena(biblioteca)
+         
+        self.Biblioteca_entrada=Cena(biblioteca_faixada)
+    
+        self.BIBLIOTECA=Cena(biblioteca_faixada)
         
-        self.BIBLIOTECA2=Cena(biblioteca)
+        self.BIBLIOTECA2=Cena(biblioteca_faixada)
         
-        self.BIBLIOTECA3=Cena(biblioteca)
+        self.BIBLIOTECA3=Cena(biblioteca_faixada)
         
-        self.BIBLIOTECA4=Cena(biblioteca)
+        self.BIBLIOTECA4=Cena(biblioteca_faixada)
         
-        self.BIBLIOTECA5=Cena(biblioteca)
+        self.BIBLIOTECA5=Cena(biblioteca_faixada)
         
-        self.BIBLIOTECA6=Cena(biblioteca)
+        self.BIBLIOTECA6=Cena(biblioteca_faixada)
         
-        self.BIBLIOTECA7=Cena(biblioteca)
-        self.BIBLIOTECA8=Cena(biblioteca)
+        self.BIBLIOTECA7=Cena(biblioteca_faixada)
+        self.BIBLIOTECA8=Cena(biblioteca_faixada)
         
+        #ELEMENTOS ATO2.1
         
+        self.porta= Elemento(porta, tit="click", w=258, h=695,  x=350, y=5, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                             cena = self.Biblioteca_entrada)
+                             
+        self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=250,h=350, x=50, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.Biblioteca_entrada)  
         
         #ELEMENTOS BIBLIOTECA
         
@@ -247,9 +260,15 @@ class desafio_teorema():
                                 w=300,h=300, x=310, y=280, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                 cena = self.BIBLIOTECA8)   
                                 
+         
+        #personagem
+        
+                                
                                    
         
         #TEXTO BIBLIOTECA
+        self.texto_1_1=Texto(self.Biblioteca_entrada, txt= "Entre na biblioteca interditada." )
+        
         self.texto_1= Texto(self.BIBLIOTECA, txt= 'Clique na peça que se encaixa no quadrado vermelho.')
         self.texto_2= Texto(self.BIBLIOTECA, txt= 'Esta não é a peça correta.')
         self.texto_3= Texto(self.BIBLIOTECA2, txt= 'Esta não é a peça correta.')
@@ -366,8 +385,8 @@ class desafio_teorema():
         self.texto_8.vai()  
         
     def inicia(self,*_):
-        self.BIBLIOTECA.vai()
-        self.texto_1.vai()
+        self.Biblioteca_entrada.vai()
+        self.texto_1_1.vai()
 
 if __name__ == "__main__":
     desafio_teorema().inicia()
