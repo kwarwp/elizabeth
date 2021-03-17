@@ -203,3 +203,21 @@ AttributeError: 'desafio_teorema' object has no attribute 'BOTAO'
     self.PORTA.elt.bind("click", self.abre_porta)
 AttributeError: 'desafio_teorema' object has no attribute 'PORTA'
 '''},
+{'date': 'Tue Mar 16 2021 22:47:56.412 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 404
+    desafio_teorema().inicia()
+  module <module> line 66
+    self.CONTINUA = Elemento(seta, tit="Próximo",
+NameError: name 'seta' is not defined
+'''},
