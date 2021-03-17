@@ -152,3 +152,10 @@ TypeError: 'Elemento' object is not callable
                                                                                                                                                                                                                                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Mar 16 2021 23:09:14.172 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  personagem correndo = "https://i.imgur.com/FotzDIP.png"
+              ^
+SyntaxError: invalid syntax
+'''},
