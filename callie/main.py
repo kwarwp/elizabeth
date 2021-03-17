@@ -63,8 +63,8 @@ class desafio_teorema():
                                w=250,h=350, x=50, y=340, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.Biblioteca_entrada)  
                                
-        self.CONTINUA = Elemento(seta, tit="Próximo",
-                                 w=55,h=58, x=900, y=420,
+        self.CONTINUA = Elemento(continua, tit="Próximo",
+                                 w=100,h=60, x=800, y=550,
                                  cena = self.BIBLIOTECA8)
                                
         
