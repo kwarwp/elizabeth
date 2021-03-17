@@ -45,13 +45,13 @@ class desafio_1:
                          w=150, h=150, x=200, y=390,
                          cena = self.ABERTURA)        
         self.SETAENTRADA1 = Elemento(seta, tit="Próximo",
-                             w=55,h=58, x=900, y=420,
+                             w=55,h=58, x=750, y=330,
                              cena = self.ENTRADA1)
         self.SETAENTRADA2 = Elemento(seta, tit="Próximo",
-                             w=55,h=58, x=900, y=420,
+                             w=55,h=58, x=750, y=330,
                              cena = self.ENTRADA2)
         self.SETAENTRADA3 = Elemento(seta, tit="Próximo",
-                             w=55,h=58, x=900, y=420,
+                             w=55,h=58, x=750, y=330,
                              cena = self.ENTRADA3)
         self.BONECADORMINDO = Elemento(boneca_dormindo, tit="Acorde Hipátia",
                               w=336, h=240, x=260, y=270,
