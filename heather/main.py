@@ -22,7 +22,7 @@ imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 imagem_computador = "https://i.imgur.com/7LHPvSS.png"
 imagem_computador2 = "https://i.imgur.com/MxZ4mO5.png"
 imagem_computador3 = "https://i.imgur.com/53q5GV9.png"
-imagem_abertura = 'https://i.imgur.com/CIQI4C4.png'
+imagem_abertura = 'https://i.imgur.com/mgSlPGj.png'
 botao_play = 'https://i.imgur.com/4IFbhfb.png'
 boneca_dormindo = 'https://i.imgur.com/PMwusTO.png'
 imagem_botaoajuda = 'https://i.imgur.com/jALMQz4.png'
@@ -76,13 +76,14 @@ class desafio_1:
                                       w=55,h=58, x=610, y=300,
                                       cena = self.cena2)
         self.BOTAO_AJUDA = Elemento(imagem_botaoajuda, tit="PLAY",
-                                      w=55,h=58, x=610, y=300,
+                                      w=55,h=58, x=200, y=100,
                                       cena = self.cena2)
          
         self.texto_4 = Texto(self.QUARTO1, txt = "Acorde Hipátia")
         self.texto_3 = Texto(self.QUARTO, txt = "Hipátia gosta de ler seu livro quando acorda. Mas, nessa manhã, não o encontrou em sua mesa e resolveu procurar no closet. Estranho...")
         self.texto_1 = Texto(self.QUARTO2, txt = 'Hipátia, encontre o livro')                     
         self.texto_2= Texto(self.cena2, txt= 'Hipátia encontrou uma mensagem estranha em seu livro, aperte o PLAY para decifrá-la')
+        self.texto_5 = Texto(self.cena2, txt = "O desafio é um anagrama. Um anagrama é criado a partir de uma palavra com suas letras embaralhadas. Tente reorganizar a frase para encontrar o recado e resolver o desafio.")
         
         self.BOTAOPLAY.elt.bind("click", self.BOTAO_PLAY)
         self.SETAENTRADA1.elt.bind("click", self.BOTAO_ENTRADA1)
@@ -92,6 +93,7 @@ class desafio_1:
         self.LIVRO.elt.bind("click", self.funcao_de_acao_do_botao)
         self.LIVROERRADO.elt.bind("click", self.livro_errado)  
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
+        self.BOTAO_AJUDA.elt.bind("click", self.AJUDA)
         
     def desafio1(self,*_):
         self.resposta1=str(input('Hipátia, qual é a resposta do desafio?'))
@@ -136,6 +138,9 @@ class desafio_1:
     def ACORDA_BONECA(self,event = None):
         self.QUARTO.vai()
         self.texto_3.vai()
+        
+    def AJUDA(self,event = None):
+        self.texto_5.vai()
     
     def inicia(self,*_):
         self.ABERTURA.vai()
