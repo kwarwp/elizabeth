@@ -26,6 +26,7 @@ desafio7= 'https://i.imgur.com/HPZJ4vE.png'
 desafio8= 'https://i.imgur.com/PrcMDw7.png'
 biblioteca_faixada = "https://i.imgur.com/9JTXWZX.png" 
 biblioteca_faixada2 = "https://i.imgur.com/wistRJZ.jpeg"
+imagem_botaoajuda = 'https://i.imgur.com/jALMQz4.png'
 
 porta= "https://i.imgur.com/wMjyyBt.png"
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
@@ -106,6 +107,10 @@ class desafio_teorema():
         self.T_CIANO = Elemento (triangulo_ciano, tit="Monte o quebra-cabeça.", 
                                  h=80,w=80, x=800, y=150,
                                  cena=self.BIBLIOTECA)
+                                 
+        self.BOTAO_AJUDA = Elemento(imagem_botaoajuda, tit="PLAY",
+                                      w=55,h=58, x=200, y=300,
+                                      cena = self.BIBLIOTECA)
                                    
                                            
         #ELEMENTOS BIBLIOTECA2
@@ -282,7 +287,8 @@ class desafio_teorema():
         self.texto_7= Texto(self.BIBLIOTECA6, txt= 'Esta não é a peça correta.')
         self.texto_8= Texto(self.BIBLIOTECA7, txt= 'Esta não é a peça correta.')
         self.texto_9= Texto(self.BIBLIOTECA8, txt= 'Parabéns! Você conseguiu completar o desafio!')
-
+        self.texto_10 = Texto(self.BIBLIOTECA, txt = "O desafio é um quebra cabeça. Clique na peça que compõe a imagem para completá-lo.")
+        
         #BOTAO BIBLIOTECA 1
         self.T_CIANO.elt.bind("click", self.desafio1)
         self.T_AZUL.elt.bind("click", self.botao_errado)
@@ -292,6 +298,7 @@ class desafio_teorema():
         self.T_ROXO.elt.bind("click", self.botao_errado)
         self.T_ROSA.elt.bind("click", self.botao_errado)
         self.T_LARANJA.elt.bind("click", self.botao_errado)
+        self.BOTAO_AJUDA.elt.bind("click", self.AJUDA)
         
         #BOTAO BIBLIOTECA2
         self.T_AZUL2.elt.bind("click", self.desafio2)
@@ -399,6 +406,9 @@ class desafio_teorema():
     def inicia(self,*_):
         self.Biblioteca_entrada.vai()
         self.texto_1_1.vai()
+        
+    def AJUDA(self,event = None):
+        self.texto_10.vai()
 
 if __name__ == "__main__":
     desafio_teorema().inicia()
