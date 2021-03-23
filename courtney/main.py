@@ -16,6 +16,7 @@ lixo= 'https://i.imgur.com/8TMfOgz.png'
 caixa_vazia= 'https://i.imgur.com/4Tm4yIE.png'
 infos_lixo= 'https://i.imgur.com/8kggT8B.png'
 seguranca = "https://i.imgur.com/z5TxOgI.png"
+imagem_botaoajuda = 'https://i.imgur.com/jALMQz4.png'
 
 personagem_assustada= "https://i.imgur.com/2G9fv6S.png"
 personagem_correndo = "https://i.imgur.com/FotzDIP.png"
@@ -149,6 +150,8 @@ class desafio_2:
         self.informacoes= Elemento(infos_lixo, tit='', 
                                    h=512, w =600, x=200, y=100,
                                    cena= self.biblioteca3)
+                                   
+
         
                              
         
@@ -205,18 +208,25 @@ class desafio_2:
         self.CONTINUA = Elemento(continua, tit="Próximo",
                                  w=100,h=60, x=600, y=550,
                                  cena = self.CORREDOR2)
+                                 
+        self.BOTAO_AJUDA = Elemento(imagem_botaoajuda, tit="PLAY",
+                                      w=55,h=58, x=200, y=100,
+                                      cena = self.CORREDOR)
         
         
         self.texto_1_1= Texto(self.CORREDOR, txt= 'Ao tentar fugir, Hipátia se deparou com um desafio. Resolvá-o encaixando a peça correta')
         self.texto_1_2= Texto(self.CORREDOR0, txt= 'Entre pela porta principal para despistar o segurança.')
         self.texto_2_2= Texto(self.CORREDOR, txt= 'Esta não é a peça correta.')
         self.texto_3_3= Texto(self.CORREDOR2, txt= 'Parabéns! Você concluiu o desafio!')
+        self.texto_5 = Texto(self.CORREDOR, txt = "O desafio é um quadrado mágico. Todas as linhas, colunas e diagonais devem somar o mesmo valor. Tente somar os valores dos exemplos para descobrir qual possui as propriedades de um quadrado mágico.")
+        
         #botao
     
         self.RESPOSTA_B.elt.bind("click", self.desafio1)
         self.RESPOSTA_A.elt.bind("click", self.botao_errado)
         self.RESPOSTA_C.elt.bind("click", self.botao_errado)
         self.PORTA2.elt.bind("click", self.abre_porta2)
+        self.BOTAO_AJUDA.elt.bind("click", self.AJUDA)
     
     def desafio1(self,*_):
         self.CORREDOR2.vai()
@@ -275,6 +285,9 @@ class desafio_2:
     def inicia(self,*_):
         self.Biblioteca_dentro1.vai()
         self.texto_3.vai()
+        
+    def AJUDA(self,event = None):
+        self.texto_5.vai()
         
 if __name__ == "__main__":                  
     desafio_2().inicia()
