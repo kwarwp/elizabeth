@@ -4,13 +4,16 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 porta_adm= 'https://i.imgur.com/TrrsagT.jpeg'
 sala_adm= 'https://i.imgur.com/Zntc84W.jpeg'
-computador= 'https://s2.glbimg.com/of-wm12tGeAcF_chWnw-0wlWP6E=/0x0:695x522/695x522/s.glbimg.com/po/tt/f/original/2014/02/13/inspiron-3000-e-nova-linha-de-desktop-compacto-com-processador-haswell.jpg'
-Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
+computador= "https://i.imgur.com/0KB7GXx.jpg"
+porta="https://i.imgur.com/QJvPpt9.png"
 pasta_confidencial= 'https://i.imgur.com/dVY2hl0.png'
-pasta_aberta = 'https://i.imgur.com/8kggT8B.png'
-botao_play = 'https://i.imgur.com/74ZZX5s.png'
-imagem_desafiocodigo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8hnuTypcbATIdbgeCmywkqxgaCbd9lA6u1w&usqp=CAU'
+pasta_aberta = 'https://i.imgur.com/fAZgWdr.png'
+imagem_desafiocodigo = 'https://i.imgur.com/fAZgWdr.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
+botao_play= "https://i.imgur.com/4IFbhfb.png"
+coordenadas = ""
+
+imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -25,8 +28,8 @@ class desafio_3:
         self.DESAFIO_CODIGO = Cena(imagem_desafiocodigo)
         self.COMPUTADOR = Cena(computador)
         
-        self.BOTAO= Elemento(Imagem_botao, tit="Abra a porta",
-                             w=30,h=36,  x=490, y=280, 
+        self.PORTA1= Elemento(porta, tit="Abra a porta",
+                             w=200,h=400,  x=460, y=70, 
                              cena = self.ENTRADA_ADM)
         self.PASTA= Elemento(pasta_confidencial, tit="Abra a pasta",
                              w=30,h=10,  x=380, y=400, 
@@ -37,8 +40,18 @@ class desafio_3:
         self.SETA = Elemento(seta, tit="SEGUIR",
                              w=30, h=36, x=450, y=300,
                              cena= self.DESAFIO_CODIGO)
+                             
+        self.BONECA1= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=300,h=400, x=100, y=240, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.ENTRADA_ADM)  
+                               
+        self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=300,h=400, x=100, y=240, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.ADM)  
+                               
+        self.SENHA= 
         
-        self.BOTAO.elt.bind("click", self.abre_porta)
+        self.PORTA1.elt.bind("click", self.abre_porta)
         self.PASTA.elt.bind("click", self.abre_pasta)
         self.PLAY.elt.bind("click", self.desafio_codigo)
         self.SETA.elt.bind("click", self.botao_seguir)
