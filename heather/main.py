@@ -25,6 +25,7 @@ imagem_computador3 = "https://i.imgur.com/53q5GV9.png"
 imagem_abertura = 'https://i.imgur.com/CIQI4C4.png'
 botao_play = 'https://i.imgur.com/4IFbhfb.png'
 boneca_dormindo = 'https://i.imgur.com/PMwusTO.png'
+imagem_botaoajuda = 'https://i.imgur.com/jALMQz4.png'
 
 STYLE["width"] = 960 #  width = 300 (default)
 STYLE["heigth"] = '600px' # min-height = "300px"
@@ -72,6 +73,9 @@ class desafio_1:
                                w=300,h=420, x=200, y=200, 
                                cena = self.QUARTO2)
         self.BOTAO_DESAFIO1= Elemento(botao_desafio1, tit="PLAY",
+                                      w=55,h=58, x=610, y=300,
+                                      cena = self.cena2)
+        self.BOTAO_AJUDA = Elemento(imagem_botaoajuda, tit="PLAY",
                                       w=55,h=58, x=610, y=300,
                                       cena = self.cena2)
          
