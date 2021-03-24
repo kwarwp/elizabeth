@@ -17,7 +17,7 @@ click_biblioteca= 'https://i.imgur.com/ZKiFXHh.png'
 click_cabana="https://i.imgur.com/ueEjt2c.png"
 pasta= "https://i.imgur.com/KeffUYv.png"
 jornal= "https://i.imgur.com/WuKy09p.png"
-carta_aberta= "https://i.imgur.com/CiQ67ph.png"
+carta_aberta= "https://i.imgur.com/LVH8eyX.png"
 
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
@@ -136,7 +136,7 @@ class desafio_3:
     
     def desafio4 (self, event = None):
         self.digite_senha= input("Digite a senha do computador para liberar a coordenada.")
-        if self.digite_senha == "123456":
+        if self.digite_senha == "749182":
             self.COMPUTADOR2.vai()
             self.parabens= Texto(self.COMPUTADOR2, txt= "Você conseguiu logar no computador, click no mini mapa para ser direcionado até a cabana")
             self.parabens.vai()
