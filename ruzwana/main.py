@@ -122,6 +122,7 @@ class desafio_3:
         self.texto_3=Texto(self.ADM2, txt = "Após ler as informações, Hipátia percebeu que havia uma carta. Clique para descobrir o que esta escrito.")
         self.texto_4=Texto(self.ADM3, txt = "Descubra o código e anote-o. Hipátia precisará dele para seu próximo passo.")
         self.texto_5=Texto(self.COMPUTADOR, txt = "Insira o código descoberto na última etapa.")
+        self.texto_6=Texto(self.MAPA, txt = "Vá até a cabana.")
         
     def botao_seguir (self, event = None):
         self.COMPUTADOR.vai()
@@ -129,6 +130,7 @@ class desafio_3:
         
     def abre_mapa (self, event= None):
         self.MAPA.vai()
+        self.texto_6.vai()
     
     def abre_carta (self, event= None):
         self.ADM3.vai()
