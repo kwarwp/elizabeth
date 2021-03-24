@@ -7,7 +7,7 @@ sala_adm= 'https://i.imgur.com/Zntc84W.jpeg'
 computador= "https://i.imgur.com/0KB7GXx.jpg"
 porta="https://i.imgur.com/QJvPpt9.png"
 pasta_confidencial= 'https://i.imgur.com/dVY2hl0.png'
-pasta_aberta = 'https://i.imgur.com/fAZgWdr.png'
+carta = 'https://i.imgur.com/fAZgWdr.png'
 imagem_desafiocodigo = 'https://i.imgur.com/fAZgWdr.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 botao_play= "https://i.imgur.com/4IFbhfb.png"
@@ -28,7 +28,7 @@ class desafio_3:
     def __init__(self):
         self.ENTRADA_ADM = Cena(porta_adm)        
         self.ADM= Cena(sala_adm)
-        self.PASTA_ABERTA= Cena(pasta_aberta)
+        self.ADM2= Cena(sala_adm)
         self.DESAFIO_CODIGO = Cena(imagem_desafiocodigo)
         self.COMPUTADOR = Cena(computador)
         self.COMPUTADOR2 = Cena(computador)
@@ -42,7 +42,7 @@ class desafio_3:
                              cena = self.ADM)
         self.PLAY = Elemento(botao_play, tit="PLAY",
                              w=30, h=36, x=450, y=300,
-                             cena= self.PASTA_ABERTA)
+                             cena= self.ADM2)
         self.SETA = Elemento(seta, tit="SEGUIR",
                              w=30, h=36, x=450, y=300,
                              cena= self.DESAFIO_CODIGO)
@@ -54,6 +54,10 @@ class desafio_3:
         self.BONECA2= Elemento(imagem_boneca2, tit="Hipátia",
                                w=300,h=400, x=100, y=240, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.ADM)  
+                               
+        self.BONECA3= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=300,h=400, x=100, y=240, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.ADM2) 
                                
         self.SENHA= Elemento(coordenadas, tit="Coordenada",
                                w=500,h=264, x=240, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -72,6 +76,10 @@ class desafio_3:
         self.CABANA= Elemento(click_cabana, tit="CLICK",
                               w=55,h=58, x=250, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                               cena = self.MAPA)  
+                              
+        self.CARTA= Elemento (carta, tit="carta",
+                              w=303, h=216, x=240, y=140,
+                              cena= self.ADM2)
 
         
         self.PORTA1.elt.bind("click", self.abre_porta)
@@ -83,7 +91,7 @@ class desafio_3:
         
         self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, Hipátia! Você conseguiu escapar. Entre na diretoria da biblioteca para mais informações')
         self.texto_2=Texto(self.ADM, txt = 'Encontre a pasta confidencial.')
-        self.texto_3=Texto(self.PASTA_ABERTA, txt = "Após ler as informações, Hipátia percebeu que havia um código para ser resolvido. Clique no botão para descobrir o que é.")
+        self.texto_3=Texto(self.ADM2, txt = "Após ler as informações, Hipátia percebeu que havia um código para ser resolvido. Clique no botão para descobrir o que é.")
         self.texto_4=Texto(self.DESAFIO_CODIGO, txt = "Descubra o código e anote-o. Hipátia precisará dele para seu próximo passo.")
         self.texto_5=Texto(self.COMPUTADOR, txt = "Insira o código descoberto na última etapa.")
         
@@ -109,7 +117,7 @@ class desafio_3:
         self.texto_4.vai()
         
     def abre_pasta (self,event = None):
-        self.PASTA_ABERTA.vai()
+        self.ADM2.vai()
         self.texto_3.vai()
 
     def abre_porta (self,event = None):
