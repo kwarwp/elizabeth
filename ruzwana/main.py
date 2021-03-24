@@ -11,7 +11,7 @@ pasta_aberta = 'https://i.imgur.com/fAZgWdr.png'
 imagem_desafiocodigo = 'https://i.imgur.com/fAZgWdr.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 botao_play= "https://i.imgur.com/4IFbhfb.png"
-coordenadas = ""
+coordenadas = "https://i.imgur.com/ZEUoh7x.png"
 
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
@@ -32,7 +32,7 @@ class desafio_3:
                              w=200,h=400,  x=460, y=70, 
                              cena = self.ENTRADA_ADM)
         self.PASTA= Elemento(pasta_confidencial, tit="Abra a pasta",
-                             w=30,h=10,  x=380, y=400, 
+                             w=50,h=20,  x=380, y=400, 
                              cena = self.ADM)
         self.PLAY = Elemento(botao_play, tit="PLAY",
                              w=30, h=36, x=450, y=300,
@@ -49,7 +49,9 @@ class desafio_3:
                                w=300,h=400, x=100, y=240, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.ADM)  
                                
-        self.SENHA= 
+        self.SENHA= Elemento(coordenadas, tit="Coordenada",
+                               w=500,h=264, x=200, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.COMPUTADOR)  
         
         self.PORTA1.elt.bind("click", self.abre_porta)
         self.PASTA.elt.bind("click", self.abre_pasta)
