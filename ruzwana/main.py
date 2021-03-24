@@ -8,7 +8,6 @@ computador= "https://i.imgur.com/0KB7GXx.jpg"
 porta="https://i.imgur.com/QJvPpt9.png"
 pasta_confidencial= 'https://i.imgur.com/dVY2hl0.png'
 carta = 'https://i.imgur.com/fAZgWdr.png'
-imagem_desafiocodigo = 'https://i.imgur.com/fAZgWdr.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 botao_play= "https://i.imgur.com/4IFbhfb.png"
 coordenadas = "https://i.imgur.com/ZEUoh7x.png"
@@ -33,7 +32,6 @@ class desafio_3:
         self.ADM= Cena(sala_adm)
         self.ADM2= Cena(sala_adm)
         self.ADM3= Cena(sala_adm)
-        self.DESAFIO_CODIGO = Cena(imagem_desafiocodigo)
         self.COMPUTADOR = Cena(computador)
         self.COMPUTADOR2 = Cena(computador)
         self.MAPA= Cena(mapa)
@@ -44,12 +42,7 @@ class desafio_3:
         self.PASTA_FECHADA= Elemento(pasta_confidencial, tit="Abra a pasta",
                              w=50,h=20,  x=380, y=400, 
                              cena = self.ADM)
-        self.PLAY = Elemento(botao_play, tit="PLAY",
-                             w=30, h=36, x=450, y=300,
-                             cena= self.ADM2)
-        self.SETA = Elemento(seta, tit="SEGUIR",
-                             w=30, h=36, x=450, y=300,
-                             cena= self.DESAFIO_CODIGO)
+
                              
         self.BONECA1= Elemento(imagem_boneca2, tit="Hipátia",
                                w=300,h=400, x=100, y=240, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -110,12 +103,15 @@ class desafio_3:
                               w=350, h=300, x=50, y=150,
                               cena=self.ADM3)
                               
+        self.SETA = Elemento(seta, tit="SEGUIR",
+                             w=30, h=36, x=450, y=300,
+                             cena= self.ADM3)
+                              
         
 
         
         self.PORTA1.elt.bind("click", self.abre_porta)
         self.PASTA_FECHADA.elt.bind("click", self.abre_pasta)
-        self.PLAY.elt.bind("click", self.desafio_codigo)
         self.SETA.elt.bind("click", self.botao_seguir)
         self.SENHA.elt.bind("click", self.desafio4)
         self.mini_mapa.elt.bind("click", self.abre_mapa)
@@ -136,6 +132,7 @@ class desafio_3:
     
     def abre_carta (self, event= None):
         self.ADM3.vai()
+        self.texto_4.vai()
     
     def desafio4 (self, event = None):
         self.digite_senha= input("Digite a senha do computador para liberar a coordenada.")
@@ -146,10 +143,7 @@ class desafio_3:
         else:
             self.tente_novamente2=Texto(self.COMPUTADOR, txt = 'Hipátia, tente novamente.')
             self.tente_novamente2.vai()
-        
-    def desafio_codigo (self,event = None):
-        self.DESAFIO_CODIGO.vai()
-        self.texto_4.vai()
+
         
     def abre_pasta (self,event = None):
         self.ADM2.vai()
