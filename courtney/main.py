@@ -7,7 +7,7 @@ Imagem_Biblioteca_dentro="https://i.imgur.com/l1LeZ9x.jpg"
 imagem_biblioteca2="https://i.imgur.com/o7cml0T.jpeg"
 imagem_caixa="https://i.imgur.com/7nnzwwN.png"
 caixa_aberta= "https://i.imgur.com/grpEmod.png"
-imagem_papel="https://thumbs.dreamstime.com/z/folhas-de-pap%C3%A9is-de-nota-com-o-desenho-da-m%C3%A3o-do-pino-do-impulso-89420296.jpg"
+imagem_papel="https://i.imgur.com/l1LeZ9x.jpg"
 Imagem_botao="https://images-na.ssl-images-amazon.com/images/I/71nQDXqkyDL.png"
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
@@ -17,6 +17,8 @@ caixa_vazia= 'https://i.imgur.com/4Tm4yIE.png'
 infos_lixo= 'https://i.imgur.com/8kggT8B.png'
 seguranca = "https://i.imgur.com/z5TxOgI.png"
 imagem_botaoajuda = 'https://i.imgur.com/jALMQz4.png'
+infos_1 = 'https://i.imgur.com/ZPvBvu6.png'
+infos_post = 'https://i.imgur.com/BlBUJw9.png'
 
 personagem_assustada= "https://i.imgur.com/2G9fv6S.png"
 personagem_correndo = "https://i.imgur.com/FotzDIP.png"
@@ -150,7 +152,14 @@ class desafio_2:
         self.informacoes= Elemento(infos_lixo, tit='', 
                                    h=512, w =600, x=200, y=100,
                                    cena= self.biblioteca3)
-                                   
+         
+        self.INFOS = Elemento(infos_1, tit='',
+                              h=512, w =600, x=200, y=50,
+                              cena= self.caixa_abre)
+                              
+        self.INFOS_2 = Elemento(infos_post, tit='',
+                              h=128, w =150, x=600, y=120,
+                              cena= self.caixa_abre)
 
         
                              
