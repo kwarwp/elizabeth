@@ -27,6 +27,7 @@ class desafio_3:
         self.PASTA_ABERTA= Cena(pasta_aberta)
         self.DESAFIO_CODIGO = Cena(imagem_desafiocodigo)
         self.COMPUTADOR = Cena(computador)
+        self.COMPUTADOR2 = Cena(computador)
         
         self.PORTA1= Elemento(porta, tit="Abra a porta",
                              w=200,h=400,  x=460, y=70, 
@@ -50,13 +51,17 @@ class desafio_3:
                                cena = self.ADM)  
                                
         self.SENHA= Elemento(coordenadas, tit="Coordenada",
-                               w=500,h=264, x=200, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               w=500,h=264, x=240, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.COMPUTADOR)  
+        self.SENHA2= Elemento(coordenadas, tit="Coordenada",
+                               w=500,h=264, x=240, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.COMPUTADOR2) 
         
         self.PORTA1.elt.bind("click", self.abre_porta)
         self.PASTA.elt.bind("click", self.abre_pasta)
         self.PLAY.elt.bind("click", self.desafio_codigo)
         self.SETA.elt.bind("click", self.botao_seguir)
+        self.SENHA.elt.bind("click", self.desafio4)
         
         self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, Hipátia! Você conseguiu escapar. Entre na diretoria da biblioteca para mais informações')
         self.texto_2=Texto(self.ADM, txt = 'Encontre a pasta confidencial.')
@@ -67,6 +72,17 @@ class desafio_3:
     def botao_seguir (self, event = None):
         self.COMPUTADOR.vai()
         self.texto_5.vai()
+    
+    def desafio4 (self, event = None):
+        self.digite_senha= str(input("Digite a senha do computador para liberar a coordenada."))
+        self.digite_senha2=self.digite_senha.lower()
+        if digite_senha2 == "123456":
+           self.COMPUTADOR2.vai()
+           self.parabens= Texto(self.COMPUTADOR2, txt= "Você conseguiu logar no computador, click no mini mapa para ser direcionado até a cabana")
+           self.parabens.vai()
+        else:
+           self.tente_novamente2=Texto(self.COMPUTADOR, txt = 'Hipátia, tente novamente.')
+           self.tente_novamente2.vai()
         
     def desafio_codigo (self,event = None):
         self.DESAFIO_CODIGO.vai()
