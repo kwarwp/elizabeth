@@ -407,3 +407,21 @@ NameError: name 'pasta_aberta' is not defined
     self.PLAY = Elemento(botao_play, tit="PLAY",
 AttributeError: 'desafio_3' object has no attribute 'PASTA_ABERTA'
 '''},
+{'date': 'Wed Mar 24 2021 15:23:13.701 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 128
+    desafio_3().inicia()
+  module <module> line 90
+    self.texto_3=Texto(self.PASTA_ABERTA, txt = "Após ler as informações, Hipátia percebeu que havia um código para ser resolvido. Clique no botão para descobrir o que é.")
+AttributeError: 'desafio_3' object has no attribute 'PASTA_ABERTA'
+'''},
