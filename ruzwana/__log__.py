@@ -357,3 +357,10 @@ AttributeError: 'desafio_3' object has no attribute 'BOTAO'
     self.PLAY = Elemento(botao_play, tit="PLAY",
 NameError: name 'botao_play' is not defined
 '''},
+{'date': 'Tue Mar 23 2021 21:02:01.353 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 52
+  self.SENHA= 
+               ^
+SyntaxError: invalid syntax
+'''},
