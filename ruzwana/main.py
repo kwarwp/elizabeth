@@ -12,6 +12,10 @@ imagem_desafiocodigo = 'https://i.imgur.com/fAZgWdr.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 botao_play= "https://i.imgur.com/4IFbhfb.png"
 coordenadas = "https://i.imgur.com/ZEUoh7x.png"
+coordenadas_rj= "https://i.imgur.com/dKLFxWB.png"
+mapa= "https://i.imgur.com/E2MZ6DR.png"
+click_biblioteca= 'https://i.imgur.com/ZKiFXHh.png'
+click_cabana="https://i.imgur.com/ueEjt2c.png"
 
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
@@ -28,6 +32,7 @@ class desafio_3:
         self.DESAFIO_CODIGO = Cena(imagem_desafiocodigo)
         self.COMPUTADOR = Cena(computador)
         self.COMPUTADOR2 = Cena(computador)
+        self.MAPA= Cena(mapa)
         
         self.PORTA1= Elemento(porta, tit="Abra a porta",
                              w=200,h=400,  x=460, y=70, 
@@ -53,15 +58,28 @@ class desafio_3:
         self.SENHA= Elemento(coordenadas, tit="Coordenada",
                                w=500,h=264, x=240, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.COMPUTADOR)  
-        self.SENHA2= Elemento(coordenadas, tit="Coordenada",
+        self.SENHA2= Elemento(coordenadas_rj, tit="Coordenada",
                                w=500,h=264, x=240, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.COMPUTADOR2) 
+                               
+        self.mini_mapa= Elemento(mapa, tit="Mini Mapa",
+                               w=100,h=50, x=240, y=140, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.COMPUTADOR2)
+                               
+        self.BIBLIOTECA= Elemento(click_biblioteca, tit="CLICK",
+                                  w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                  cena = self.MAPA)      
+        self.CABANA= Elemento(click_cabana, tit="CLICK",
+                              w=55,h=58, x=250, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                              cena = self.MAPA)  
+
         
         self.PORTA1.elt.bind("click", self.abre_porta)
         self.PASTA.elt.bind("click", self.abre_pasta)
         self.PLAY.elt.bind("click", self.desafio_codigo)
         self.SETA.elt.bind("click", self.botao_seguir)
         self.SENHA.elt.bind("click", self.desafio4)
+        self.mini_mapa.elt.bind("click", self.abre_mapa)
         
         self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, Hipátia! Você conseguiu escapar. Entre na diretoria da biblioteca para mais informações')
         self.texto_2=Texto(self.ADM, txt = 'Encontre a pasta confidencial.')
@@ -72,17 +90,19 @@ class desafio_3:
     def botao_seguir (self, event = None):
         self.COMPUTADOR.vai()
         self.texto_5.vai()
+        
+    def abre_mapa (self, event= None):
+        self.MAPA.vai()
     
     def desafio4 (self, event = None):
-        self.digite_senha= str(input("Digite a senha do computador para liberar a coordenada."))
-        self.digite_senha2=self.digite_senha.lower()
-        if digite_senha2 == "123456":
-           self.COMPUTADOR2.vai()
-           self.parabens= Texto(self.COMPUTADOR2, txt= "Você conseguiu logar no computador, click no mini mapa para ser direcionado até a cabana")
-           self.parabens.vai()
+        self.digite_senha= input("Digite a senha do computador para liberar a coordenada.")
+        if self.digite_senha == "123456":
+            self.COMPUTADOR2.vai()
+            self.parabens= Texto(self.COMPUTADOR2, txt= "Você conseguiu logar no computador, click no mini mapa para ser direcionado até a cabana")
+            self.parabens.vai()
         else:
-           self.tente_novamente2=Texto(self.COMPUTADOR, txt = 'Hipátia, tente novamente.')
-           self.tente_novamente2.vai()
+            self.tente_novamente2=Texto(self.COMPUTADOR, txt = 'Hipátia, tente novamente.')
+            self.tente_novamente2.vai()
         
     def desafio_codigo (self,event = None):
         self.DESAFIO_CODIGO.vai()
