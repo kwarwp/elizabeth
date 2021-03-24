@@ -14,7 +14,8 @@ imagem_boneca1 = 'https://i.imgur.com/alSNLX0.png'
 seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
 lixo= 'https://i.imgur.com/8TMfOgz.png'
 caixa_vazia= 'https://i.imgur.com/4Tm4yIE.png'
-infos_lixo= 'https://i.imgur.com/8kggT8B.png'
+infos_lixo1= 'https://i.imgur.com/KSOlfol.png'
+infos_lixo2= 'https://i.imgur.com/j6In8RZ.png'
 seguranca = "https://i.imgur.com/z5TxOgI.png"
 imagem_botaoajuda = 'https://i.imgur.com/jALMQz4.png'
 infos_1 = 'https://i.imgur.com/ZPvBvu6.png'
@@ -149,8 +150,12 @@ class desafio_2:
                             h=100, w =103, x=200, y=500, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                             cena = self.biblioteca3)
                             
-        self.informacoes= Elemento(infos_lixo, tit='', 
-                                   h=512, w =600, x=200, y=100,
+        self.informacoes1= Elemento(infos_lixo1, tit='', 
+                                   h=512, w =600, x=100, y=100,
+                                   cena= self.biblioteca3)
+                                  
+        self.informacoes2= Elemento(infos_lixo2, tit='', 
+                                   h=256, w =300, x=650, y=100,
                                    cena= self.biblioteca3)
          
         self.INFOS = Elemento(infos_1, tit='',
@@ -158,7 +163,7 @@ class desafio_2:
                               cena= self.caixa_abre)
                               
         self.INFOS_2 = Elemento(infos_post, tit='',
-                              h=128, w =150, x=600, y=120,
+                              h=128, w =150, x=650, y=180,
                               cena= self.caixa_abre)
 
         
@@ -181,7 +186,7 @@ class desafio_2:
 
         self.CAIXA_ABERTA.elt.bind("click", self.CAIXA_ABRE)
         self.SETA.elt.bind("click", self.funcao_de_acao_do_botao3)
-        self.informacoes.elt.bind("click", self.funcao_de_acao_do_botao4)
+        self.informacoes1.elt.bind("click", self.funcao_de_acao_do_botao4)
         self.BONECA8.elt.bind("click", self.CORRE)
         self.BONECA9.elt.bind("click", self.CORRE1)
         self.BONECA10.elt.bind("click", self.CORRE2)
