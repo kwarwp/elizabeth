@@ -364,3 +364,10 @@ NameError: name 'botao_play' is not defined
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Mar 24 2021 14:39:13.865 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 77
+  self.digite_senha= str(input("Digite a senha do computador para liberar a coordenada.")
+                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
