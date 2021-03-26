@@ -12,6 +12,8 @@ imagem_cabanadentro4 = 'https://i.imgur.com/5eWOp3i.jpeg'
 imagem_cabanadentro5 = 'https://i.imgur.com/qx1sdZ8.jpeg'
 imagem_reuniao = 'https://i.imgur.com/tzvaPBC.jpeg'
 imagem_seta1 = 'https://image.flaticon.com/icons/png/512/37/37758.png'
+imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
+creditos= "https://www.clickriomafra.com.br/emacite/wp-content/uploads/2019/03/O-que-%C3%A9-cena-p%C3%B3s-cr%C3%A9ditos-Exemplo-de-tela-de-cr%C3%A9ditos-de-filme.png"
 
 
 STYLE["width"] = 960 #  width = 300 (default)
@@ -29,11 +31,16 @@ class ATO4:
         self.CABANA_DENTRO4 = Cena(imagem_cabanadentro4)
         self.CABANA_DENTRO5 = Cena(imagem_cabanadentro5)
         self.SALA_REUNIAO = Cena(imagem_reuniao)
+        self.Creditos= Cena(creditos)
         
         
         self.PORTA = Elemento(imagem_porta, tit="CLIQUE",
                               w=35,h=120, x=655, y=220,
                               cena = self.CABANA_FORA)
+                              
+        self.BONECA= Elemento(imagem_boneca2, tit="Hipátia",
+                               w=250,h=350, x=300, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.CABANA_FORA) 
 
         self.SETA_1 = Elemento(imagem_seta1, tit="CLIQUE",
                               w=55,h=58, x=900, y=420,
@@ -55,7 +62,12 @@ class ATO4:
                               w=55,h=58, x=900, y=420,
                               cena = self.CABANA_DENTRO5)
                               
+        self.SETA_6 = Elemento(imagem_seta1, tit="CLIQUE",
+                              w=55,h=58, x=900, y=320,
+                              cena = self.SALA_REUNIAO)
+                              
         self.texto_1 = Texto(self.CABANA_FORA, txt= "Clique na porta para entrar na cabana.")
+        self.texto_2 = Texto(self.SALA_REUNIAO, txt= "                                     CONTINUA")
         
         self.PORTA.elt.bind("click", self.PORTA_ABRE)
         self.SETA_1.elt.bind("click", self.DIALOGO1)
@@ -63,6 +75,7 @@ class ATO4:
         self.SETA_3.elt.bind("click", self.DIALOGO3)
         self.SETA_4.elt.bind("click", self.DIALOGO4)
         self.SETA_5.elt.bind("click", self.REUNIAO)
+        self.SETA_6.elt.bind("click", self.CREDITOS)
 
         
                              
@@ -87,6 +100,10 @@ class ATO4:
         
     def REUNIAO(self,*_):
         self.SALA_REUNIAO.vai()
+        self.texto_2.vai()
+        
+    def CREDITOS (self,*_):
+        self.Creditos.vai()
         
 if __name__ == "__main__":  
     ATO4().inicia()                    
