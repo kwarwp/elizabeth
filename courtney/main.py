@@ -232,7 +232,7 @@ class desafio_2:
         self.texto_1_2= Texto(self.CORREDOR0, txt= 'Entre pela porta principal para despistar o segurança.')
         self.texto_2_2= Texto(self.CORREDOR, txt= 'Esta não é a peça correta.')
         self.texto_3_3= Texto(self.CORREDOR2, txt= 'Parabéns! Você concluiu o desafio!')
-        self.texto_5 = Texto(self.CORREDOR, txt = "O desafio é um quadrado mágico. Todas as linhas, colunas e diagonais devem somar o mesmo valor. Tente somar os valores dos exemplos para descobrir qual possui as propriedades de um quadrado mágico.")
+        self.texto_5_5 = Texto(self.CORREDOR, txt = "O desafio é um quadrado mágico. Todas as linhas, colunas e diagonais devem somar o mesmo valor. Tente somar os valores dos exemplos para descobrir qual possui as propriedades de um quadrado mágico.")
         
         #botao
     
@@ -301,7 +301,7 @@ class desafio_2:
         self.texto_3.vai()
         
     def AJUDA(self,event = None):
-        self.texto_5.vai()
+        self.texto_5_5.vai()
         
 if __name__ == "__main__":                  
     desafio_2().inicia()
