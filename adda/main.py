@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
 
 imagem_cabanafora = 'https://i.imgur.com/3qeO1qP.jpg'
 imagem_porta = 'https://i.imgur.com/f1yocCX.png'
-imagem_cabanadentro1 = 'https://i.imgur.com/OZGjgtL.png'
+imagem_cabanadentro1 = 'https://i.imgur.com/r7WL6jW.jpeg'
 imagem_cabanadentro2 = 'https://i.imgur.com/OZGjgtL.png'
 imagem_cabanadentro3 = 'https://i.imgur.com/OZGjgtL.png'
 imagem_cabanadentro4 = 'https://i.imgur.com/OZGjgtL.png'
@@ -50,10 +50,6 @@ class ATO4:
                               cena = self.CABANA_DENTRO4)
                               
         self.texto_1 = Texto(self.CABANA_FORA, txt= "Clique na porta para entrar na cabana.")
-        self.texto_2 = Texto(self.CABANA_DENTRO1, txt= "Ao entrar, Hipátia se deparou com alguém e se espantou. Era sua mãe. Clique na seta para saber o que a mãe da Hipátia tem a dizer.")
-        self.texto_3 = Texto(self.CABANA_DENTRO2, txt= "TEXTO PROVISORIO DE TESTE - CENA PRIMEIRO DIALOGO")
-        self.texto_4 = Texto(self.CABANA_DENTRO3, txt= "TEXTO PROVISORIO DE TESTE - CENA SEGUNDO DIALOGO")
-        self.texto_5 = Texto(self.CABANA_DENTRO4, txt= "TEXTO PROVISORIO DE TESTE - CENA TERCEIRO DIALOGO")
         
         self.PORTA.elt.bind("click", self.PORTA_ABRE)
         self.SETA_1.elt.bind("click", self.DIALOGO1)
@@ -65,23 +61,18 @@ class ATO4:
                              
     def inicia(self,*_):
         self.CABANA_FORA.vai()
-        self.texto_1.vai()
         
     def PORTA_ABRE(self,*_):
-        self.CABANA_DENTRO1.vai()
-        self.texto_2.vai()       
+        self.CABANA_DENTRO1.vai()       
         
     def DIALOGO1(self,*_):
         self.CABANA_DENTRO2.vai()
-        self.texto_3.vai()
         
     def DIALOGO2(self,*_):
         self.CABANA_DENTRO3.vai()
-        self.texto_4.vai()
         
     def DIALOGO3(self,*_):
         self.CABANA_DENTRO4.vai()
-        self.texto_5.vai()
         
     def REUNIAO(self,*_):
         self.SALA_REUNIAO.vai()
