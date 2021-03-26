@@ -227,3 +227,21 @@ AttributeError: 'ATO4' object has no attribute 'DIALOGO4'
     self.BONECA6= Elemento(imagem_boneca2, tit="Hipátia",
 NameError: name 'imagem_boneca2' is not defined
 '''},
+{'date': 'Fri Mar 26 2021 17:27:55.446 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 105
+    ATO4().inicia()                    
+  module <module> line 74
+    self.SETA_6.elt.bind("click", self.CREDITOS)
+AttributeError: 'ATO4' object has no attribute 'SETA_6'
+'''},
