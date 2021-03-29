@@ -111,7 +111,7 @@ class desafio_1:
             self.parabens.vai() 
         else:
         #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
-            self.tente_novamente=Texto(self.cena3, txt = 'Hipátia, tente novamente.')
+            self.tente_novamente=Texto(self.cena2, txt = 'Hipátia, tente novamente.')
             self.tente_novamente.vai()
         
     def livro_errado(self,event = None):
