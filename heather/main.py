@@ -3,7 +3,6 @@
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from Callie.main import desafio_teorema
 #from meredith.main import nome_personagem
 #from roxane.main import *
 #from cenas.imix import Inicial
@@ -80,10 +79,9 @@ class desafio_1:
         self.BOTAO_AJUDA = Elemento(imagem_botaoajuda, tit="PLAY",
                                       w=55,h=58, x=200, y=100,
                                       cena = self.cena2)
-                                      
         self.BIBLIOTECA= Elemento(click_biblioteca, tit="CLICK",
                                   w=55,h=58, x=610, y=300, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                                  cena = self.cena4)
+                                  cena = self.cena4)  
          
         self.texto_4 = Texto(self.QUARTO1, txt = "Acorde Hipátia")
         self.texto_3 = Texto(self.QUARTO, txt = "Hipátia gosta de ler seu livro quando acorda. Mas, nessa manhã, não o encontrou em sua mesa e resolveu procurar no closet. Estranho...")
@@ -100,7 +98,7 @@ class desafio_1:
         self.LIVROERRADO.elt.bind("click", self.livro_errado)  
         self.BOTAO_DESAFIO1.elt.bind("click", self.desafio1)
         self.BOTAO_AJUDA.elt.bind("click", self.AJUDA)
-        self.BIBLIOTECA.elt.bind("click", self.linka_salas)
+        self.BIBLIOTECA.elt.bind("click", self.chama_sala)
         
     def desafio1(self,*_):
         self.resposta1=str(input('Hipátia, qual é a resposta do desafio?'))
@@ -110,10 +108,10 @@ class desafio_1:
         #print('a verificiação if ta funcionando') # LINHA DE VERIFICAÇÃO É NECESSÁRIO O CONSOLE DO BROWSER
             self.cena4.vai()
             self.parabens = Texto(self.cena4, txt = 'Parabéns, Hipátia, você acertou!')
-            self.parabens.vai()
+            self.parabens.vai() 
         else:
         #print('a verificiação else ta funcionando') #LINHA DE VERIFICAÇAO
-            self.tente_novamente=Texto(self.cena2, txt = 'Hipátia, tente novamente.')
+            self.tente_novamente=Texto(self.cena3, txt = 'Hipátia, tente novamente.')
             self.tente_novamente.vai()
         
     def livro_errado(self,event = None):
@@ -145,9 +143,8 @@ class desafio_1:
     def AJUDA(self,event = None):
         self.texto_5.vai()
         
-    def linka_salas(self,event = None):
-        self.desafio_teorema.vai()
-    
+    def chama_sala(self, event= None):
+        self.
     
     def inicia(self,*_):
         self.ABERTURA.vai()
