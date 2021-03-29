@@ -3,7 +3,7 @@
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-#from meredith.main import nome_personagem
+from Callie.main import desafio_teorema
 #from roxane.main import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
@@ -144,7 +144,7 @@ class desafio_1:
         self.texto_5.vai()
         
     def chama_sala(self, event= None):
-        self.
+        self.desafio_teorema.inicia()
     
     def inicia(self,*_):
         self.ABERTURA.vai()
