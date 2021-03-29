@@ -8,7 +8,7 @@ computador= "https://i.imgur.com/0KB7GXx.jpg"
 porta="https://i.imgur.com/QJvPpt9.png"
 pasta_confidencial= 'https://i.imgur.com/dVY2hl0.png'
 carta = 'https://i.imgur.com/fAZgWdr.png'
-seta= 'https://image.flaticon.com/icons/png/512/37/37758.png'
+senha= 'https://i.imgur.com/zfWiXMg.png'
 botao_play= "https://i.imgur.com/4IFbhfb.png"
 coordenadas = "https://i.imgur.com/ZEUoh7x.png"
 coordenadas_rj= "https://i.imgur.com/dKLFxWB.png"
@@ -17,7 +17,7 @@ click_biblioteca= 'https://i.imgur.com/ZKiFXHh.png'
 click_cabana="https://i.imgur.com/ueEjt2c.png"
 pasta= "https://i.imgur.com/KeffUYv.png"
 jornal= "https://i.imgur.com/WuKy09p.png"
-carta_aberta= "https://i.imgur.com/LVH8eyX.png"
+carta_aberta= "https://i.imgur.com/CiQ67ph.png"
 
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
 
@@ -103,16 +103,16 @@ class desafio_3:
                               w=350, h=300, x=50, y=150,
                               cena=self.ADM3)
                               
-        self.SETA = Elemento(seta, tit="SEGUIR",
-                             w=30, h=36, x=450, y=300,
-                             cena= self.ADM3)
+        self.SENHA_PC = Elemento(senha, tit="SEGUIR",
+                                 w=100, h=40, x=570, y=350,
+                                 cena= self.ADM3)
                               
         
 
         
         self.PORTA1.elt.bind("click", self.abre_porta)
         self.PASTA_FECHADA.elt.bind("click", self.abre_pasta)
-        self.SETA.elt.bind("click", self.botao_seguir)
+        self.SENHA_PC.elt.bind("click", self.botao_seguir)
         self.SENHA.elt.bind("click", self.desafio4)
         self.mini_mapa.elt.bind("click", self.abre_mapa)
         self.CARTA.elt.bind("click", self.abre_carta)
