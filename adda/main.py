@@ -13,7 +13,7 @@ imagem_cabanadentro5 = 'https://i.imgur.com/qx1sdZ8.jpeg'
 imagem_reuniao = 'https://i.imgur.com/tzvaPBC.jpeg'
 imagem_seta1 = 'https://image.flaticon.com/icons/png/512/37/37758.png'
 imagem_boneca2 = 'https://i.imgur.com/NEyFwDm.png'
-creditos= "https://www.clickriomafra.com.br/emacite/wp-content/uploads/2019/03/O-que-%C3%A9-cena-p%C3%B3s-cr%C3%A9ditos-Exemplo-de-tela-de-cr%C3%A9ditos-de-filme.png"
+creditos= "https://i.imgur.com/cWChkOI.png"
 
 
 STYLE["width"] = 960 #  width = 300 (default)
