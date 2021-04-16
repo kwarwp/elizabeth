@@ -146,7 +146,7 @@ class desafio_1:
         self.texto_5.vai()
         
     def chama_sala(self, event= None):
-        DT().inicia()
+        DT().inicia() # Daí aqui alterei os "as" lá do import
     
     def inicia(self,*_):
         self.ABERTURA.vai()
