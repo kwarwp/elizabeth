@@ -2,6 +2,7 @@
 # ATO 2
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
+from ruzwana.main import desafio_3 as D3
 
 Imagem_Biblioteca_dentro="https://i.imgur.com/l1LeZ9x.jpg"
 imagem_biblioteca2="https://i.imgur.com/o7cml0T.jpeg"
@@ -241,6 +242,7 @@ class desafio_2:
         self.RESPOSTA_C.elt.bind("click", self.botao_errado)
         self.PORTA2.elt.bind("click", self.abre_porta2)
         self.BOTAO_AJUDA.elt.bind("click", self.AJUDA)
+        self.CONTINUA.elt.bind("click", self.chama_sala)
     
     def desafio1(self,*_):
         self.CORREDOR2.vai()
@@ -302,6 +304,9 @@ class desafio_2:
         
     def AJUDA(self,event = None):
         self.texto_5_5.vai()
+        
+    def chama_sala(self, event= None):
+        D3().inicia() # Daí aqui alterei os "as" lá do import
         
 if __name__ == "__main__":                  
     desafio_2().inicia()
