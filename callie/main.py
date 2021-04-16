@@ -3,6 +3,7 @@
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from courtney.main import desafio_2 as D2
 
 
 STYLE["width"] = 960 #  width = 300 (default)
@@ -346,6 +347,7 @@ class desafio_teorema():
         #botao ato2.1
         
         self.PORTA.elt.bind("click", self.abre_porta)
+        self.CONTINUA.elt.bind("click", self.chama_sala)
     
     def abre_porta (self,event = None):
         self.BIBLIOTECA.vai()
@@ -409,6 +411,9 @@ class desafio_teorema():
         
     def AJUDA(self,event = None):
         self.texto_10.vai()
+        
+    def chama_sala (self, event= None):
+        D2().inicia()
 
 if __name__ == "__main__":
     desafio_teorema().inicia()
