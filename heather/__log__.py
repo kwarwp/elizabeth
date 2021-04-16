@@ -6,3 +6,10 @@
                                                      ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Fri Apr 16 2021 19:38:46.642 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 148
+  self.desafio_teorema().inicia()
+  ^
+IndentationError: expected an indented block
+'''},
