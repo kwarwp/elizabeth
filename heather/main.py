@@ -3,7 +3,9 @@
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from callie.main import desafio_teorema as DT
+from callie.main import desafio_teorema as DT   #AQUI VOCÊS TINHAM COLOCADO O NOME DO MODULO COM A PRIMEIRA LETRA MAIÚSCULA
+                                                # ESSE "as DT" faz com que o objeto seja chamável. pois cria um nome local da
+                                                # função do outro módulo praí
 #from roxane.main import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
