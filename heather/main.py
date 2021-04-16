@@ -3,7 +3,7 @@
 
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from Callie.main import desafio_teorema
+from callie.main import desafio_teorema
 #from roxane.main import *
 #from cenas.imix import Inicial
 #from cenas.ik import Passeio
