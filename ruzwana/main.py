@@ -1,6 +1,7 @@
 # Ato 3
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from adda.main import ATO4 as A4
 
 porta_adm= 'https://i.imgur.com/TrrsagT.jpeg'
 sala_adm= 'https://i.imgur.com/Zntc84W.jpeg'
@@ -116,6 +117,7 @@ class desafio_3:
         self.SENHA.elt.bind("click", self.desafio4)
         self.mini_mapa.elt.bind("click", self.abre_mapa)
         self.CARTA.elt.bind("click", self.abre_carta)
+        self.CABANA.elt.bind("click", self.chama_sala)
         
         self.texto_1=Texto(self.ENTRADA_ADM, txt = 'Parabéns, Hipátia! Você conseguiu escapar. Entre na diretoria da biblioteca para mais informações')
         self.texto_2=Texto(self.ADM, txt = 'Encontre a pasta confidencial.')
@@ -158,6 +160,9 @@ class desafio_3:
     def inicia(self,*_):
         self.ENTRADA_ADM.vai()
         self.texto_1.vai()
+        
+    def chama_sala(self, event= None):
+        A4().inicia() # Daí aqui alterei os "as" lá do import
 
 if __name__ == "__main__":                  
     desafio_3().inicia()
